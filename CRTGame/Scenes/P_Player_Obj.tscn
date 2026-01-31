@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://y7n01w7miaw"]
+
+[ext_resource type="Texture2D" uid="uid://fsm0j1e5vx04" path="res://CRTGame/Assets/icon.svg" id="1_24w76"]
+[ext_resource type="Script" uid="uid://cv4qy572tfxr" path="res://CRTGame/Scripts/Player_Script.cs" id="1_ky0se"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s3ing"]
+size = Vector2(120, 120)
+
+[node name="P_Player_Obj" type="CharacterBody2D" unique_id=494675637]
+script = ExtResource("1_ky0se")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1795927814]
+texture = ExtResource("1_24w76")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=334427194]
+shape = SubResource("RectangleShape2D_s3ing")
