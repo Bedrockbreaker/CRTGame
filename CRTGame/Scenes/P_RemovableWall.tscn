@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://cjupevbhmpo2e"]
+
+[ext_resource type="Script" uid="uid://wo5wcvhyvrnr" path="res://CRTGame/Scripts/RemovableWall.cs" id="1_uh6xr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nuc5x"]
+size = Vector2(50, 50)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uh6xr"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.49803922, 0.49803922, 0.49803922, 1)
+
+[node name="PRemovableWall" type="Area2D" unique_id=835157038 node_paths=PackedStringArray("Collider", "Panel")]
+script = ExtResource("1_uh6xr")
+Collider = NodePath("CollisionShape2D")
+Panel = NodePath("CollisionShape2D/Panel")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=381665987]
+position = Vector2(25, 25)
+shape = SubResource("RectangleShape2D_nuc5x")
+
+[node name="Panel" type="Panel" parent="CollisionShape2D" unique_id=2141839097]
+offset_left = -25.0
+offset_top = -25.0
+offset_right = 25.0
+offset_bottom = 25.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_uh6xr")
+
+[connection signal="area_entered" from="." to="." method="OnAreaEntered"]
+[connection signal="area_exited" from="." to="." method="OnAreaExited"]

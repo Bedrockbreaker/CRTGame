@@ -1,14 +1,34 @@
 [gd_scene format=3 uid="uid://jt4f45okr88m"]
 
 [ext_resource type="PackedScene" uid="uid://byk7kcem4g0aa" path="res://CRTGame/Scenes/P_Sheet.tscn" id="1_2dprt"]
+[ext_resource type="PackedScene" uid="uid://cjupevbhmpo2e" path="res://CRTGame/Scenes/P_RemovableWall.tscn" id="2_68gcj"]
 
 [node name="Node2D" type="Node2D" unique_id=1513356743]
 
 [node name="Sheet" parent="." unique_id=3925472 instance=ExtResource("1_2dprt")]
 position = Vector2(84, 37)
-Color = Color(1, 1, 0, 1)
+Color = Color(1, 1, 0, 0.49803922)
 
 [node name="Sheet2" parent="." unique_id=2020183571 instance=ExtResource("1_2dprt")]
 position = Vector2(350, 187)
-ColorLayer = 1
+ColorLayer = 2
+Color = Color(1, 0, 0, 0.49803922)
+
+[node name="Sheet3" parent="." unique_id=1587114572 instance=ExtResource("1_2dprt")]
+position = Vector2(156, 284)
+ColorLayer = 3
+Color = Color(0.13471723, 0.51897305, 0.9999998, 0.49803922)
+
+[node name="PRemovableWall" parent="." unique_id=835157038 instance=ExtResource("2_68gcj")]
+position = Vector2(898, 81)
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall2" parent="." unique_id=2040089098 instance=ExtResource("2_68gcj")]
+position = Vector2(1019, 317)
+ColorLayer = 2
 Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall3" parent="." unique_id=1523504706 instance=ExtResource("2_68gcj")]
+position = Vector2(932, 545)
+ColorLayer = 3
+Color = Color(1, 0.49803922, 0, 1)

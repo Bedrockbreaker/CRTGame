@@ -6,22 +6,25 @@ namespace CRTGame;
 public partial class Sheet : Area2D
 {
 	[Export]
-	public int ColorLayer;
+	public uint ColorLayer = 1;
 
 	[Export]
 	public Color Color = Colors.White;
+
+	[Export]
+	public CollisionShape2D Collider;
 
 	private Vector2 DragOffset;
 	private bool bDragging;
 
 	public override void _Ready()
 	{
-		CollisionLayer = 1U << (ColorLayer + 8);
-		CollisionMask = 1U << (ColorLayer + 8);
+		CollisionLayer = ColorLayer << 8;
+		CollisionMask = CollisionLayer;
 
 		Modulate = Color;
 
-		ZIndex = ColorLayer + 8;
+		ZIndex = (int)(ColorLayer + 8);
 	}
 
 	public override void _Process(double delta)
@@ -33,7 +36,7 @@ public partial class Sheet : Area2D
 			PhysicsPointQueryParameters2D raycast = new()
 			{
 				Position = GetGlobalMousePosition(),
-				CollisionMask = ~0U ^ 255U, // Ignore layers 0-7
+				CollisionMask = ~0U << 8, // Ignore layers 0-7
 				CollideWithAreas = true,
 				CollideWithBodies = false
 			};

@@ -5,8 +5,9 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bg7fr"]
 size = Vector2(400, 300)
 
-[node name="Sheet" type="Area2D" unique_id=3925472]
+[node name="Sheet" type="Area2D" unique_id=3925472 node_paths=PackedStringArray("Collider")]
 script = ExtResource("1_pw20y")
+Collider = NodePath("CollisionShape2D")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=249633031]
 position = Vector2(200, 150)
