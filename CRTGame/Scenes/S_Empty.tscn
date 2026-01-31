@@ -1,3 +1,14 @@
 [gd_scene format=3 uid="uid://jt4f45okr88m"]
 
+[ext_resource type="PackedScene" uid="uid://byk7kcem4g0aa" path="res://CRTGame/Scenes/P_Sheet.tscn" id="1_2dprt"]
+
 [node name="Node2D" type="Node2D" unique_id=1513356743]
+
+[node name="Sheet" parent="." unique_id=3925472 instance=ExtResource("1_2dprt")]
+position = Vector2(84, 37)
+Color = Color(1, 1, 0, 1)
+
+[node name="Sheet2" parent="." unique_id=2020183571 instance=ExtResource("1_2dprt")]
+position = Vector2(350, 187)
+ColorLayer = 1
+Color = Color(1, 0, 0, 1)

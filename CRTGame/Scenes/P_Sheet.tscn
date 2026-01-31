@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://byk7kcem4g0aa"]
+
+[ext_resource type="Script" uid="uid://dv75i1jylyua2" path="res://CRTGame/Scripts/Sheet.cs" id="1_pw20y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bg7fr"]
+size = Vector2(400, 300)
+
+[node name="Sheet" type="Area2D" unique_id=3925472]
+script = ExtResource("1_pw20y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=249633031]
+position = Vector2(200, 150)
+shape = SubResource("RectangleShape2D_bg7fr")
+
+[node name="ColorRect" type="ColorRect" parent="CollisionShape2D" unique_id=852058932]
+offset_left = -200.0
+offset_top = -150.0
+offset_right = 200.0
+offset_bottom = 150.0
