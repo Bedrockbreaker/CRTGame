@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bdh7egwxplubc"]
+
+[ext_resource type="Texture2D" uid="uid://fsm0j1e5vx04" path="res://CRTGame/Assets/icon.svg" id="1_cur01"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wmrnl"]
+size = Vector2(120, 120)
+
+[node name="P_TempWall_obj" type="StaticBody2D" unique_id=2132844915]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=53222600]
+texture = ExtResource("1_cur01")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=793370991]
+shape = SubResource("RectangleShape2D_wmrnl")
