@@ -10,6 +10,8 @@ public partial class Player_Script : CharacterBody2D
 	public override void _Ready()
 	{
 		Velocity = new Vector2(-1, -1).Normalized() * speed;
+
+		ZIndex = 1;
 	}
 
 	public override void _PhysicsProcess(double delta)

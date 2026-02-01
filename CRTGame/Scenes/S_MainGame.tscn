@@ -7,6 +7,11 @@
 
 [node name="SMainGame" type="Node2D" unique_id=1561625556]
 
+[node name="P_Player_Obj" parent="." unique_id=494675637 instance=ExtResource("2_f6gu4")]
+position = Vector2(99, 92)
+scale = Vector2(0.08376193, 0.08348762)
+speed = 125.0
+
 [node name="P_TempWall_obj" parent="." unique_id=2132844915 instance=ExtResource("1_sgp38")]
 position = Vector2(249.00002, 85)
 scale = Vector2(0.1180593, 2.1716092)
@@ -25,14 +30,34 @@ position = Vector2(128, 7)
 rotation = -1.5707964
 scale = Vector2(0.1180593, 2.1716092)
 
-[node name="P_Player_Obj" parent="." unique_id=494675637 instance=ExtResource("2_f6gu4")]
-position = Vector2(99, 92)
-scale = Vector2(0.08376193, 0.08348762)
-speed = 125.0
-
 [node name="Sheet" parent="." unique_id=3925472 instance=ExtResource("4_h1iqy")]
 position = Vector2(-41, 122)
 Color = Color(1, 0, 0, 0.49803922)
 
 [node name="PRemovableWall" parent="." unique_id=1832529673 instance=ExtResource("3_alwe3")]
-position = Vector2(118, 59)
+position = Vector2(117, 8)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall2" parent="." unique_id=2077384586 instance=ExtResource("3_alwe3")]
+position = Vector2(117, 34)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall3" parent="." unique_id=1769766687 instance=ExtResource("3_alwe3")]
+position = Vector2(117, 60)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall4" parent="." unique_id=600492391 instance=ExtResource("3_alwe3")]
+position = Vector2(117, 86)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall5" parent="." unique_id=1239304032 instance=ExtResource("3_alwe3")]
+position = Vector2(117, 112)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall6" parent="." unique_id=1409437256 instance=ExtResource("3_alwe3")]
+position = Vector2(117, 138)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall7" parent="." unique_id=838257331 instance=ExtResource("3_alwe3")]
+position = Vector2(117, 164)
+Color = Color(1, 0, 0, 1)
