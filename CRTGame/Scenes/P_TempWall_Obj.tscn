@@ -9,6 +9,7 @@ size = Vector2(120, 120)
 shape = SubResource("RectangleShape2D_wmrnl")
 
 [node name="ColorRect" type="ColorRect" parent="CollisionShape2D" unique_id=1014892499]
+z_index = 75
 offset_left = -60.0
 offset_top = -60.0
 offset_right = 60.0

@@ -19,7 +19,7 @@ public partial class Player_Script : CharacterBody2D
 	{
 		Velocity = new Vector2(-1, -1).Normalized() * speed;
 
-		ZIndex = 5;
+		ZIndex = 100;
 	}
 
 	public override void _PhysicsProcess(double delta)

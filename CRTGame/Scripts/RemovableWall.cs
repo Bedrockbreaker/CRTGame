@@ -41,7 +41,7 @@ public partial class RemovableWall : Area2D
 			BgColor = Color
 		});
 
-		ZIndex = -1;
+		ZIndex = 50;
 	}
 
 	public override void _PhysicsProcess(double delta)
