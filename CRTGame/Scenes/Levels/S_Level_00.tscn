@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dth6bg08xhmi4" path="res://CRTGame/Scenes/P_NextLevel_Trigger.tscn" id="6_qhqqy"]
 [ext_resource type="PackedScene" uid="uid://b72nxmx4xjgma" path="res://CRTGame/Scenes/P_CheckpointManager.tscn" id="7_bfyf4"]
 [ext_resource type="PackedScene" uid="uid://d4cvm61eymhlu" path="res://CRTGame/Scenes/P_Checkpoint_Trigger.tscn" id="8_lsgob"]
-[ext_resource type="Texture2D" uid="uid://cpwkf2gp8bln5" path="res://CRTGame/Assets/pnoqtitle5.png" id="8_mfbrv"]
+[ext_resource type="Texture2D" uid="uid://cpwkf2gp8bln5" path="res://CRTGame/Assets/T_Title_D.png" id="8_mfbrv"]
 [ext_resource type="Shader" uid="uid://da2fn4r6hxtqp" path="res://CRTGame/Scenes/CRTShader.gdshader" id="9_bm1s6"]
 
 [sub_resource type="Environment" id="Environment_613lf"]
