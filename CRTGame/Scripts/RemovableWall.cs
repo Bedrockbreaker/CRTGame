@@ -72,6 +72,7 @@ public partial class RemovableWall : Area2D
 
 		if (bDisabledThisTick == bDisabled) return;
 
+		// HACK: This assumes stylebox will never be null. In a game jam, who cares?
 		StyleBoxFlat stylebox = Panel.GetThemeStylebox("panel").Duplicate() as StyleBoxFlat;
 
 		bDisabled = bDisabledThisTick;

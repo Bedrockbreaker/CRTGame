@@ -1,3 +1,29 @@
 [gd_scene format=3 uid="uid://cq3kwuasp34h1"]
 
+[ext_resource type="PackedScene" uid="uid://bdh7egwxplubc" path="res://CRTGame/Scenes/P_TempWall_Obj.tscn" id="1_sgp38"]
+[ext_resource type="PackedScene" uid="uid://y7n01w7miaw" path="res://CRTGame/Scenes/P_Player_Obj.tscn" id="2_f6gu4"]
+
 [node name="SMainGame" type="Node2D" unique_id=1561625556]
+
+[node name="P_TempWall_obj" parent="." unique_id=2132844915 instance=ExtResource("1_sgp38")]
+position = Vector2(249.00002, 85)
+scale = Vector2(0.1180593, 2.1716092)
+
+[node name="P_TempWall_obj2" parent="." unique_id=1882632523 instance=ExtResource("1_sgp38")]
+position = Vector2(7, 93)
+scale = Vector2(0.1180593, 2.1716092)
+
+[node name="P_TempWall_obj3" parent="." unique_id=229794668 instance=ExtResource("1_sgp38")]
+position = Vector2(126.99999, 185)
+rotation = -1.5707964
+scale = Vector2(0.1180593, 2.1716092)
+
+[node name="P_TempWall_obj4" parent="." unique_id=513998305 instance=ExtResource("1_sgp38")]
+position = Vector2(128, 7)
+rotation = -1.5707964
+scale = Vector2(0.1180593, 2.1716092)
+
+[node name="P_Player_Obj" parent="." unique_id=494675637 instance=ExtResource("2_f6gu4")]
+position = Vector2(99, 92)
+scale = Vector2(0.08376193, 0.08348762)
+speed = 125.0
