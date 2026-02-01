@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://uopg8uxcrxoq"]
+[gd_scene format=3 uid="uid://co8j1a8e4mjwk"]
 
 [ext_resource type="PackedScene" uid="uid://y7n01w7miaw" path="res://CRTGame/Scenes/P_Player_Obj.tscn" id="1_dhirg"]
 [ext_resource type="PackedScene" uid="uid://bdh7egwxplubc" path="res://CRTGame/Scenes/P_TempWall_Obj.tscn" id="2_48syi"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cjupevbhmpo2e" path="res://CRTGame/Scenes/P_RemovableWall.tscn" id="4_o3nxe"]
 [ext_resource type="PackedScene" uid="uid://maq345s0yxvm" path="res://CRTGame/Scenes/P_Death_Trigger.tscn" id="5_4u631"]
 [ext_resource type="PackedScene" uid="uid://dth6bg08xhmi4" path="res://CRTGame/Scenes/P_NextLevel_Trigger.tscn" id="6_tbblb"]
+[ext_resource type="PackedScene" uid="uid://crokqnhtt37b0" path="res://CRTGame/Scenes/Levels/S_Level_10.tscn" id="7_48syi"]
 [ext_resource type="PackedScene" uid="uid://b72nxmx4xjgma" path="res://CRTGame/Scenes/P_CheckpointManager.tscn" id="7_ywt5m"]
 [ext_resource type="PackedScene" uid="uid://d4cvm61eymhlu" path="res://CRTGame/Scenes/P_Checkpoint_Trigger.tscn" id="8_pfvuq"]
 [ext_resource type="Shader" uid="uid://da2fn4r6hxtqp" path="res://CRTGame/Scenes/CRTShader.gdshader" id="9_t7ir4"]
@@ -39,16 +40,16 @@ scale = Vector2(0.08376193, 0.08348762)
 speed = 125.0
 
 [node name="Sheet" parent="." unique_id=3925472 instance=ExtResource("3_at406")]
-position = Vector2(234, 127)
+position = Vector2(218, -34.999985)
 Color = Color(1, 0, 0, 0.5882353)
 
 [node name="Sheet2" parent="." unique_id=1893159727 instance=ExtResource("3_at406")]
-position = Vector2(222, 140)
+position = Vector2(217, 123)
 ColorLayer = 2
 Color = Color(0, 1, 0, 0.5882353)
 
 [node name="Sheet3" parent="." unique_id=959544771 instance=ExtResource("3_at406")]
-position = Vector2(213, 158)
+position = Vector2(-33.999992, 61.000008)
 ColorLayer = 4
 Color = Color(0, 0, 1, 0.5882353)
 
@@ -1846,6 +1847,7 @@ scale = Vector2(0.18161985, 1.9485674)
 [node name="P_NextLevel_Trigger" parent="." unique_id=1309058265 instance=ExtResource("6_tbblb")]
 position = Vector2(241, 48)
 scale = Vector2(0.14288308, 0.16155179)
+nextLevel = ExtResource("7_48syi")
 levelWinSound = null
 
 [node name="P_CheckpointManager" parent="." unique_id=979586994 instance=ExtResource("7_ywt5m")]
@@ -1859,7 +1861,6 @@ scale = Vector2(0.33801043, 0.37335715)
 environment = SubResource("Environment_613lf")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=932884743]
-visible = false
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=630225158]
 material = SubResource("ShaderMaterial_jeo66")
