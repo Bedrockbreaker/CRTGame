@@ -25,6 +25,21 @@ public partial class Sheet : Area2D
 		Modulate = Color;
 
 		ZIndex = (int)(ColorLayer + 8);
+
+		if ((ColorLayer & 1) > 0)
+		{
+			MusicPlayer.Instance.PlayRedMusic();
+		}
+
+		if ((ColorLayer & 2) > 0)
+		{
+			MusicPlayer.Instance.PlayGreenMusic();
+		}
+
+		if ((ColorLayer & 4) > 0)
+		{
+			MusicPlayer.Instance.PlayBlueMusic();
+		}
 	}
 
 	public override void _Process(double delta)
@@ -84,5 +99,23 @@ public partial class Sheet : Area2D
 		if (!bDragging) return;
 
 		Position = GetGlobalMousePosition() - DragOffset;
+	}
+
+	public override void _ExitTree()
+	{
+		if ((ColorLayer & 1) > 0)
+		{
+			MusicPlayer.Instance.StopRedMusic();
+		}
+
+		if ((ColorLayer & 2) > 0)
+		{
+			MusicPlayer.Instance.StopGreenMusic();
+		}
+
+		if ((ColorLayer & 4) > 0)
+		{
+			MusicPlayer.Instance.StopBlueMusic();
+		}
 	}
 }

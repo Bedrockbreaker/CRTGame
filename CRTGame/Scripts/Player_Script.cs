@@ -13,6 +13,9 @@ public partial class Player_Script : CharacterBody2D
 	[Export]
 	public AudioStreamPlayer2D audioOutput;
 
+	[Export]
+	public PackedScene bounceParticle;
+
 	private RandomNumberGenerator Random = new();
 
 	public override void _EnterTree()
@@ -34,6 +37,11 @@ public partial class Player_Script : CharacterBody2D
 		if (collision != null)
 		{
 			Velocity = Velocity.Bounce(collision.GetNormal());
+
+			GpuParticles2D particle = bounceParticle.Instantiate<GpuParticles2D>();
+			particle.Position = Position;
+			particle.Restart();
+			GetParent().AddChild(particle);
 
 			audioOutput.Stream = bounce;
 			audioOutput.PitchScale = Random.Randf() * 0.3f + 0.85f;
