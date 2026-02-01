@@ -1,0 +1,533 @@
+[gd_scene format=3 uid="uid://b7txftljn2sct"]
+
+[ext_resource type="PackedScene" uid="uid://y7n01w7miaw" path="res://CRTGame/Scenes/P_Player_Obj.tscn" id="1_bh6j0"]
+[ext_resource type="PackedScene" uid="uid://bdh7egwxplubc" path="res://CRTGame/Scenes/P_TempWall_Obj.tscn" id="2_nyhls"]
+[ext_resource type="PackedScene" uid="uid://byk7kcem4g0aa" path="res://CRTGame/Scenes/P_Sheet.tscn" id="3_p4jrb"]
+[ext_resource type="PackedScene" uid="uid://cjupevbhmpo2e" path="res://CRTGame/Scenes/P_RemovableWall.tscn" id="4_77nhe"]
+[ext_resource type="PackedScene" uid="uid://maq345s0yxvm" path="res://CRTGame/Scenes/P_Death_Trigger.tscn" id="5_euyoi"]
+[ext_resource type="PackedScene" uid="uid://dth6bg08xhmi4" path="res://CRTGame/Scenes/P_NextLevel_Trigger.tscn" id="6_ppb7o"]
+[ext_resource type="PackedScene" uid="uid://b72nxmx4xjgma" path="res://CRTGame/Scenes/P_CheckpointManager.tscn" id="7_8nywk"]
+[ext_resource type="PackedScene" uid="uid://d4cvm61eymhlu" path="res://CRTGame/Scenes/P_Checkpoint_Trigger.tscn" id="8_wrsga"]
+[ext_resource type="Shader" uid="uid://da2fn4r6hxtqp" path="res://CRTGame/Scenes/CRTShader.gdshader" id="9_argnu"]
+
+[sub_resource type="Environment" id="Environment_613lf"]
+background_mode = 3
+glow_enabled = true
+glow_intensity = 0.05
+glow_strength = 1.1
+glow_bloom = 0.07
+adjustment_enabled = true
+adjustment_brightness = 3.25
+adjustment_contrast = 0.9
+adjustment_saturation = 0.97
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jeo66"]
+shader = ExtResource("9_argnu")
+shader_parameter/crt_brightness = 1.0000000475
+shader_parameter/crt_ghost = 0.1810000085975
+shader_parameter/crt_grid = 0.0
+shader_parameter/crt_white_noise = 0.0050000002375
+shader_parameter/crt_curve = 0.06000000285
+shader_parameter/crt_color = 4.6000002185
+shader_parameter/crt_pixel_size = 1.0000000475
+
+[node name="SMainGame" type="Node2D" unique_id=1561625556]
+
+[node name="P_Player_Obj" parent="." unique_id=494675637 instance=ExtResource("1_bh6j0")]
+position = Vector2(19.999985, 22.999977)
+scale = Vector2(0.08376193, 0.08348762)
+speed = 125.0
+
+[node name="P_TempWall_obj" parent="." unique_id=2132844915 instance=ExtResource("2_nyhls")]
+position = Vector2(258, 84)
+scale = Vector2(0.1180593, 2.1716092)
+
+[node name="P_TempWall_obj7" parent="." unique_id=406593067 instance=ExtResource("2_nyhls")]
+position = Vector2(185.00002, 95.99999)
+scale = Vector2(0.098, 0.842)
+
+[node name="P_TempWall_obj2" parent="." unique_id=1882632523 instance=ExtResource("2_nyhls")]
+position = Vector2(-4.0000005, 94)
+scale = Vector2(0.1180593, 2.1716092)
+
+[node name="P_TempWall_obj3" parent="." unique_id=229794668 instance=ExtResource("2_nyhls")]
+position = Vector2(130, 196)
+rotation = -1.5707964
+scale = Vector2(0.1180593, 2.1716092)
+
+[node name="P_TempWall_obj4" parent="." unique_id=513998305 instance=ExtResource("2_nyhls")]
+position = Vector2(127, -4)
+rotation = -1.5707964
+scale = Vector2(0.1180593, 2.1716092)
+
+[node name="P_TempWall_obj5" parent="." unique_id=773180772 instance=ExtResource("2_nyhls")]
+position = Vector2(-34.999996, 46)
+rotation = -1.5707964
+scale = Vector2(0.1180593, 2.1716092)
+
+[node name="P_TempWall_obj6" parent="." unique_id=490823722 instance=ExtResource("2_nyhls")]
+position = Vector2(-35, 146)
+rotation = -1.5707964
+scale = Vector2(0.1180593, 2.1716092)
+
+[node name="Sheet" parent="." unique_id=3925472 instance=ExtResource("3_p4jrb")]
+position = Vector2(223, 142)
+Color = Color(1, 0, 0, 0.5882353)
+
+[node name="Sheet2" parent="." unique_id=1893159727 instance=ExtResource("3_p4jrb")]
+position = Vector2(224, -29)
+ColorLayer = 2
+Color = Color(0, 1, 0, 0.5882353)
+
+[node name="Sheet3" parent="." unique_id=959544771 instance=ExtResource("3_p4jrb")]
+position = Vector2(-239, 164)
+ColorLayer = 4
+Color = Color(0, 0, 1, 0.5882353)
+
+[node name="PRemovableWall" parent="." unique_id=1832529673 instance=ExtResource("4_77nhe")]
+position = Vector2(95, 39)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall2" parent="." unique_id=2077384586 instance=ExtResource("4_77nhe")]
+position = Vector2(101, 39)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall3" parent="." unique_id=3617733 instance=ExtResource("4_77nhe")]
+position = Vector2(107, 39)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall4" parent="." unique_id=1372861197 instance=ExtResource("4_77nhe")]
+position = Vector2(113, 39)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall5" parent="." unique_id=1048680941 instance=ExtResource("4_77nhe")]
+position = Vector2(119, 39)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall6" parent="." unique_id=681172777 instance=ExtResource("4_77nhe")]
+position = Vector2(125, 39)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall7" parent="." unique_id=2084555967 instance=ExtResource("4_77nhe")]
+position = Vector2(131, 39)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall8" parent="." unique_id=1926074383 instance=ExtResource("4_77nhe")]
+position = Vector2(137, 39)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall9" parent="." unique_id=1948311285 instance=ExtResource("4_77nhe")]
+position = Vector2(143, 39)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall10" parent="." unique_id=433744629 instance=ExtResource("4_77nhe")]
+position = Vector2(149, 39)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall11" parent="." unique_id=537785523 instance=ExtResource("4_77nhe")]
+position = Vector2(155, 39)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall12" parent="." unique_id=1228652294 instance=ExtResource("4_77nhe")]
+position = Vector2(161, 39)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall13" parent="." unique_id=1366002536 instance=ExtResource("4_77nhe")]
+position = Vector2(167, 39)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall14" parent="." unique_id=1945567660 instance=ExtResource("4_77nhe")]
+position = Vector2(173, 39)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall15" parent="." unique_id=472507956 instance=ExtResource("4_77nhe")]
+position = Vector2(179, 39)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall16" parent="." unique_id=866874593 instance=ExtResource("4_77nhe")]
+position = Vector2(185, 39)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall81" parent="." unique_id=184316090 instance=ExtResource("4_77nhe")]
+position = Vector2(191, 93)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall82" parent="." unique_id=1879383427 instance=ExtResource("4_77nhe")]
+position = Vector2(197, 93)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall83" parent="." unique_id=207966596 instance=ExtResource("4_77nhe")]
+position = Vector2(203, 93)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall84" parent="." unique_id=92148872 instance=ExtResource("4_77nhe")]
+position = Vector2(209, 93)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall85" parent="." unique_id=1072399040 instance=ExtResource("4_77nhe")]
+position = Vector2(215, 93)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall86" parent="." unique_id=212329840 instance=ExtResource("4_77nhe")]
+position = Vector2(221, 93)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall87" parent="." unique_id=316968487 instance=ExtResource("4_77nhe")]
+position = Vector2(227, 93)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall88" parent="." unique_id=1161019301 instance=ExtResource("4_77nhe")]
+position = Vector2(233, 93)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall89" parent="." unique_id=561919462 instance=ExtResource("4_77nhe")]
+position = Vector2(239, 93)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall90" parent="." unique_id=1326384837 instance=ExtResource("4_77nhe")]
+position = Vector2(245, 93)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall17" parent="." unique_id=1756243227 instance=ExtResource("4_77nhe")]
+position = Vector2(95, 147)
+Color = Color(0, 1, 0, 1)
+
+[node name="PRemovableWall18" parent="." unique_id=293525210 instance=ExtResource("4_77nhe")]
+position = Vector2(101, 147)
+Color = Color(0, 1, 0, 1)
+
+[node name="PRemovableWall19" parent="." unique_id=1658293001 instance=ExtResource("4_77nhe")]
+position = Vector2(107, 147)
+Color = Color(0, 1, 0, 1)
+
+[node name="PRemovableWall20" parent="." unique_id=1045537342 instance=ExtResource("4_77nhe")]
+position = Vector2(113, 147)
+Color = Color(0, 1, 0, 1)
+
+[node name="PRemovableWall21" parent="." unique_id=552171570 instance=ExtResource("4_77nhe")]
+position = Vector2(119, 147)
+Color = Color(0, 1, 0, 1)
+
+[node name="PRemovableWall22" parent="." unique_id=2026820880 instance=ExtResource("4_77nhe")]
+position = Vector2(125, 147)
+Color = Color(0, 1, 0, 1)
+
+[node name="PRemovableWall23" parent="." unique_id=1267038497 instance=ExtResource("4_77nhe")]
+position = Vector2(131, 147)
+Color = Color(0, 1, 0, 1)
+
+[node name="PRemovableWall24" parent="." unique_id=1213365933 instance=ExtResource("4_77nhe")]
+position = Vector2(137, 147)
+Color = Color(0, 1, 0, 1)
+
+[node name="PRemovableWall25" parent="." unique_id=2077165042 instance=ExtResource("4_77nhe")]
+position = Vector2(143, 147)
+Color = Color(0, 1, 0, 1)
+
+[node name="PRemovableWall26" parent="." unique_id=2024363751 instance=ExtResource("4_77nhe")]
+position = Vector2(149, 147)
+Color = Color(0, 1, 0, 1)
+
+[node name="PRemovableWall27" parent="." unique_id=2000604729 instance=ExtResource("4_77nhe")]
+position = Vector2(155, 147)
+Color = Color(0, 1, 0, 1)
+
+[node name="PRemovableWall28" parent="." unique_id=808478134 instance=ExtResource("4_77nhe")]
+position = Vector2(161, 147)
+Color = Color(0, 1, 0, 1)
+
+[node name="PRemovableWall29" parent="." unique_id=1767947626 instance=ExtResource("4_77nhe")]
+position = Vector2(167, 147)
+Color = Color(0, 1, 0, 1)
+
+[node name="PRemovableWall30" parent="." unique_id=1570417738 instance=ExtResource("4_77nhe")]
+position = Vector2(173, 147)
+Color = Color(0, 1, 0, 1)
+
+[node name="PRemovableWall31" parent="." unique_id=1633227370 instance=ExtResource("4_77nhe")]
+position = Vector2(179, 147)
+Color = Color(0, 1, 0, 1)
+
+[node name="PRemovableWall32" parent="." unique_id=879104788 instance=ExtResource("4_77nhe")]
+position = Vector2(185, 147)
+Color = Color(0, 1, 0, 1)
+
+[node name="PRemovableWall33" parent="." unique_id=1514445675 instance=ExtResource("4_77nhe")]
+position = Vector2(185, 153)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall34" parent="." unique_id=435945390 instance=ExtResource("4_77nhe")]
+position = Vector2(185, 159)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall35" parent="." unique_id=1412813095 instance=ExtResource("4_77nhe")]
+position = Vector2(185, 165)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall36" parent="." unique_id=1486629903 instance=ExtResource("4_77nhe")]
+position = Vector2(185, 171)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall37" parent="." unique_id=1041108183 instance=ExtResource("4_77nhe")]
+position = Vector2(185, 177)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall38" parent="." unique_id=68594754 instance=ExtResource("4_77nhe")]
+position = Vector2(185, 183)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall39" parent="." unique_id=636615760 instance=ExtResource("4_77nhe")]
+position = Vector2(167, 153)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall40" parent="." unique_id=335269167 instance=ExtResource("4_77nhe")]
+position = Vector2(167, 159)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall41" parent="." unique_id=1379253270 instance=ExtResource("4_77nhe")]
+position = Vector2(167, 165)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall42" parent="." unique_id=580975413 instance=ExtResource("4_77nhe")]
+position = Vector2(167, 171)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall43" parent="." unique_id=1286632299 instance=ExtResource("4_77nhe")]
+position = Vector2(167, 177)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall44" parent="." unique_id=518565480 instance=ExtResource("4_77nhe")]
+position = Vector2(167, 183)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall45" parent="." unique_id=338471973 instance=ExtResource("4_77nhe")]
+position = Vector2(95, 153)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall46" parent="." unique_id=658742144 instance=ExtResource("4_77nhe")]
+position = Vector2(95, 159)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall47" parent="." unique_id=1809765254 instance=ExtResource("4_77nhe")]
+position = Vector2(95, 165)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall48" parent="." unique_id=1365201787 instance=ExtResource("4_77nhe")]
+position = Vector2(95, 171)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall49" parent="." unique_id=1415857065 instance=ExtResource("4_77nhe")]
+position = Vector2(95, 177)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall50" parent="." unique_id=1205116743 instance=ExtResource("4_77nhe")]
+position = Vector2(95, 183)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall51" parent="." unique_id=855568805 instance=ExtResource("4_77nhe")]
+position = Vector2(113, 153)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall52" parent="." unique_id=502689633 instance=ExtResource("4_77nhe")]
+position = Vector2(113, 159)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall53" parent="." unique_id=563132487 instance=ExtResource("4_77nhe")]
+position = Vector2(113, 165)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall54" parent="." unique_id=1503022145 instance=ExtResource("4_77nhe")]
+position = Vector2(113, 171)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall55" parent="." unique_id=802771956 instance=ExtResource("4_77nhe")]
+position = Vector2(113, 177)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall56" parent="." unique_id=137158479 instance=ExtResource("4_77nhe")]
+position = Vector2(113, 183)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall57" parent="." unique_id=1272017466 instance=ExtResource("4_77nhe")]
+position = Vector2(95, 3)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall58" parent="." unique_id=196395853 instance=ExtResource("4_77nhe")]
+position = Vector2(95, 9)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall59" parent="." unique_id=1474670996 instance=ExtResource("4_77nhe")]
+position = Vector2(95, 15)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall60" parent="." unique_id=127073614 instance=ExtResource("4_77nhe")]
+position = Vector2(95, 21)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall61" parent="." unique_id=1625885525 instance=ExtResource("4_77nhe")]
+position = Vector2(95, 27)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall62" parent="." unique_id=1868281110 instance=ExtResource("4_77nhe")]
+position = Vector2(95, 33)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall63" parent="." unique_id=1994707089 instance=ExtResource("4_77nhe")]
+position = Vector2(113, 3)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall64" parent="." unique_id=515365968 instance=ExtResource("4_77nhe")]
+position = Vector2(113, 9)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall65" parent="." unique_id=1127649090 instance=ExtResource("4_77nhe")]
+position = Vector2(113, 15)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall66" parent="." unique_id=801829541 instance=ExtResource("4_77nhe")]
+position = Vector2(113, 21)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall67" parent="." unique_id=864095827 instance=ExtResource("4_77nhe")]
+position = Vector2(113, 27)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall68" parent="." unique_id=738684336 instance=ExtResource("4_77nhe")]
+position = Vector2(113, 33)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall69" parent="." unique_id=1444819863 instance=ExtResource("4_77nhe")]
+position = Vector2(185, 3)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall70" parent="." unique_id=1893974965 instance=ExtResource("4_77nhe")]
+position = Vector2(185, 9)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall71" parent="." unique_id=1016740962 instance=ExtResource("4_77nhe")]
+position = Vector2(185, 15)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall72" parent="." unique_id=2109649653 instance=ExtResource("4_77nhe")]
+position = Vector2(185, 21)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall73" parent="." unique_id=969658827 instance=ExtResource("4_77nhe")]
+position = Vector2(185, 27)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall74" parent="." unique_id=1718058080 instance=ExtResource("4_77nhe")]
+position = Vector2(185, 33)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall75" parent="." unique_id=405562095 instance=ExtResource("4_77nhe")]
+position = Vector2(168, 3)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall76" parent="." unique_id=719078677 instance=ExtResource("4_77nhe")]
+position = Vector2(168, 9)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall77" parent="." unique_id=1911574806 instance=ExtResource("4_77nhe")]
+position = Vector2(168, 15)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall78" parent="." unique_id=809366182 instance=ExtResource("4_77nhe")]
+position = Vector2(168, 21)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall79" parent="." unique_id=60870396 instance=ExtResource("4_77nhe")]
+position = Vector2(168, 27)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="PRemovableWall80" parent="." unique_id=1407105344 instance=ExtResource("4_77nhe")]
+position = Vector2(168, 33)
+ColorLayer = 3
+Color = Color(1, 1, 0, 1)
+
+[node name="P_Death_Trigger" parent="." unique_id=1762642872 instance=ExtResource("5_euyoi")]
+position = Vector2(89.99999, 96)
+scale = Vector2(4.427, 2.129)
+
+[node name="P_NextLevel_Trigger" parent="." unique_id=1309058265 instance=ExtResource("6_ppb7o")]
+position = Vector2(18, 172)
+scale = Vector2(0.14288308, 0.16155179)
+
+[node name="P_CheckpointManager" parent="." unique_id=979586994 instance=ExtResource("7_8nywk")]
+position = Vector2(-75, 76)
+
+[node name="P_Checkpoint_Trigger" parent="P_CheckpointManager" unique_id=1097131134 instance=ExtResource("8_wrsga")]
+position = Vector2(92, -55.000008)
+scale = Vector2(0.33801043, 0.37335715)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1166395278]
+environment = SubResource("Environment_613lf")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=932884743]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=630225158]
+material = SubResource("ShaderMaterial_jeo66")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(18.892157, 18.892157, 18.892157, 1)
