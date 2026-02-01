@@ -1,12 +1,28 @@
 using Godot;
-using System;
+
+namespace CRTGame;
 
 public partial class NextLevel_Trigger : Area2D
 {
 	[Export]
-	public PackedScene nextLevel; 
+	public PackedScene nextLevel;
 
-    private void OnBodyEntered(PhysicsBody2D body)
+	[Export]
+	public AudioStreamWav levelWinSound;
+
+	[Export]
+	public AudioStreamPlayer2D audioOutput;
+
+	private RandomNumberGenerator Random = new();
+	private float hue = 0f;
+
+	public override void _Process(double delta)
+	{
+		hue = (hue + 0.5f * (float)delta) % 1f;
+		Modulate = Color.FromHsv(hue, 1f, 1f);
+	}
+
+	private void OnBodyEntered(PhysicsBody2D body)
 	{
 		if (body.IsInGroup("Player"))
 		{
@@ -17,10 +33,14 @@ public partial class NextLevel_Trigger : Area2D
 				return;
 			}
 
+			audioOutput.Stream = levelWinSound;
+			audioOutput.PitchScale = Random.Randf() * 0.3f + 0.85f;
+			audioOutput.Play();
+
 			Player_Data.Instance.lastPosition = player.Position;
 			Player_Data.Instance.lastVelocity = player.Velocity;
 
-            CallDeferred(nameof(ChangeSceneDeferred), nextLevel);
+			CallDeferred(nameof(ChangeSceneDeferred), nextLevel);
 		}
 	}
 

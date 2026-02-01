@@ -1,0 +1,99 @@
+[gd_scene format=3 uid="uid://cdsoie7fdykh3"]
+
+[ext_resource type="PackedScene" uid="uid://y7n01w7miaw" path="res://CRTGame/Scenes/P_Player_Obj.tscn" id="1_mfbrv"]
+[ext_resource type="Script" uid="uid://clirt4i8i417l" path="res://CRTGame/Scripts/MainLevelStarter.cs" id="1_tg71s"]
+[ext_resource type="PackedScene" uid="uid://bdh7egwxplubc" path="res://CRTGame/Scenes/P_TempWall_Obj.tscn" id="2_ruqsc"]
+[ext_resource type="PackedScene" uid="uid://d2eciw8cb5esh" path="res://CRTGame/Scenes/Levels/S_Level_01.tscn" id="5_mfbrv"]
+[ext_resource type="PackedScene" uid="uid://dth6bg08xhmi4" path="res://CRTGame/Scenes/P_NextLevel_Trigger.tscn" id="6_qhqqy"]
+[ext_resource type="PackedScene" uid="uid://b72nxmx4xjgma" path="res://CRTGame/Scenes/P_CheckpointManager.tscn" id="7_bfyf4"]
+[ext_resource type="PackedScene" uid="uid://d4cvm61eymhlu" path="res://CRTGame/Scenes/P_Checkpoint_Trigger.tscn" id="8_lsgob"]
+[ext_resource type="Texture2D" uid="uid://cpwkf2gp8bln5" path="res://CRTGame/Assets/pnoqtitle5.png" id="8_mfbrv"]
+[ext_resource type="Shader" uid="uid://da2fn4r6hxtqp" path="res://CRTGame/Scenes/CRTShader.gdshader" id="9_bm1s6"]
+
+[sub_resource type="Environment" id="Environment_613lf"]
+background_mode = 3
+glow_enabled = true
+glow_intensity = 0.05
+glow_strength = 1.1
+glow_bloom = 0.07
+adjustment_enabled = true
+adjustment_brightness = 3.25
+adjustment_contrast = 0.9
+adjustment_saturation = 0.97
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jeo66"]
+shader = ExtResource("9_bm1s6")
+shader_parameter/crt_brightness = 1.0000000475
+shader_parameter/crt_ghost = 0.1810000085975
+shader_parameter/crt_grid = 0.0
+shader_parameter/crt_white_noise = 0.0050000002375
+shader_parameter/crt_curve = 0.06000000285
+shader_parameter/crt_color = 4.6000002185
+shader_parameter/crt_pixel_size = 1.0000000475
+
+[node name="SMainGame" type="Node2D" unique_id=1561625556]
+
+[node name="MainLevelStarter" type="Node2D" parent="." unique_id=238979579 node_paths=PackedStringArray("Player", "SpawnStart", "LevelWin", "LevelWinSpawn")]
+script = ExtResource("1_tg71s")
+Player = NodePath("../P_Player_Obj")
+SpawnStart = NodePath("../P_CheckpointManager/P_Checkpoint_Trigger")
+LevelWin = NodePath("../P_NextLevel_Trigger")
+LevelWinSpawn = NodePath("../Node2D")
+
+[node name="P_Player_Obj" parent="." unique_id=494675637 instance=ExtResource("1_mfbrv")]
+position = Vector2(319, -70)
+scale = Vector2(0.08376193, 0.08348762)
+speed = 125.0
+
+[node name="P_TempWall_obj" parent="." unique_id=2132844915 instance=ExtResource("2_ruqsc")]
+position = Vector2(260, 84)
+scale = Vector2(0.1180593, 2.1716092)
+
+[node name="P_TempWall_obj2" parent="." unique_id=1882632523 instance=ExtResource("2_ruqsc")]
+position = Vector2(-4.0000005, 94)
+scale = Vector2(0.1180593, 2.1716092)
+
+[node name="P_TempWall_obj3" parent="." unique_id=229794668 instance=ExtResource("2_ruqsc")]
+position = Vector2(130, 196)
+rotation = -1.5707964
+scale = Vector2(0.1180593, 2.1716092)
+
+[node name="P_TempWall_obj4" parent="." unique_id=513998305 instance=ExtResource("2_ruqsc")]
+position = Vector2(127, -4)
+rotation = -1.5707964
+scale = Vector2(0.1180593, 2.1716092)
+
+[node name="P_NextLevel_Trigger" parent="." unique_id=1309058265 instance=ExtResource("6_qhqqy")]
+position = Vector2(-61, 87)
+scale = Vector2(0.47463936, 0.47463936)
+nextLevel = ExtResource("5_mfbrv")
+
+[node name="P_CheckpointManager" parent="." unique_id=979586994 instance=ExtResource("7_bfyf4")]
+position = Vector2(-75, 76)
+
+[node name="P_Checkpoint_Trigger" parent="P_CheckpointManager" unique_id=1097131134 instance=ExtResource("8_lsgob")]
+position = Vector2(205.00002, 100)
+scale = Vector2(0.33801043, 0.37335715)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1166395278]
+environment = SubResource("Environment_613lf")
+
+[node name="TTitleD" type="Sprite2D" parent="." unique_id=361003211]
+texture_filter = 1
+position = Vector2(128, 93.99999)
+scale = Vector2(4.9039736, 4.903973)
+texture = ExtResource("8_mfbrv")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=932884743]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=630225158]
+material = SubResource("ShaderMaterial_jeo66")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(18.892157, 18.892157, 18.892157, 1)
+
+[node name="Node2D" type="Node2D" parent="." unique_id=725978272]
+position = Vector2(40, 87)

@@ -29,20 +29,30 @@ public partial class Sheet : Area2D
 
 	public override void _Process(double delta)
 	{
+		Vector2 mousePos = GetGlobalMousePosition();
+
+		PhysicsPointQueryParameters2D raycast = new()
+		{
+			Position = mousePos,
+			CollisionMask = ~0U << 8, // Ignore layers 0-7
+			CollideWithAreas = true,
+			CollideWithBodies = false
+		};
+
+		Array<Dictionary> result = GetWorld2D().DirectSpaceState.IntersectPoint(raycast);
+
+		if (result.Count > 0)
+		{
+			Input.SetDefaultCursorShape(Input.CursorShape.PointingHand);
+		}
+		else
+		{
+			Input.SetDefaultCursorShape(Input.CursorShape.Arrow);
+		}
+
 		if (Input.IsActionJustPressed("Click", true))
 		{
 			// Test mouse overlap with sheet (or other sheets on top of this one)
-
-			PhysicsPointQueryParameters2D raycast = new()
-			{
-				Position = GetGlobalMousePosition(),
-				CollisionMask = ~0U << 8, // Ignore layers 0-7
-				CollideWithAreas = true,
-				CollideWithBodies = false
-			};
-
-			Array<Dictionary> result = GetWorld2D().DirectSpaceState.IntersectPoint(raycast);
-
 			foreach (Dictionary hit in result)
 			{
 				// Ignore overlaps with non-sheet objects
