@@ -46,7 +46,8 @@ position = Vector2(218, -34.999985)
 Color = Color(1, 0, 0, 0.5882353)
 
 [node name="Sheet2" parent="." unique_id=1893159727 instance=ExtResource("3_at406")]
-position = Vector2(217, 123)
+position = Vector2(223, 120)
+scale = Vector2(0.7932075, 0.8)
 ColorLayer = 2
 Color = Color(0, 1, 0, 0.5882353)
 
@@ -103,14 +104,19 @@ rotation = -1.5707964
 scale = Vector2(0.1180593, 2.1716092)
 
 [node name="P_TempWall_obj6" parent="." unique_id=1057269495 instance=ExtResource("2_48syi")]
-position = Vector2(-80.99999, 172)
+position = Vector2(-67.99999, 173)
 rotation = -1.5707964
 scale = Vector2(0.553, 2.172)
 
 [node name="P_TempWall_obj7" parent="." unique_id=727375089 instance=ExtResource("2_48syi")]
-position = Vector2(-81, 22)
+position = Vector2(-67.99999, 21)
 rotation = -1.5707964
 scale = Vector2(0.553, 2.172)
+
+[node name="P_TempWall_obj10" parent="." unique_id=589601618 instance=ExtResource("2_48syi")]
+position = Vector2(295, 185)
+rotation = -1.5707964
+scale = Vector2(0.7381696, 1.3749237)
 
 [node name="PRemovableWall" parent="." unique_id=1832529673 instance=ExtResource("4_o3nxe")]
 position = Vector2(67, 5)
@@ -1881,7 +1887,6 @@ scale = Vector2(0.26820517, 0.26820517)
 winScreen = NodePath("../P_Win_Screen")
 
 [node name="P_Win_Screen" parent="." unique_id=1371838822 instance=ExtResource("12_o3nxe")]
-visible = false
 custom_minimum_size = Vector2(512, 384)
 offset_left = -37.000008
 offset_top = -20.0

@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://maq345s0yxvm" path="res://CRTGame/Scenes/P_Death_Trigger.tscn" id="5_qmkic"]
 [ext_resource type="PackedScene" uid="uid://dth6bg08xhmi4" path="res://CRTGame/Scenes/P_NextLevel_Trigger.tscn" id="6_mkcqg"]
 [ext_resource type="PackedScene" uid="uid://b72nxmx4xjgma" path="res://CRTGame/Scenes/P_CheckpointManager.tscn" id="7_f030b"]
-[ext_resource type="PackedScene" uid="uid://buro2e2b074w7" path="res://CRTGame/Scenes/Levels/S_Level_08.tscn" id="7_ik026"]
+[ext_resource type="PackedScene" uid="uid://dwx71ta5l8q1e" path="res://CRTGame/Scenes/Levels/S_Level_07-2.tscn" id="7_ik026"]
 [ext_resource type="PackedScene" uid="uid://d4cvm61eymhlu" path="res://CRTGame/Scenes/P_Checkpoint_Trigger.tscn" id="8_prsyi"]
 [ext_resource type="Shader" uid="uid://da2fn4r6hxtqp" path="res://CRTGame/Scenes/CRTShader.gdshader" id="9_wjwvc"]
 
@@ -45,9 +45,9 @@ rotation = -1.5707964
 scale = Vector2(0.25426853, 0.521602)
 
 [node name="P_TempWall_obj7" parent="." unique_id=555225553 instance=ExtResource("2_ik026")]
-position = Vector2(169, 93.00001)
+position = Vector2(177, 93)
 rotation = -1.5707964
-scale = Vector2(0.30796474, 0.49030557)
+scale = Vector2(0.27553502, 0.5703055)
 
 [node name="P_TempWall_obj5" parent="." unique_id=1464416751 instance=ExtResource("2_ik026")]
 position = Vector2(125.00001, 169.00002)
@@ -232,13 +232,8 @@ position = Vector2(96, 108)
 ColorLayer = 5
 Color = Color(1, 0, 1, 1)
 
-[node name="PRemovableWall58" parent="." unique_id=825216920 instance=ExtResource("4_wysh0")]
-position = Vector2(102, 108)
-ColorLayer = 5
-Color = Color(1, 0, 1, 1)
-
 [node name="PRemovableWall59" parent="." unique_id=505185057 instance=ExtResource("4_wysh0")]
-position = Vector2(108, 96)
+position = Vector2(102, 96)
 ColorLayer = 5
 Color = Color(1, 0, 1, 1)
 
@@ -248,37 +243,32 @@ ColorLayer = 5
 Color = Color(1, 0, 1, 1)
 
 [node name="PRemovableWall74" parent="." unique_id=969174384 instance=ExtResource("4_wysh0")]
-position = Vector2(108, 102)
+position = Vector2(102, 102)
 ColorLayer = 5
 Color = Color(1, 0, 1, 1)
 
 [node name="PRemovableWall60" parent="." unique_id=839676632 instance=ExtResource("4_wysh0")]
-position = Vector2(108, 90)
+position = Vector2(102, 90)
 ColorLayer = 5
 Color = Color(1, 0, 1, 1)
 
 [node name="PRemovableWall63" parent="." unique_id=109762996 instance=ExtResource("4_wysh0")]
-position = Vector2(108, 84)
+position = Vector2(102, 84)
 ColorLayer = 5
 Color = Color(1, 0, 1, 1)
 
 [node name="PRemovableWall64" parent="." unique_id=443434714 instance=ExtResource("4_wysh0")]
-position = Vector2(108, 78)
-ColorLayer = 5
-Color = Color(1, 0, 1, 1)
-
-[node name="PRemovableWall65" parent="." unique_id=1501893339 instance=ExtResource("4_wysh0")]
-position = Vector2(102, 72)
+position = Vector2(102, 78)
 ColorLayer = 5
 Color = Color(1, 0, 1, 1)
 
 [node name="PRemovableWall85" parent="." unique_id=144275698 instance=ExtResource("4_wysh0")]
-position = Vector2(108, 72)
+position = Vector2(102, 72)
 ColorLayer = 5
 Color = Color(1, 0, 1, 1)
 
 [node name="PRemovableWall86" parent="." unique_id=768155547 instance=ExtResource("4_wysh0")]
-position = Vector2(108, 108)
+position = Vector2(102, 108)
 ColorLayer = 5
 Color = Color(1, 0, 1, 1)
 
@@ -338,22 +328,22 @@ ColorLayer = 5
 Color = Color(1, 0, 1, 1)
 
 [node name="PRemovableWall26" parent="." unique_id=747153415 instance=ExtResource("4_wysh0")]
-position = Vector2(205, 33)
+position = Vector2(193, 33)
 ColorLayer = 4
 Color = Color(0, 0, 1, 1)
 
 [node name="PRemovableWall27" parent="." unique_id=741813569 instance=ExtResource("4_wysh0")]
-position = Vector2(205, 33)
+position = Vector2(193, 33)
 ColorLayer = 4
 Color = Color(0, 0, 1, 1)
 
 [node name="PRemovableWall80" parent="." unique_id=1976516683 instance=ExtResource("4_wysh0")]
-position = Vector2(205, 39)
+position = Vector2(193, 39)
 ColorLayer = 4
 Color = Color(0, 0, 1, 1)
 
 [node name="PRemovableWall81" parent="." unique_id=2033933869 instance=ExtResource("4_wysh0")]
-position = Vector2(205, 45)
+position = Vector2(193, 45)
 ColorLayer = 4
 Color = Color(0, 0, 1, 1)
 
@@ -457,28 +447,48 @@ position = Vector2(211, 3)
 ColorLayer = 4
 Color = Color(0, 0, 1, 1)
 
-[node name="PRemovableWall46" parent="." unique_id=2114900544 instance=ExtResource("4_wysh0")]
+[node name="PRemovableWall91" parent="." unique_id=1091620050 instance=ExtResource("4_wysh0")]
+position = Vector2(205, 45)
+ColorLayer = 4
+Color = Color(0, 0, 1, 1)
+
+[node name="PRemovableWall92" parent="." unique_id=1283182699 instance=ExtResource("4_wysh0")]
 position = Vector2(205, 3)
 ColorLayer = 4
 Color = Color(0, 0, 1, 1)
 
+[node name="PRemovableWall93" parent="." unique_id=1007947890 instance=ExtResource("4_wysh0")]
+position = Vector2(199, 45)
+ColorLayer = 4
+Color = Color(0, 0, 1, 1)
+
+[node name="PRemovableWall94" parent="." unique_id=498539831 instance=ExtResource("4_wysh0")]
+position = Vector2(199, 3)
+ColorLayer = 4
+Color = Color(0, 0, 1, 1)
+
+[node name="PRemovableWall46" parent="." unique_id=2114900544 instance=ExtResource("4_wysh0")]
+position = Vector2(193, 3)
+ColorLayer = 4
+Color = Color(0, 0, 1, 1)
+
 [node name="PRemovableWall47" parent="." unique_id=1234147273 instance=ExtResource("4_wysh0")]
-position = Vector2(205, 9)
+position = Vector2(193, 9)
 ColorLayer = 4
 Color = Color(0, 0, 1, 1)
 
 [node name="PRemovableWall48" parent="." unique_id=1611117442 instance=ExtResource("4_wysh0")]
-position = Vector2(205, 15)
+position = Vector2(193, 15)
 ColorLayer = 4
 Color = Color(0, 0, 1, 1)
 
 [node name="PRemovableWall49" parent="." unique_id=584479345 instance=ExtResource("4_wysh0")]
-position = Vector2(205, 21)
+position = Vector2(193, 21)
 ColorLayer = 4
 Color = Color(0, 0, 1, 1)
 
 [node name="PRemovableWall50" parent="." unique_id=115985562 instance=ExtResource("4_wysh0")]
-position = Vector2(205, 27)
+position = Vector2(193, 27)
 ColorLayer = 4
 Color = Color(0, 0, 1, 1)
 
@@ -501,8 +511,8 @@ rotation = 1.5707964
 scale = Vector2(0.3656111, 7.7310553)
 
 [node name="P_NextLevel_Trigger" parent="." unique_id=1309058265 instance=ExtResource("6_mkcqg")]
-position = Vector2(230.00002, 27)
-scale = Vector2(0.14288308, 0.16155179)
+position = Vector2(224.00002, 27)
+scale = Vector2(0.22425245, 0.22791457)
 nextLevel = ExtResource("7_ik026")
 levelWinSound = null
 
