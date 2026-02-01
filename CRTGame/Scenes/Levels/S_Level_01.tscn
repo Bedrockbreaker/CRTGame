@@ -197,7 +197,7 @@ nextLevel = ExtResource("6_v652r")
 position = Vector2(-75, 76)
 
 [node name="P_Checkpoint_Trigger" parent="P_CheckpointManager" unique_id=1097131134 instance=ExtResource("7_r6fs5")]
-position = Vector2(114, 81)
+position = Vector2(138, 73)
 scale = Vector2(0.33801043, 0.37335715)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1166395278]
