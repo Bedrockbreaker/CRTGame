@@ -701,8 +701,8 @@ position = Vector2(127, 199.00002)
 scale = Vector2(-7.1048074, 0.30398035)
 
 [node name="P_NextLevel_Trigger" parent="." unique_id=1309058265 instance=ExtResource("6_ef01r")]
-position = Vector2(32, 88.00001)
-scale = Vector2(0.19009355, 0.20488407)
+position = Vector2(33, 83.00001)
+scale = Vector2(0.11937626, 0.123096175)
 nextLevel = ExtResource("7_2jk0f")
 levelWinSound = null
 

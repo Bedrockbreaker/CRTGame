@@ -50,7 +50,7 @@ rotation = -1.5707964
 scale = Vector2(0.38213092, 0.050335832)
 
 [node name="P_TempWall_obj6" parent="." unique_id=1664720763 instance=ExtResource("2_gn3wx")]
-position = Vector2(222.00002, 196)
+position = Vector2(222.00002, 191)
 rotation = -1.5707964
 scale = Vector2(0.049100343, -0.35936058)
 

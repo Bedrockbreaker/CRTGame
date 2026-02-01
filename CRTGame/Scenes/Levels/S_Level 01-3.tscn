@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://b72nxmx4xjgma" path="res://CRTGame/Scenes/P_CheckpointManager.tscn" id="7_qrbtx"]
 [ext_resource type="PackedScene" uid="uid://d4cvm61eymhlu" path="res://CRTGame/Scenes/P_Checkpoint_Trigger.tscn" id="8_q1y26"]
 [ext_resource type="Shader" uid="uid://da2fn4r6hxtqp" path="res://CRTGame/Scenes/CRTShader.gdshader" id="9_qm4vh"]
+[ext_resource type="Texture2D" uid="uid://bovb4yv2rkan5" path="res://CRTGame/Assets/Arrow.png" id="11_wnn0y"]
 
 [sub_resource type="Environment" id="Environment_613lf"]
 background_mode = 3
@@ -40,7 +41,7 @@ scale = Vector2(0.08376193, 0.08348762)
 speed = 125.0
 
 [node name="Sheet2" parent="." unique_id=1893159727 instance=ExtResource("3_wnn0y")]
-position = Vector2(187.99998, 142.99998)
+position = Vector2(211, 150)
 ColorLayer = 2
 Color = Color(0, 1, 0, 0.5882353)
 
@@ -1051,3 +1052,8 @@ scale = Vector2(0.34514582, -0.049872994)
 [node name="P_TempWall_obj10" parent="." unique_id=596880273 instance=ExtResource("2_4nowm")]
 position = Vector2(251, 98)
 scale = Vector2(0.05526512, 0.44980252)
+
+[node name="Arrow" type="Sprite2D" parent="." unique_id=1067804823]
+texture_filter = 1
+position = Vector2(187, 172)
+texture = ExtResource("11_wnn0y")
