@@ -12,9 +12,6 @@ public partial class RemovableWall : Area2D
 	public Color Color = Colors.White;
 
 	[Export]
-	public Color BorderColor = Colors.Gray;
-
-	[Export]
 	public CollisionShape2D SheetDetector;
 
 	[Export]
@@ -42,12 +39,9 @@ public partial class RemovableWall : Area2D
 		Panel.AddThemeStyleboxOverride("panel", new StyleBoxFlat
 		{
 			BgColor = Color,
-			BorderColor = BorderColor,
-			BorderWidthLeft = 2,
-			BorderWidthTop = 2,
-			BorderWidthRight = 2,
-			BorderWidthBottom = 2
 		});
+
+		ZIndex = -1;
 	}
 
 	public override void _PhysicsProcess(double delta)
@@ -86,13 +80,11 @@ public partial class RemovableWall : Area2D
 		{
 			Collider.CollisionLayer &= ~ColorLayer;
 			Collider.CollisionMask &= ~ColorLayer;
-			stylebox.SetBorderWidthAll(0);
 		}
 		else
 		{
 			Collider.CollisionLayer |= ColorLayer;
 			Collider.CollisionMask |= ColorLayer;
-			stylebox.SetBorderWidthAll(2);
 		}
 
 		Panel.AddThemeStyleboxOverride("panel", stylebox);
