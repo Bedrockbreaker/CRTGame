@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://ci1b1usq8s2hx"]
+
+[ext_resource type="Script" uid="uid://d0ux7b2kkdmjf" path="res://CRTGame/Scripts/MainMenu.cs" id="1_qby75"]
+
+[node name="SMainMenu" type="Node2D" unique_id=380077557]
+script = ExtResource("1_qby75")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=946002037]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=799101275]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label_Title" type="Label" parent="CanvasLayer/Control" unique_id=310541507]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -97.0
+offset_right = -17.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "CRT Game"
+vertical_alignment = 1
+uppercase = true
+
+[node name="BoxContainer" type="BoxContainer" parent="CanvasLayer/Control" unique_id=1705334733]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 79.0
+grow_vertical = 2
+alignment = 1
+vertical = true
+
+[node name="Button_Start" type="Button" parent="CanvasLayer/Control/BoxContainer" unique_id=1356357596]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 1, 0.5069101, 1)
+text = "START"
+
+[node name="Button_Options" type="Button" parent="CanvasLayer/Control/BoxContainer" unique_id=1340304539]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 1, 0.5069101, 1)
+text = "OPTIONS"
+
+[node name="Button_Credits" type="Button" parent="CanvasLayer/Control/BoxContainer" unique_id=875847598]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 1, 0.5069101, 1)
+text = "CREDITS"
+
+[node name="Button_Quit" type="Button" parent="CanvasLayer/Control/BoxContainer" unique_id=1357369849]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 1, 0.5069101, 1)
+text = "QUIT"
+
+[connection signal="button_up" from="CanvasLayer/Control/BoxContainer/Button_Start" to="." method="_on_button_start_button_up"]
+[connection signal="button_up" from="CanvasLayer/Control/BoxContainer/Button_Options" to="." method="_on_button_options_button_up"]
+[connection signal="button_up" from="CanvasLayer/Control/BoxContainer/Button_Credits" to="." method="_on_button_credits_button_up"]
+[connection signal="button_up" from="CanvasLayer/Control/BoxContainer/Button_Quit" to="." method="_on_button_quit_button_up"]
