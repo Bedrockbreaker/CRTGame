@@ -5,7 +5,7 @@
 [ext_resource type="AudioStream" uid="uid://dcmhco7fs3vbn" path="res://CRTGame/Assets/A_Bounce.wav" id="2_712bt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s3ing"]
-size = Vector2(120, 120)
+size = Vector2(94, 94)
 
 [node name="P_Player_Obj" type="CharacterBody2D" unique_id=494675637 node_paths=PackedStringArray("audioOutput") groups=["Player"]]
 collision_layer = 255
@@ -15,6 +15,8 @@ bounce = ExtResource("2_712bt")
 audioOutput = NodePath("AudioStreamPlayer2D")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1795927814]
+position = Vector2(0, 1.9073486e-06)
+scale = Vector2(0.78125, 0.78125)
 texture = ExtResource("1_24w76")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=334427194]
