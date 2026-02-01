@@ -9,7 +9,7 @@ public partial class Death_Trigger : Area2D
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-        checkpointManager = GetParent().GetNode("CheckpointManager") as CheckpointManager;
+        checkpointManager = GetParent().GetNode("P_CheckpointManager") as CheckpointManager;
         player = GetParent().GetNode("P_Player_Obj") as CharacterBody2D;
     }
 

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b72nxmx4xjgma"]
+
+[ext_resource type="Script" uid="uid://56pslhm3awqg" path="res://CRTGame/Scripts/CheckpointManager.cs" id="1_o1swa"]
+
+[node name="P_CheckpointManager" type="Node2D" unique_id=979586994]
+script = ExtResource("1_o1swa")
