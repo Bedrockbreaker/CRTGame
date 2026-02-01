@@ -15,9 +15,15 @@ public partial class Player_Script : CharacterBody2D
 
 	private RandomNumberGenerator Random = new();
 
+	public override void _EnterTree()
+	{
+		Player_Data.Instance.player = this;
+	}
+
 	public override void _Ready()
 	{
-		Velocity = new Vector2(-1, -1).Normalized() * speed;
+		Velocity = Player_Data.Instance.lastVelocity.Normalized() * speed;
+		Position = Player_Data.Instance.lastPosition;
 
 		ZIndex = 100;
 	}

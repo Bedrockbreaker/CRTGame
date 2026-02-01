@@ -26,9 +26,9 @@ scale = Vector2(38.08579, -1.9669665)
 
 [node name="P_CheckpointManager" parent="." unique_id=979586994 instance=ExtResource("3_ft4f0")]
 
-[node name="P_Checkpoint_Trigger" parent="P_CheckpointManager" unique_id=1097131134 instance=ExtResource("4_i3q48")]
+[node name="P_Checkpoint_Trigger" parent="." unique_id=1097131134 instance=ExtResource("4_i3q48")]
 position = Vector2(560.00006, 92)
 scale = Vector2(26.789194, -4.151616)
 
 [node name="P_Player_Obj" parent="." unique_id=494675637 instance=ExtResource("5_bqol6")]
-position = Vector2(289, 393)
+position = Vector2(255, 372)
