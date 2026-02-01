@@ -31,7 +31,7 @@ shader_parameter/crt_curve = 0.06000000285
 shader_parameter/crt_color = 4.6000002185
 shader_parameter/crt_pixel_size = 1.0000000475
 
-[node name="SMainGame" type="Node2D" unique_id=1561625556]
+[node name="SMainGame2" type="Node2D" unique_id=1561625556]
 
 [node name="MainLevelStarter" type="Node2D" parent="." unique_id=238979579 node_paths=PackedStringArray("Player", "SpawnStart", "LevelWin", "LevelWinSpawn")]
 script = ExtResource("1_tg71s")
