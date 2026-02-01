@@ -10,6 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://b72nxmx4xjgma" path="res://CRTGame/Scenes/P_CheckpointManager.tscn" id="7_ywt5m"]
 [ext_resource type="PackedScene" uid="uid://d4cvm61eymhlu" path="res://CRTGame/Scenes/P_Checkpoint_Trigger.tscn" id="8_pfvuq"]
 [ext_resource type="Shader" uid="uid://da2fn4r6hxtqp" path="res://CRTGame/Scenes/CRTShader.gdshader" id="9_t7ir4"]
+[ext_resource type="PackedScene" uid="uid://bqadkibup2vc7" path="res://CRTGame/Scenes/P_Win_Trigger.tscn" id="11_at406"]
+[ext_resource type="PackedScene" uid="uid://v44x3niut827" path="res://CRTGame/Scenes/P_Win_Screen.tscn" id="12_o3nxe"]
 
 [sub_resource type="Environment" id="Environment_613lf"]
 background_mode = 3
@@ -1845,7 +1847,7 @@ position = Vector2(-29, 122)
 scale = Vector2(0.18161985, 1.9485674)
 
 [node name="P_NextLevel_Trigger" parent="." unique_id=1309058265 instance=ExtResource("6_tbblb")]
-position = Vector2(241, 48)
+position = Vector2(338.00003, 48)
 scale = Vector2(0.14288308, 0.16155179)
 nextLevel = ExtResource("7_48syi")
 levelWinSound = null
@@ -1871,3 +1873,18 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 color = Color(18.892157, 18.892157, 18.892157, 1)
+
+[node name="P_Win_Trigger" parent="." unique_id=650866840 node_paths=PackedStringArray("winScreen") instance=ExtResource("11_at406")]
+position = Vector2(242, 50.000023)
+rotation = -0.7853982
+scale = Vector2(0.26820517, 0.26820517)
+winScreen = NodePath("../P_Win_Screen")
+
+[node name="P_Win_Screen" parent="." unique_id=1371838822 instance=ExtResource("12_o3nxe")]
+visible = false
+custom_minimum_size = Vector2(512, 384)
+offset_left = -37.000008
+offset_top = -20.0
+offset_right = 475.0
+offset_bottom = 364.0
+scale = Vector2(0.64, 0.64)

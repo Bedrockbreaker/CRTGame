@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cfnv2cb4grg17"]
+
+[ext_resource type="Script" uid="uid://dokivf83i8ign" path="res://CRTGame/Scripts/Quit_Button.cs" id="2_twicj"]
+
+[node name="P_Quit_Button" type="Button" unique_id=1492634057]
+offset_left = -65.0
+offset_top = -50.0
+offset_right = 66.0
+offset_bottom = 50.0
+text = "QUIT THE GAME
+QUIT THE GAME
+QUIT THE GAME
+QUIT THE GAME"
+script = ExtResource("2_twicj")
+
+[connection signal="pressed" from="." to="." method="OnPressed"]
