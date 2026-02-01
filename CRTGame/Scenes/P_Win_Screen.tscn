@@ -1,13 +1,23 @@
-[gd_scene format=3 uid="uid://djw3nr6dtd7yt"]
+[gd_scene format=3 uid="uid://v44x3niut827"]
 
 [ext_resource type="Texture2D" uid="uid://ckwuhuypo0bhd" path="res://CRTGame/Assets/WinScreen3.svg" id="1_8ad1s"]
 [ext_resource type="Script" uid="uid://ctefv5ch01u03" path="res://CRTGame/Scripts/Win_Screen.cs" id="2_a07t1"]
-[ext_resource type="PackedScene" uid="uid://cfnv2cb4grg17" path="res://CRTGame/Scenes/P_Quit_Button.tscn" id="3_3nei4"]
+[ext_resource type="PackedScene" path="res://CRTGame/Scenes/P_Quit_Button.tscn" id="3_3nei4"]
 
-[node name="P_Win_Screen" type="Sprite2D" unique_id=1371838822]
-texture = ExtResource("1_8ad1s")
+[node name="ColorRect" type="ColorRect" unique_id=75831754]
+z_index = 200
+offset_left = -188.0
+offset_top = -93.0
+offset_right = 196.0
+offset_bottom = 99.0
+color = Color(0, 0, 0, 0.98039216)
 script = ExtResource("2_a07t1")
 
-[node name="P_Quit_Button" parent="." unique_id=1492634057 instance=ExtResource("3_3nei4")]
+[node name="P_Win_Screen" type="Sprite2D" parent="." unique_id=1371838822]
+position = Vector2(268, 121)
+texture = ExtResource("1_8ad1s")
+
+[node name="P_Quit_Button" parent="P_Win_Screen" unique_id=1492634057 instance=ExtResource("3_3nei4")]
 offset_top = 45.0
 offset_bottom = 145.0
+metadata/_edit_use_anchors_ = true
