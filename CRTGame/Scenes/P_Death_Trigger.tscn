@@ -1,12 +1,15 @@
 [gd_scene format=3 uid="uid://maq345s0yxvm"]
 
 [ext_resource type="Script" uid="uid://c5w2308l5glgd" path="res://CRTGame/Scripts/Death_Trigger.cs" id="1_1c3ty"]
+[ext_resource type="AudioStream" uid="uid://b86mjiqle511h" path="res://CRTGame/Assets/A_Death.wav" id="2_03gtw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d2lc8"]
 size = Vector2(40, 40)
 
-[node name="P_Death_Trigger" type="Area2D" unique_id=1762642872]
+[node name="P_Death_Trigger" type="Area2D" unique_id=1762642872 node_paths=PackedStringArray("audioOutput")]
 script = ExtResource("1_1c3ty")
+deathSound = ExtResource("2_03gtw")
+audioOutput = NodePath("AudioStreamPlayer2D")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=490593705]
 shape = SubResource("RectangleShape2D_d2lc8")
@@ -17,5 +20,7 @@ offset_top = -20.0
 offset_right = 20.0
 offset_bottom = 20.0
 color = Color(0.33333334, 0.33333334, 0.33333334, 1)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1494336736]
 
 [connection signal="body_entered" from="." to="." method="OnBodyEntered"]

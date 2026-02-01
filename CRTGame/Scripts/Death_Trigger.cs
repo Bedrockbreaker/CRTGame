@@ -4,8 +4,16 @@ namespace CRTGame;
 
 public partial class Death_Trigger : Area2D
 {
+	[Export]
+	AudioStreamWav deathSound;
+
+	[Export]
+	AudioStreamPlayer2D audioOutput;
+
 	public CheckpointManager checkpointManager;
 	public CharacterBody2D player;
+
+	private RandomNumberGenerator Random = new();
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
@@ -27,5 +35,8 @@ public partial class Death_Trigger : Area2D
 	private void KillPlayer()
 	{
 		player.Position = checkpointManager.lastLocation;
+		audioOutput.Stream = deathSound;
+		audioOutput.PitchScale = Random.Randf() * 0.3f + 0.85f;
+		audioOutput.Play();
 	}
 }

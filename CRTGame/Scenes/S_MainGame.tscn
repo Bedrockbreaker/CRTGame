@@ -6,12 +6,12 @@
 [ext_resource type="PackedScene" uid="uid://byk7kcem4g0aa" path="res://CRTGame/Scenes/P_Sheet.tscn" id="4_h1iqy"]
 [ext_resource type="PackedScene" uid="uid://maq345s0yxvm" path="res://CRTGame/Scenes/P_Death_Trigger.tscn" id="5_m071d"]
 [ext_resource type="PackedScene" uid="uid://d4cvm61eymhlu" path="res://CRTGame/Scenes/P_Checkpoint_Trigger.tscn" id="6_ix5sn"]
-[ext_resource type="PackedScene" path="res://CRTGame/Scenes/P_CheckpointManager.tscn" id="7_ix5sn"]
+[ext_resource type="PackedScene" uid="uid://b72nxmx4xjgma" path="res://CRTGame/Scenes/P_CheckpointManager.tscn" id="7_ix5sn"]
 
 [node name="SMainGame" type="Node2D" unique_id=1561625556]
 
 [node name="P_Player_Obj" parent="." unique_id=494675637 instance=ExtResource("2_f6gu4")]
-position = Vector2(57.999996, 119.99999)
+position = Vector2(66, 119)
 scale = Vector2(0.08376193, 0.08348762)
 speed = 125.0
 
