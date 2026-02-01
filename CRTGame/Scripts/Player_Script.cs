@@ -3,11 +3,17 @@ using System;
 
 public partial class Player_Script : CharacterBody2D
 {
-	public const float speed = 300.0f;
+	public float speed = 300.0f;
+
+    public override void _EnterTree()
+    {
+        Player_Data.Instance.player = this;
+    }
 
     public override void _Ready()
     {
-        Velocity = new Vector2(-200, -200).Normalized() * speed;
+        Velocity = Player_Data.Instance.lastVelocity.Normalized() * speed;
+		Position = Player_Data.Instance.lastPosition;
     }
 
     public override void _PhysicsProcess(double delta)

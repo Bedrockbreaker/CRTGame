@@ -17,13 +17,10 @@ public partial class NextLevel_Trigger : Area2D
 				return;
 			}
 
-			/*
-			WORKING ON GETTING IT TO REMEMBER POSITIONS
-			Player_Data.lastPosition = player.Position;
-			Player_Data.lastVelocity = player.Velocity;
-			*/
+			Player_Data.Instance.lastPosition = player.Position;
+			Player_Data.Instance.lastVelocity = player.Velocity;
 
-			CallDeferred(nameof(ChangeSceneDeferred), nextLevel);
+            CallDeferred(nameof(ChangeSceneDeferred), nextLevel);
 		}
 	}
 

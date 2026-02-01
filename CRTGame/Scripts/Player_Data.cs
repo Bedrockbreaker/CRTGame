@@ -1,11 +1,27 @@
 using Godot;
 using System;
 
-public static partial class Player_Data
+public partial class Player_Data : Node
 {
-    [Export]
-    public static Vector2 lastPosition = new Vector2(0, 0);
+    public static Player_Data Instance { get; private set; }
 
     [Export]
-    public static Vector2 lastVelocity = new Vector2(0, 0);
+    public Vector2 lastPosition { get; set; } = new Vector2(0, 0);
+
+    [Export]
+    public Vector2 lastVelocity { get; set; } = new Vector2(-900, -900);
+
+    [Export]
+    public CharacterBody2D player { get; set; }
+
+    public override void _EnterTree()
+    {
+        Instance = this;
+
+    }
+
+    public override void _Ready()
+    {
+        lastPosition = player.GlobalPosition;
+    }
 }
