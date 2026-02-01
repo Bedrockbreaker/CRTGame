@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://c75gghwls1f4e" path="res://CRTGame/Scenes/Levels/S_Level_01-2.tscn" id="6_v652r"]
 [ext_resource type="PackedScene" uid="uid://d4cvm61eymhlu" path="res://CRTGame/Scenes/P_Checkpoint_Trigger.tscn" id="7_r6fs5"]
 [ext_resource type="Shader" uid="uid://da2fn4r6hxtqp" path="res://CRTGame/Scenes/CRTShader.gdshader" id="8_x66bf"]
+[ext_resource type="Texture2D" uid="uid://bovb4yv2rkan5" path="res://CRTGame/Assets/Arrow.png" id="10_0s75u"]
 
 [sub_resource type="Environment" id="Environment_613lf"]
 background_mode = 3
@@ -34,6 +35,7 @@ shader_parameter/crt_pixel_size = 1.0000000475
 [node name="SMainGame2" type="Node2D" unique_id=1561625556]
 
 [node name="P_Player_Obj" parent="." unique_id=494675637 instance=ExtResource("1_lt8sq")]
+texture_filter = 1
 position = Vector2(39.999985, 157)
 scale = Vector2(0.08376193, 0.08348762)
 speed = 125.0
@@ -202,6 +204,12 @@ scale = Vector2(0.33801043, 0.37335715)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1166395278]
 environment = SubResource("Environment_613lf")
+
+[node name="Arrow" type="Sprite2D" parent="." unique_id=611347792]
+texture_filter = 1
+position = Vector2(73, 31)
+rotation = -3.1415925
+texture = ExtResource("10_0s75u")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=932884743]
 

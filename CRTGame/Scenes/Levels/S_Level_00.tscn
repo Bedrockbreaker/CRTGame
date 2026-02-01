@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://d4cvm61eymhlu" path="res://CRTGame/Scenes/P_Checkpoint_Trigger.tscn" id="8_lsgob"]
 [ext_resource type="Texture2D" uid="uid://cpwkf2gp8bln5" path="res://CRTGame/Assets/T_Title_D.png" id="8_mfbrv"]
 [ext_resource type="Shader" uid="uid://da2fn4r6hxtqp" path="res://CRTGame/Scenes/CRTShader.gdshader" id="9_bm1s6"]
+[ext_resource type="Texture2D" uid="uid://p6gxlaibpj7h" path="res://CRTGame/Assets/arrow_click.png" id="10_ruqsc"]
 
 [sub_resource type="Environment" id="Environment_613lf"]
 background_mode = 3
@@ -65,7 +66,7 @@ rotation = -1.5707964
 scale = Vector2(0.1180593, 2.1716092)
 
 [node name="P_NextLevel_Trigger" parent="." unique_id=1309058265 instance=ExtResource("6_qhqqy")]
-position = Vector2(-61, 87)
+position = Vector2(-61, 73.97186)
 scale = Vector2(0.47463936, 0.47463936)
 nextLevel = ExtResource("5_mfbrv")
 
@@ -81,7 +82,7 @@ environment = SubResource("Environment_613lf")
 
 [node name="TTitleD" type="Sprite2D" parent="." unique_id=361003211]
 texture_filter = 1
-position = Vector2(128, 93.99999)
+position = Vector2(128, 80.971855)
 scale = Vector2(4.9039736, 4.903973)
 texture = ExtResource("8_mfbrv")
 
@@ -98,4 +99,10 @@ mouse_filter = 2
 color = Color(18.892157, 18.892157, 18.892157, 1)
 
 [node name="Node2D" type="Node2D" parent="." unique_id=725978272]
-position = Vector2(40, 87)
+position = Vector2(40, 74)
+
+[node name="ArrowClick" type="Sprite2D" parent="." unique_id=1239287396]
+texture_filter = 1
+position = Vector2(131, 128.97186)
+scale = Vector2(1.9014661, 1.9014661)
+texture = ExtResource("10_ruqsc")
