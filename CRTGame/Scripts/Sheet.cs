@@ -12,6 +12,9 @@ public partial class Sheet : Area2D
 	public Color Color = Colors.White;
 
 	[Export]
+	public ColorRect ColorRect;
+
+	[Export]
 	public CollisionShape2D Collider;
 
 	private Vector2 DragOffset;
@@ -55,15 +58,6 @@ public partial class Sheet : Area2D
 		};
 
 		Array<Dictionary> result = GetWorld2D().DirectSpaceState.IntersectPoint(raycast);
-
-		if (result.Count > 0)
-		{
-			Input.SetDefaultCursorShape(Input.CursorShape.PointingHand);
-		}
-		else
-		{
-			Input.SetDefaultCursorShape(Input.CursorShape.Arrow);
-		}
 
 		if (Input.IsActionJustPressed("Click", true))
 		{
@@ -117,5 +111,19 @@ public partial class Sheet : Area2D
 		{
 			MusicPlayer.Instance.StopBlueMusic();
 		}
+	}
+
+	private void OnMouseEnter()
+	{
+		GD.Print(this + " entered");
+		Input.SetDefaultCursorShape(Input.CursorShape.PointingHand);
+		ColorRect.MouseDefaultCursorShape = Control.CursorShape.PointingHand;
+	}
+
+	private void OnMouseExit()
+	{
+		GD.Print(this + " exited");
+		Input.SetDefaultCursorShape(Input.CursorShape.Arrow);
+		ColorRect.MouseDefaultCursorShape = Control.CursorShape.Arrow;
 	}
 }

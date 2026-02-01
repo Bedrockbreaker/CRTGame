@@ -39,6 +39,7 @@ Player = NodePath("../P_Player_Obj")
 SpawnStart = NodePath("../P_CheckpointManager/P_Checkpoint_Trigger")
 LevelWin = NodePath("../P_NextLevel_Trigger")
 LevelWinSpawn = NodePath("../Node2D")
+TimeToPlayerSpawn = 0.0
 
 [node name="P_Player_Obj" parent="." unique_id=494675637 instance=ExtResource("1_mfbrv")]
 position = Vector2(319, -70)
@@ -93,6 +94,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 color = Color(18.892157, 18.892157, 18.892157, 1)
 
 [node name="Node2D" type="Node2D" parent="." unique_id=725978272]

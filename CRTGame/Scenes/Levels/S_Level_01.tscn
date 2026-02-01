@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cjupevbhmpo2e" path="res://CRTGame/Scenes/P_RemovableWall.tscn" id="4_oh12d"]
 [ext_resource type="PackedScene" uid="uid://dth6bg08xhmi4" path="res://CRTGame/Scenes/P_NextLevel_Trigger.tscn" id="6_0s75u"]
 [ext_resource type="PackedScene" uid="uid://b72nxmx4xjgma" path="res://CRTGame/Scenes/P_CheckpointManager.tscn" id="6_rxc86"]
-[ext_resource type="PackedScene" uid="uid://c75gghwls1f4e" path="res://CRTGame/Scenes/Levels/S_Level_01-2.tscn" id="6_v652r"]
+[ext_resource type="PackedScene" path="res://CRTGame/Scenes/Levels/S_Level_01-2.tscn" id="6_v652r"]
 [ext_resource type="PackedScene" uid="uid://d4cvm61eymhlu" path="res://CRTGame/Scenes/P_Checkpoint_Trigger.tscn" id="7_r6fs5"]
 [ext_resource type="Shader" uid="uid://da2fn4r6hxtqp" path="res://CRTGame/Scenes/CRTShader.gdshader" id="8_x66bf"]
 
@@ -31,7 +31,7 @@ shader_parameter/crt_curve = 0.06000000285
 shader_parameter/crt_color = 4.6000002185
 shader_parameter/crt_pixel_size = 1.0000000475
 
-[node name="SMainGame" type="Node2D" unique_id=1561625556]
+[node name="SMainGame2" type="Node2D" unique_id=1561625556]
 
 [node name="P_Player_Obj" parent="." unique_id=494675637 instance=ExtResource("1_lt8sq")]
 position = Vector2(39.999985, 157)
@@ -212,4 +212,5 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 color = Color(18.892157, 18.892157, 18.892157, 1)

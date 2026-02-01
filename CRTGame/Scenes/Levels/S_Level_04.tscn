@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://byk7kcem4g0aa" path="res://CRTGame/Scenes/P_Sheet.tscn" id="3_qsae1"]
 [ext_resource type="PackedScene" uid="uid://cjupevbhmpo2e" path="res://CRTGame/Scenes/P_RemovableWall.tscn" id="4_uqgdo"]
 [ext_resource type="PackedScene" uid="uid://dth6bg08xhmi4" path="res://CRTGame/Scenes/P_NextLevel_Trigger.tscn" id="6_0o18i"]
-[ext_resource type="PackedScene" path="res://CRTGame/Scenes/Levels/S_Level_05.tscn" id="6_tauqh"]
+[ext_resource type="PackedScene" uid="uid://dyiui8jq0pnk4" path="res://CRTGame/Scenes/Levels/S_Level_05.tscn" id="6_tauqh"]
 [ext_resource type="PackedScene" uid="uid://b72nxmx4xjgma" path="res://CRTGame/Scenes/P_CheckpointManager.tscn" id="7_uban3"]
 [ext_resource type="PackedScene" uid="uid://d4cvm61eymhlu" path="res://CRTGame/Scenes/P_Checkpoint_Trigger.tscn" id="8_jbaue"]
 [ext_resource type="Shader" uid="uid://da2fn4r6hxtqp" path="res://CRTGame/Scenes/CRTShader.gdshader" id="9_5o0l5"]
@@ -614,4 +614,5 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 color = Color(18.892157, 18.892157, 18.892157, 1)

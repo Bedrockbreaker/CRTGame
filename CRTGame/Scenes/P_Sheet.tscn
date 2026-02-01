@@ -5,9 +5,10 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bg7fr"]
 size = Vector2(120, 90)
 
-[node name="Sheet" type="Area2D" unique_id=3925472 node_paths=PackedStringArray("Collider")]
+[node name="Sheet" type="Area2D" unique_id=3925472 node_paths=PackedStringArray("ColorRect", "Collider")]
 scale = Vector2(0.8, 0.8)
 script = ExtResource("1_pw20y")
+ColorRect = NodePath("CollisionShape2D/ColorRect")
 Collider = NodePath("CollisionShape2D")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=249633031]
@@ -19,3 +20,6 @@ offset_left = -60.0
 offset_top = -45.0
 offset_right = 60.0
 offset_bottom = 45.0
+
+[connection signal="mouse_entered" from="CollisionShape2D/ColorRect" to="." method="OnMouseEnter"]
+[connection signal="mouse_exited" from="CollisionShape2D/ColorRect" to="." method="OnMouseExit"]
