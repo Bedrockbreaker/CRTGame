@@ -28,17 +28,17 @@ public partial class RemovableWall : Area2D
 		ColorLayer &= 255; // Clamp to 8 bits
 
 		// The Area2D (this object) is reponsible for detecting overlaps with color sheets
-		CollisionLayer = ColorLayer << 8;
+		CollisionLayer = 0b1111111100000000;
 		CollisionMask = CollisionLayer;
 
 		// The StaticBody2D (child node) is responsible for physics
-		Collider.CollisionLayer = ColorLayer;
+		Collider.CollisionLayer = 0b0000000011111111;
 		Collider.CollisionMask = Collider.CollisionLayer;
 
 		// "panel" (in lowercase) is an id reference, apparently. I hate godot.
 		Panel.AddThemeStyleboxOverride("panel", new StyleBoxFlat
 		{
-			BgColor = Color,
+			BgColor = Color
 		});
 
 		ZIndex = -1;
@@ -62,51 +62,49 @@ public partial class RemovableWall : Area2D
 					&& Position.Y + wallRect.Size.Y <= sheet.Position.Y + sheetRect.Size.Y
 				)) continue; // Sheet must enclose this wall
 
-				ColorMask &= ~sheet.ColorLayer; // All sheets covering this wall must combine to this wall's Color Layer
-				if (ColorMask != 0) continue;
-
-				bDisabledThisTick = true;
-				break;
+				ColorMask ^= sheet.ColorLayer;
 			}
+
+			if (ColorMask == 0) bDisabledThisTick = true;
 		}
 
 		if (bDisabledThisTick == bDisabled) return;
 
 		// HACK: This assumes stylebox will never be null. In a game jam, who cares?
-		StyleBoxFlat stylebox = Panel.GetThemeStylebox("panel").Duplicate() as StyleBoxFlat;
+		// StyleBoxFlat stylebox = Panel.GetThemeStylebox("panel").Duplicate() as StyleBoxFlat;
 
 		bDisabled = bDisabledThisTick;
 		if (bDisabled)
 		{
-			Collider.CollisionLayer &= ~ColorLayer;
-			Collider.CollisionMask &= ~ColorLayer;
+			Collider.CollisionLayer &= ~0b0000000011111111U;
+			Collider.CollisionMask &= ~0b0000000011111111U;
 		}
 		else
 		{
-			Collider.CollisionLayer |= ColorLayer;
-			Collider.CollisionMask |= ColorLayer;
+			Collider.CollisionLayer |= 0b0000000011111111U;
+			Collider.CollisionMask |= 0b0000000011111111U;
 		}
 
-		Panel.AddThemeStyleboxOverride("panel", stylebox);
+		// Panel.AddThemeStyleboxOverride("panel", stylebox);
 		GD.Print(this + " disabled: " + bDisabled);
 	}
 
 	private void OnAreaEntered(Area2D area)
 	{
-		GD.Print(this + " entered: " + area);
 
-		if (area is Sheet sheet && ((sheet.ColorLayer & ColorLayer) != 0))
+		if (area is Sheet sheet)
 		{
+			GD.Print(this + " entered: " + area);
 			CandidateSheets.Add(sheet);
 		}
 	}
 
 	private void OnAreaExited(Area2D area)
 	{
-		GD.Print(this + " exited: " + area);
 
-		if (area is Sheet sheet && ((sheet.ColorLayer & ColorLayer) != 0))
+		if (area is Sheet sheet)
 		{
+			GD.Print(this + " exited: " + area);
 			CandidateSheets.Remove(sheet);
 		}
 	}

@@ -1,5 +1,6 @@
 using Godot;
-using System;
+
+namespace CRTGame;
 
 public partial class CheckpointManager : Node2D
 {
@@ -7,6 +8,7 @@ public partial class CheckpointManager : Node2D
 	public CharacterBody2D player;
 
 	// Called when the node enters the scene tree for the first time.
+
 	public override void _Ready()
 	{
 		player = GetParent().GetNode("P_Player_Obj") as CharacterBody2D;

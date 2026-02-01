@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://b6qw0rswr3jdf"]
+[gd_scene format=3 uid="uid://d4cvm61eymhlu"]
 
 [ext_resource type="Script" uid="uid://bnjy6mg3anjlu" path="res://CRTGame/Scripts/Checkpoint_Trigger.cs" id="1_bjtc6"]
 
@@ -7,13 +7,6 @@ size = Vector2(40, 40)
 
 [node name="P_Checkpoint_Trigger" type="Area2D" unique_id=1097131134]
 script = ExtResource("1_bjtc6")
-
-[node name="ColorRect" type="ColorRect" parent="." unique_id=277946742]
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
-color = Color(0, 1, 1, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1701206597]
 shape = SubResource("RectangleShape2D_sy7sd")

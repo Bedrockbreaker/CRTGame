@@ -1,5 +1,6 @@
 using Godot;
-using System;
+
+namespace CRTGame;
 
 public partial class Checkpoint_Trigger : Area2D
 {
