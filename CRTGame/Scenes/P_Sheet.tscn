@@ -6,6 +6,7 @@
 size = Vector2(120, 90)
 
 [node name="Sheet" type="Area2D" unique_id=3925472 node_paths=PackedStringArray("Collider")]
+scale = Vector2(0.8, 0.8)
 script = ExtResource("1_pw20y")
 Collider = NodePath("CollisionShape2D")
 
