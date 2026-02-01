@@ -2,6 +2,25 @@
 
 [ext_resource type="PackedScene" uid="uid://byk7kcem4g0aa" path="res://CRTGame/Scenes/P_Sheet.tscn" id="1_2dprt"]
 [ext_resource type="PackedScene" uid="uid://cjupevbhmpo2e" path="res://CRTGame/Scenes/P_RemovableWall.tscn" id="2_68gcj"]
+[ext_resource type="Shader" uid="uid://da2fn4r6hxtqp" path="res://CRTGame/Scenes/CRTShader.gdshader" id="3_65l1w"]
+
+[sub_resource type="Environment" id="Environment_68gcj"]
+background_mode = 3
+glow_enabled = true
+glow_strength = 1.1
+glow_bloom = 0.07
+adjustment_enabled = true
+adjustment_brightness = 3.0
+adjustment_contrast = 0.8
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qxvnf"]
+shader = ExtResource("3_65l1w")
+shader_parameter/crt_brightness = 1.0000000475
+shader_parameter/crt_ghost = 5.0000002375
+shader_parameter/crt_grid = 0.0
+shader_parameter/crt_white_noise = 0.010000000475
+shader_parameter/crt_curve = 0.050000002375
+shader_parameter/crt_color = 3.0000001425
 
 [node name="Node2D" type="Node2D" unique_id=1513356743]
 
@@ -32,3 +51,17 @@ Color = Color(1, 0, 0, 1)
 position = Vector2(198, 143)
 ColorLayer = 3
 Color = Color(1, 0.49803922, 0, 1)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=591521128]
+environment = SubResource("Environment_68gcj")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=115580425]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=994301890]
+material = SubResource("ShaderMaterial_qxvnf")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(18.892157, 18.892157, 18.892157, 1)
