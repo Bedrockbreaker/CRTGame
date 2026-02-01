@@ -35,7 +35,7 @@ shader_parameter/crt_pixel_size = 1.0000000475
 [node name="SMainGame" type="Node2D" unique_id=1561625556]
 
 [node name="P_Player_Obj" parent="." unique_id=494675637 instance=ExtResource("1_p0j11")]
-position = Vector2(126, 161)
+position = Vector2(125.99999, 158)
 scale = Vector2(0.08376193, 0.08348762)
 speed = 125.0
 
@@ -710,7 +710,7 @@ levelWinSound = null
 position = Vector2(-75, 76)
 
 [node name="P_Checkpoint_Trigger" parent="P_CheckpointManager" unique_id=1097131134 instance=ExtResource("8_q1y26")]
-position = Vector2(201.00006, 85.000015)
+position = Vector2(201.00002, 82)
 scale = Vector2(0.33801043, 0.37335715)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1166395278]
@@ -740,10 +740,6 @@ scale = Vector2(0.1185916, 0.11346674)
 position = Vector2(173, 146)
 scale = Vector2(0.1185916, 0.11346674)
 
-[node name="P_TempWall_obj5" parent="." unique_id=1046505454 instance=ExtResource("2_4nowm")]
-position = Vector2(186, 158)
-scale = Vector2(0.1185916, 0.11346674)
-
 [node name="P_TempWall_obj8" parent="." unique_id=314008345 instance=ExtResource("2_4nowm")]
 position = Vector2(229, 74)
 scale = Vector2(0.34514582, -0.049872994)
@@ -758,8 +754,4 @@ scale = Vector2(0.05526512, 0.44980252)
 
 [node name="P_TempWall_obj6" parent="." unique_id=1780117925 instance=ExtResource("2_4nowm")]
 position = Vector2(134, 109)
-scale = Vector2(0.1185916, 0.11346674)
-
-[node name="P_TempWall_obj7" parent="." unique_id=647939198 instance=ExtResource("2_4nowm")]
-position = Vector2(121, 97)
 scale = Vector2(0.1185916, 0.11346674)

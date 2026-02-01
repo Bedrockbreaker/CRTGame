@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cjupevbhmpo2e" path="res://CRTGame/Scenes/P_RemovableWall.tscn" id="4_oh12d"]
 [ext_resource type="PackedScene" uid="uid://dth6bg08xhmi4" path="res://CRTGame/Scenes/P_NextLevel_Trigger.tscn" id="6_0s75u"]
 [ext_resource type="PackedScene" uid="uid://b72nxmx4xjgma" path="res://CRTGame/Scenes/P_CheckpointManager.tscn" id="6_rxc86"]
-[ext_resource type="PackedScene" path="res://CRTGame/Scenes/Levels/S_Level_01-2.tscn" id="6_v652r"]
+[ext_resource type="PackedScene" uid="uid://c75gghwls1f4e" path="res://CRTGame/Scenes/Levels/S_Level_01-2.tscn" id="6_v652r"]
 [ext_resource type="PackedScene" uid="uid://d4cvm61eymhlu" path="res://CRTGame/Scenes/P_Checkpoint_Trigger.tscn" id="7_r6fs5"]
 [ext_resource type="Shader" uid="uid://da2fn4r6hxtqp" path="res://CRTGame/Scenes/CRTShader.gdshader" id="8_x66bf"]
 
@@ -189,7 +189,7 @@ position = Vector2(127, 189)
 Color = Color(1, 0, 0, 1)
 
 [node name="P_NextLevel_Trigger" parent="." unique_id=1309058265 instance=ExtResource("6_0s75u")]
-position = Vector2(230, 97)
+position = Vector2(225, 97)
 scale = Vector2(0.4660597, 0.47664526)
 nextLevel = ExtResource("6_v652r")
 
@@ -204,6 +204,7 @@ scale = Vector2(0.33801043, 0.37335715)
 environment = SubResource("Environment_613lf")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=932884743]
+visible = false
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=630225158]
 material = SubResource("ShaderMaterial_jeo66")

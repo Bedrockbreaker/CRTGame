@@ -613,8 +613,8 @@ rotation = 1.5707964
 scale = Vector2(1.4701606, 7.7360554)
 
 [node name="P_NextLevel_Trigger" parent="." unique_id=1309058265 instance=ExtResource("6_ic0ya")]
-position = Vector2(22, 94)
-scale = Vector2(0.14288308, 0.16155179)
+position = Vector2(25, 94)
+scale = Vector2(0.39105013, -0.3864391)
 nextLevel = ExtResource("7_3wgxn")
 
 [node name="P_CheckpointManager" parent="." unique_id=979586994 instance=ExtResource("8_u6lx1")]

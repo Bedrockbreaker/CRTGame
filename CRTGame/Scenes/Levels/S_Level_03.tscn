@@ -57,7 +57,7 @@ rotation = -1.5707964
 scale = Vector2(0.1180593, 2.1716092)
 
 [node name="Sheet" parent="." unique_id=3925472 instance=ExtResource("3_631gy")]
-position = Vector2(192, 133)
+position = Vector2(201, 134)
 Color = Color(1, 0, 0, 0.5882353)
 
 [node name="Sheet2" parent="." unique_id=1893159727 instance=ExtResource("3_631gy")]
@@ -495,7 +495,7 @@ Color = Color(1, 0, 0, 1)
 
 [node name="P_NextLevel_Trigger" parent="." unique_id=1309058265 instance=ExtResource("6_dnjqp")]
 position = Vector2(230, 164)
-scale = Vector2(0.14288308, 0.16155179)
+scale = Vector2(0.3079047, 0.31746182)
 nextLevel = ExtResource("6_sjld3")
 
 [node name="P_CheckpointManager" parent="." unique_id=979586994 instance=ExtResource("7_j1e45")]
