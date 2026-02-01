@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cp1b0m65t7yfj"]
+
+[ext_resource type="Script" uid="uid://b3o4dwfq1o5qf" path="res://CRTGame/Scripts/NextLevel_Trigger.cs" id="1_x7x0e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qu0n5"]
+size = Vector2(84, 84)
+
+[node name="P_NextLevel_Trigger" type="Area2D" unique_id=1309058265]
+script = ExtResource("1_x7x0e")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=997409151]
+offset_left = -42.0
+offset_top = -42.0
+offset_right = 42.0
+offset_bottom = 42.0
+color = Color(1, 0, 1, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=550961904]
+shape = SubResource("RectangleShape2D_qu0n5")
+
+[connection signal="body_entered" from="." to="." method="OnBodyEntered"]

@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://me27lnmfk6sp"]
+
+[ext_resource type="PackedScene" uid="uid://bdh7egwxplubc" path="res://CRTGame/Scenes/P_TempWall_Obj.tscn" id="1_qwy3r"]
+[ext_resource type="PackedScene" uid="uid://y7n01w7miaw" path="res://CRTGame/Scenes/P_Player_Obj.tscn" id="3_eonsw"]
+
+[node name="Node2D" type="Node2D" unique_id=2005894480]
+
+[node name="P_TempWall_obj" parent="." unique_id=2132844915 instance=ExtResource("1_qwy3r")]
+position = Vector2(527, 14)
+scale = Vector2(10.171778, 1.2967877)
+
+[node name="P_TempWall_obj2" parent="." unique_id=883400545 instance=ExtResource("1_qwy3r")]
+position = Vector2(528, 661)
+scale = Vector2(9.427638, 1.3635625)
+
+[node name="P_TempWall_obj3" parent="." unique_id=42941720 instance=ExtResource("1_qwy3r")]
+position = Vector2(-13, 307)
+scale = Vector2(1.4905536, 5.331164)
+
+[node name="P_TempWall_obj4" parent="." unique_id=341481040 instance=ExtResource("1_qwy3r")]
+position = Vector2(1166, 327)
+scale = Vector2(0.97740096, 5.477805)
+
+[node name="P_Player_Obj" parent="." unique_id=494675637 instance=ExtResource("3_eonsw")]
+position = Vector2(318, 282)
+
+[node name="P_TempWall_obj5" parent="." unique_id=1000581750 instance=ExtResource("1_qwy3r")]
+position = Vector2(727, 327)
+scale = Vector2(1.0779226, 2.0939293)
