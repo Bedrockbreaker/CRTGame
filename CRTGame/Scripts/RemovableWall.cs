@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using Godot;
 
@@ -16,7 +15,10 @@ public partial class RemovableWall : Area2D
 	public Color BorderColor = Colors.Gray;
 
 	[Export]
-	public CollisionShape2D Collider;
+	public CollisionShape2D SheetDetector;
+
+	[Export]
+	public StaticBody2D Collider;
 
 	[Export]
 	public Panel Panel;
@@ -28,9 +30,13 @@ public partial class RemovableWall : Area2D
 	{
 		ColorLayer &= 255; // Clamp to 8 bits
 
-		// The higher byte is for interactions with color sheets, the lower byte is for interactions with the player
-		CollisionLayer = (ColorLayer << 8) | ColorLayer;
+		// The Area2D (this object) is reponsible for detecting overlaps with color sheets
+		CollisionLayer = ColorLayer << 8;
 		CollisionMask = CollisionLayer;
+
+		// The StaticBody2D (child node) is responsible for physics
+		Collider.CollisionLayer = ColorLayer;
+		Collider.CollisionMask = Collider.CollisionLayer;
 
 		// "panel" (in lowercase) is an id reference, apparently. I hate godot.
 		Panel.AddThemeStyleboxOverride("panel", new StyleBoxFlat
@@ -51,7 +57,7 @@ public partial class RemovableWall : Area2D
 
 		if (CandidateSheets.Count != 0)
 		{
-			Rect2 wallRect = Collider.Shape.GetRect();
+			Rect2 wallRect = SheetDetector.Shape.GetRect();
 
 			foreach (Sheet sheet in CandidateSheets)
 			{
@@ -78,14 +84,14 @@ public partial class RemovableWall : Area2D
 		bDisabled = bDisabledThisTick;
 		if (bDisabled)
 		{
-			CollisionLayer &= ~ColorLayer;
-			CollisionMask &= ~ColorLayer;
+			Collider.CollisionLayer &= ~ColorLayer;
+			Collider.CollisionMask &= ~ColorLayer;
 			stylebox.SetBorderWidthAll(0);
 		}
 		else
 		{
-			CollisionLayer |= ColorLayer;
-			CollisionMask |= ColorLayer;
+			Collider.CollisionLayer |= ColorLayer;
+			Collider.CollisionMask |= ColorLayer;
 			stylebox.SetBorderWidthAll(2);
 		}
 
