@@ -179,7 +179,7 @@ position = Vector2(205, 177)
 Color = Color(1, 0, 0, 1)
 
 [node name="PRemovableWall51" parent="." unique_id=1235623409 instance=ExtResource("4_wysh0")]
-position = Vector2(66, 106)
+position = Vector2(60, 106)
 ColorLayer = 5
 Color = Color(1, 0, 1, 1)
 
@@ -193,8 +193,13 @@ position = Vector2(66, 112)
 ColorLayer = 5
 Color = Color(1, 0, 1, 1)
 
-[node name="PRemovableWall53" parent="." unique_id=413814550 instance=ExtResource("4_wysh0")]
+[node name="PRemovableWall88" parent="." unique_id=145229582 instance=ExtResource("4_wysh0")]
 position = Vector2(72, 112)
+ColorLayer = 5
+Color = Color(1, 0, 1, 1)
+
+[node name="PRemovableWall53" parent="." unique_id=413814550 instance=ExtResource("4_wysh0")]
+position = Vector2(60, 112)
 ColorLayer = 5
 Color = Color(1, 0, 1, 1)
 
@@ -293,28 +298,33 @@ position = Vector2(72, 70)
 ColorLayer = 5
 Color = Color(1, 0, 1, 1)
 
+[node name="PRemovableWall87" parent="." unique_id=330421429 instance=ExtResource("4_wysh0")]
+position = Vector2(60, 70)
+ColorLayer = 5
+Color = Color(1, 0, 1, 1)
+
 [node name="PRemovableWall71" parent="." unique_id=100443791 instance=ExtResource("4_wysh0")]
-position = Vector2(66, 76)
+position = Vector2(60, 76)
 ColorLayer = 5
 Color = Color(1, 0, 1, 1)
 
 [node name="PRemovableWall72" parent="." unique_id=2064055767 instance=ExtResource("4_wysh0")]
-position = Vector2(66, 82)
+position = Vector2(60, 82)
 ColorLayer = 5
 Color = Color(1, 0, 1, 1)
 
 [node name="PRemovableWall73" parent="." unique_id=2132587179 instance=ExtResource("4_wysh0")]
-position = Vector2(66, 88)
+position = Vector2(60, 88)
 ColorLayer = 5
 Color = Color(1, 0, 1, 1)
 
 [node name="PRemovableWall74" parent="." unique_id=1699070081 instance=ExtResource("4_wysh0")]
-position = Vector2(66, 94)
+position = Vector2(60, 94)
 ColorLayer = 5
 Color = Color(1, 0, 1, 1)
 
 [node name="PRemovableWall75" parent="." unique_id=1765492858 instance=ExtResource("4_wysh0")]
-position = Vector2(66, 100)
+position = Vector2(60, 100)
 ColorLayer = 5
 Color = Color(1, 0, 1, 1)
 
