@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://cucpltd6ylvqn"]
+
+[ext_resource type="PackedScene" uid="uid://bdh7egwxplubc" path="res://CRTGame/Scenes/P_TempWall_Obj.tscn" id="1_fyr63"]
+[ext_resource type="PackedScene" uid="uid://y7n01w7miaw" path="res://CRTGame/Scenes/P_Player_Obj.tscn" id="2_clspk"]
+[ext_resource type="PackedScene" uid="uid://bqadkibup2vc7" path="res://CRTGame/Scenes/P_Win_Trigger.tscn" id="3_clspk"]
+[ext_resource type="PackedScene" uid="uid://djw3nr6dtd7yt" path="res://CRTGame/Scenes/P_Win_Screen.tscn" id="5_lmpf7"]
+
+[node name="SLevelWinTest" type="Node2D" unique_id=517776933]
+
+[node name="P_TempWall_obj" parent="." unique_id=2132844915 instance=ExtResource("1_fyr63")]
+position = Vector2(581, -3)
+scale = Vector2(9.697877, 0.8097221)
+
+[node name="P_TempWall_obj2" parent="." unique_id=826825978 instance=ExtResource("1_fyr63")]
+position = Vector2(592, 647)
+scale = Vector2(9.927325, 0.7832093)
+
+[node name="P_TempWall_obj3" parent="." unique_id=799248723 instance=ExtResource("1_fyr63")]
+position = Vector2(1, 330)
+scale = Vector2(0.85321754, 5.8793163)
+
+[node name="P_TempWall_obj4" parent="." unique_id=1035068715 instance=ExtResource("1_fyr63")]
+position = Vector2(1154, 320)
+scale = Vector2(1, 5.885754)
+
+[node name="P_Player_Obj" parent="." unique_id=494675637 instance=ExtResource("2_clspk")]
+position = Vector2(147, 132)
+bounce = null
+
+[node name="P_Win_Trigger" parent="." unique_id=650866840 node_paths=PackedStringArray("winScreen") instance=ExtResource("3_clspk")]
+position = Vector2(748.00006, 348)
+scale = Vector2(7.1281896, 7.1281896)
+winScreen = NodePath("../P_Win_Screen")
+
+[node name="P_Win_Screen" parent="." unique_id=1371838822 instance=ExtResource("5_lmpf7")]
+position = Vector2(591.99994, 296)
+scale = Vector2(2.6200004, 2.6200004)
