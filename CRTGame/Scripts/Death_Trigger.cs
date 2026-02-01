@@ -12,6 +12,8 @@ public partial class Death_Trigger : Area2D
 	{
 		checkpointManager = GetParent().GetNode("P_CheckpointManager") as CheckpointManager;
 		player = GetParent().GetNode("P_Player_Obj") as CharacterBody2D;
+
+		ZIndex = -5;
 	}
 
 	private void OnBodyEntered(PhysicsBody2D body)

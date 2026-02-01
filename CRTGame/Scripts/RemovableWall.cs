@@ -70,9 +70,6 @@ public partial class RemovableWall : Area2D
 
 		if (bDisabledThisTick == bDisabled) return;
 
-		// HACK: This assumes stylebox will never be null. In a game jam, who cares?
-		// StyleBoxFlat stylebox = Panel.GetThemeStylebox("panel").Duplicate() as StyleBoxFlat;
-
 		bDisabled = bDisabledThisTick;
 		if (bDisabled)
 		{
@@ -85,13 +82,11 @@ public partial class RemovableWall : Area2D
 			Collider.CollisionMask |= 0b0000000011111111U;
 		}
 
-		// Panel.AddThemeStyleboxOverride("panel", stylebox);
 		GD.Print(this + " disabled: " + bDisabled);
 	}
 
 	private void OnAreaEntered(Area2D area)
 	{
-
 		if (area is Sheet sheet)
 		{
 			GD.Print(this + " entered: " + area);
@@ -101,7 +96,6 @@ public partial class RemovableWall : Area2D
 
 	private void OnAreaExited(Area2D area)
 	{
-
 		if (area is Sheet sheet)
 		{
 			GD.Print(this + " exited: " + area);
