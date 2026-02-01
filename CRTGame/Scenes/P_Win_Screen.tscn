@@ -1,8 +1,13 @@
 [gd_scene format=3 uid="uid://djw3nr6dtd7yt"]
 
 [ext_resource type="Texture2D" uid="uid://ckwuhuypo0bhd" path="res://CRTGame/Assets/WinScreen3.svg" id="1_8ad1s"]
-[ext_resource type="Script" uid="uid://ctefv5ch01u03" path="res://CRTGame/Scenes/Win_Screen.cs" id="2_a07t1"]
+[ext_resource type="Script" uid="uid://ctefv5ch01u03" path="res://CRTGame/Scripts/Win_Screen.cs" id="2_a07t1"]
+[ext_resource type="PackedScene" uid="uid://cfnv2cb4grg17" path="res://CRTGame/Scenes/P_Quit_Button.tscn" id="3_3nei4"]
 
 [node name="P_Win_Screen" type="Sprite2D" unique_id=1371838822]
 texture = ExtResource("1_8ad1s")
 script = ExtResource("2_a07t1")
+
+[node name="P_Quit_Button" parent="." unique_id=1492634057 instance=ExtResource("3_3nei4")]
+offset_top = 45.0
+offset_bottom = 145.0

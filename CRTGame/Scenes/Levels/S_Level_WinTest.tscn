@@ -33,5 +33,5 @@ scale = Vector2(7.1281896, 7.1281896)
 winScreen = NodePath("../P_Win_Screen")
 
 [node name="P_Win_Screen" parent="." unique_id=1371838822 instance=ExtResource("5_lmpf7")]
-position = Vector2(591.99994, 296)
+position = Vector2(571.99994, 208)
 scale = Vector2(2.6200004, 2.6200004)
