@@ -204,7 +204,6 @@ scale = Vector2(0.33801043, 0.37335715)
 environment = SubResource("Environment_613lf")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=932884743]
-visible = false
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=630225158]
 material = SubResource("ShaderMaterial_jeo66")

@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://maq345s0yxvm" path="res://CRTGame/Scenes/P_Death_Trigger.tscn" id="5_qmkic"]
 [ext_resource type="PackedScene" uid="uid://dth6bg08xhmi4" path="res://CRTGame/Scenes/P_NextLevel_Trigger.tscn" id="6_mkcqg"]
 [ext_resource type="PackedScene" uid="uid://b72nxmx4xjgma" path="res://CRTGame/Scenes/P_CheckpointManager.tscn" id="7_f030b"]
+[ext_resource type="PackedScene" uid="uid://buro2e2b074w7" path="res://CRTGame/Scenes/Levels/S_Level_08.tscn" id="7_ik026"]
 [ext_resource type="PackedScene" uid="uid://d4cvm61eymhlu" path="res://CRTGame/Scenes/P_Checkpoint_Trigger.tscn" id="8_prsyi"]
 [ext_resource type="Shader" uid="uid://da2fn4r6hxtqp" path="res://CRTGame/Scenes/CRTShader.gdshader" id="9_wjwvc"]
 
@@ -494,6 +495,7 @@ scale = Vector2(0.3656111, 7.7310553)
 [node name="P_NextLevel_Trigger" parent="." unique_id=1309058265 instance=ExtResource("6_mkcqg")]
 position = Vector2(230.00002, 27)
 scale = Vector2(0.14288308, 0.16155179)
+nextLevel = ExtResource("7_ik026")
 levelWinSound = null
 
 [node name="P_CheckpointManager" parent="." unique_id=979586994 instance=ExtResource("7_f030b")]
