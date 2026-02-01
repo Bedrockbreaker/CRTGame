@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://sau6aab4qoir"]
+
+[ext_resource type="PackedScene" uid="uid://bdh7egwxplubc" path="res://CRTGame/Scenes/P_TempWall_Obj.tscn" id="1_ft4f0"]
+[ext_resource type="PackedScene" uid="uid://pa6nw5bb6f0h" path="res://CRTGame/Scenes/P_Death_Trigger.tscn" id="2_sn3wh"]
+[ext_resource type="PackedScene" uid="uid://b72nxmx4xjgma" path="res://CRTGame/Scenes/P_CheckpointManager.tscn" id="3_ft4f0"]
+[ext_resource type="PackedScene" uid="uid://b6qw0rswr3jdf" path="res://CRTGame/Scenes/P_Checkpoint_Trigger.tscn" id="4_i3q48"]
+[ext_resource type="PackedScene" uid="uid://y7n01w7miaw" path="res://CRTGame/Scenes/P_Player_Obj.tscn" id="5_bqol6"]
+
+[node name="STriggerTest" type="Node2D" unique_id=37790107]
+
+[node name="P_TempWall_obj" parent="." unique_id=2132844915 instance=ExtResource("1_ft4f0")]
+position = Vector2(570, 6)
+scale = Vector2(17.449287, 0.82077515)
+
+[node name="P_TempWall_obj3" parent="." unique_id=1916760439 instance=ExtResource("1_ft4f0")]
+position = Vector2(1134, 2658)
+scale = Vector2(1, 70.55999)
+
+[node name="P_TempWall_obj2" parent="." unique_id=1685742059 instance=ExtResource("1_ft4f0")]
+position = Vector2(-20, 281)
+scale = Vector2(1, 8.4)
+
+[node name="P_Death_Trigger" parent="." unique_id=1762642872 instance=ExtResource("2_sn3wh")]
+position = Vector2(606, 604)
+scale = Vector2(38.08579, -1.9669665)
+
+[node name="P_CheckpointManager" parent="." unique_id=979586994 instance=ExtResource("3_ft4f0")]
+
+[node name="P_Checkpoint_Trigger" parent="P_CheckpointManager" unique_id=1097131134 instance=ExtResource("4_i3q48")]
+position = Vector2(560.00006, 92)
+scale = Vector2(26.789194, -4.151616)
+
+[node name="P_Player_Obj" parent="." unique_id=494675637 instance=ExtResource("5_bqol6")]
+position = Vector2(289, 393)
