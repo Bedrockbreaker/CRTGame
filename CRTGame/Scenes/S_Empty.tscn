@@ -6,29 +6,29 @@
 [node name="Node2D" type="Node2D" unique_id=1513356743]
 
 [node name="Sheet" parent="." unique_id=3925472 instance=ExtResource("1_2dprt")]
-position = Vector2(84, 37)
+position = Vector2(12, 14)
 Color = Color(1, 1, 0, 0.49803922)
 
 [node name="Sheet2" parent="." unique_id=2020183571 instance=ExtResource("1_2dprt")]
-position = Vector2(350, 187)
+position = Vector2(59, 55)
 ColorLayer = 2
 Color = Color(1, 0, 0, 0.49803922)
 
 [node name="Sheet3" parent="." unique_id=1587114572 instance=ExtResource("1_2dprt")]
-position = Vector2(156, 284)
+position = Vector2(27, 83)
 ColorLayer = 3
 Color = Color(0.13471723, 0.51897305, 0.9999998, 0.49803922)
 
 [node name="PRemovableWall" parent="." unique_id=835157038 instance=ExtResource("2_68gcj")]
-position = Vector2(898, 81)
+position = Vector2(202, 21)
 Color = Color(1, 1, 0, 1)
 
 [node name="PRemovableWall2" parent="." unique_id=2040089098 instance=ExtResource("2_68gcj")]
-position = Vector2(1019, 317)
+position = Vector2(214, 79)
 ColorLayer = 2
 Color = Color(1, 0, 0, 1)
 
 [node name="PRemovableWall3" parent="." unique_id=1523504706 instance=ExtResource("2_68gcj")]
-position = Vector2(932, 545)
+position = Vector2(198, 143)
 ColorLayer = 3
 Color = Color(1, 0.49803922, 0, 1)

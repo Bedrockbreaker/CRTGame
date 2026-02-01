@@ -11,7 +11,16 @@ config_version=5
 [application]
 
 config/name="CRTGame"
+config/version="1.0"
+run/main_scene="uid://jt4f45okr88m"
 config/features=PackedStringArray("4.6", "C#", "Forward Plus")
+
+[display]
+
+window/size/viewport_width=256
+window/size/viewport_height=192
+window/stretch/mode="viewport"
+window/stretch/scale_mode="integer"
 
 [dotnet]
 

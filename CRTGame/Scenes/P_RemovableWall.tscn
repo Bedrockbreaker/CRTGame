@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://wo5wcvhyvrnr" path="res://CRTGame/Scripts/RemovableWall.cs" id="1_uh6xr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nuc5x"]
-size = Vector2(50, 50)
+size = Vector2(25, 25)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uh6xr"]
 bg_color = Color(1, 1, 1, 1)
@@ -19,14 +19,14 @@ Collider = NodePath("CollisionShape2D")
 Panel = NodePath("CollisionShape2D/Panel")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=381665987]
-position = Vector2(25, 25)
+position = Vector2(12.5, 12.5)
 shape = SubResource("RectangleShape2D_nuc5x")
 
 [node name="Panel" type="Panel" parent="CollisionShape2D" unique_id=2141839097]
-offset_left = -25.0
-offset_top = -25.0
-offset_right = 25.0
-offset_bottom = 25.0
+offset_left = -13.5
+offset_top = -13.5
+offset_right = 12.5
+offset_bottom = 12.5
 theme_override_styles/panel = SubResource("StyleBoxFlat_uh6xr")
 
 [connection signal="area_entered" from="." to="." method="OnAreaEntered"]

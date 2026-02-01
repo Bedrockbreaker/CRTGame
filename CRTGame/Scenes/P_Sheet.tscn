@@ -3,18 +3,18 @@
 [ext_resource type="Script" uid="uid://dv75i1jylyua2" path="res://CRTGame/Scripts/Sheet.cs" id="1_pw20y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bg7fr"]
-size = Vector2(400, 300)
+size = Vector2(120, 90)
 
 [node name="Sheet" type="Area2D" unique_id=3925472 node_paths=PackedStringArray("Collider")]
 script = ExtResource("1_pw20y")
 Collider = NodePath("CollisionShape2D")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=249633031]
-position = Vector2(200, 150)
+position = Vector2(60, 45)
 shape = SubResource("RectangleShape2D_bg7fr")
 
 [node name="ColorRect" type="ColorRect" parent="CollisionShape2D" unique_id=852058932]
-offset_left = -200.0
-offset_top = -150.0
-offset_right = 200.0
-offset_bottom = 150.0
+offset_left = -60.0
+offset_top = -45.0
+offset_right = 60.0
+offset_bottom = 45.0
