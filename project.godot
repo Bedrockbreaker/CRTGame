@@ -16,6 +16,7 @@ run/main_scene="uid://cdsoie7fdykh3"
 config/features=PackedStringArray("4.6", "C#", "Forward Plus")
 boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/show_image=false
+config/windows_native_icon="res://CRTGame/Assets/PnoqLOGO.ico"
 
 [autoload]
 
