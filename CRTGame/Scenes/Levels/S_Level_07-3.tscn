@@ -198,11 +198,11 @@ ColorLayer = 4
 Color = Color(0, 0, 1, 1)
 
 [node name="PRemovableWall122" parent="." unique_id=304795988 instance=ExtResource("4_b0wb5")]
-position = Vector2(211, 31)
+position = Vector2(205, 31)
 Color = Color(1, 0, 0, 1)
 
 [node name="PRemovableWall179" parent="." unique_id=730266008 instance=ExtResource("4_b0wb5")]
-position = Vector2(211, 37)
+position = Vector2(205, 37)
 Color = Color(1, 0, 0, 1)
 
 [node name="PRemovableWall180" parent="." unique_id=128442736 instance=ExtResource("4_b0wb5")]
@@ -261,20 +261,28 @@ Color = Color(1, 0, 0, 1)
 position = Vector2(217, 7)
 Color = Color(1, 0, 0, 1)
 
-[node name="PRemovableWall136" parent="." unique_id=1851750055 instance=ExtResource("4_b0wb5")]
-position = Vector2(211, 13)
+[node name="PRemovableWall186" parent="." unique_id=2030017173 instance=ExtResource("4_b0wb5")]
+position = Vector2(211, 37)
 Color = Color(1, 0, 0, 1)
 
-[node name="PRemovableWall181" parent="." unique_id=1458666549 instance=ExtResource("4_b0wb5")]
+[node name="PRemovableWall187" parent="." unique_id=787589170 instance=ExtResource("4_b0wb5")]
 position = Vector2(211, 7)
 Color = Color(1, 0, 0, 1)
 
+[node name="PRemovableWall136" parent="." unique_id=1851750055 instance=ExtResource("4_b0wb5")]
+position = Vector2(205, 13)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall181" parent="." unique_id=1458666549 instance=ExtResource("4_b0wb5")]
+position = Vector2(205, 7)
+Color = Color(1, 0, 0, 1)
+
 [node name="PRemovableWall137" parent="." unique_id=1048025500 instance=ExtResource("4_b0wb5")]
-position = Vector2(211, 19)
+position = Vector2(205, 19)
 Color = Color(1, 0, 0, 1)
 
 [node name="PRemovableWall138" parent="." unique_id=603801502 instance=ExtResource("4_b0wb5")]
-position = Vector2(211, 25)
+position = Vector2(205, 25)
 Color = Color(1, 0, 0, 1)
 
 [node name="PRemovableWall108" parent="." unique_id=1993626336 instance=ExtResource("4_b0wb5")]
@@ -749,7 +757,7 @@ position = Vector2(135, 42.000004)
 scale = Vector2(0.8362556, -2.9025676)
 
 [node name="P_NextLevel_Trigger" parent="." unique_id=1309058265 instance=ExtResource("6_7sgou")]
-position = Vector2(229, 25.000002)
+position = Vector2(226, 25)
 scale = Vector2(0.15934347, 0.17471285)
 nextLevel = ExtResource("7_67hxb")
 levelWinSound = null
