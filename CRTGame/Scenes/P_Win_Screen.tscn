@@ -2,9 +2,12 @@
 
 [ext_resource type="Texture2D" uid="uid://ckwuhuypo0bhd" path="res://CRTGame/Assets/WinScreen3.svg" id="1_8ad1s"]
 [ext_resource type="Script" uid="uid://ctefv5ch01u03" path="res://CRTGame/Scripts/Win_Screen.cs" id="2_a07t1"]
-[ext_resource type="PackedScene" path="res://CRTGame/Scenes/P_Quit_Button.tscn" id="3_3nei4"]
+[ext_resource type="PackedScene" uid="uid://cfnv2cb4grg17" path="res://CRTGame/Scenes/P_Quit_Button.tscn" id="3_3nei4"]
 
-[node name="ColorRect" type="ColorRect" unique_id=75831754]
+[sub_resource type="LabelSettings" id="LabelSettings_3nei4"]
+font_size = 32
+
+[node name="ColorRect" type="ColorRect" unique_id=75831754 node_paths=PackedStringArray("timeLabel")]
 z_index = 200
 offset_left = -188.0
 offset_top = -93.0
@@ -12,6 +15,7 @@ offset_right = 196.0
 offset_bottom = 99.0
 color = Color(0, 0, 0, 0.98039216)
 script = ExtResource("2_a07t1")
+timeLabel = NodePath("Label")
 
 [node name="P_Win_Screen" type="Sprite2D" parent="." unique_id=1371838822]
 position = Vector2(268, 121)
@@ -21,3 +25,13 @@ texture = ExtResource("1_8ad1s")
 offset_top = 45.0
 offset_bottom = 145.0
 metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="." unique_id=127224446]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 41.0
+offset_right = 442.95654
+offset_bottom = 93.0
+text = "Time: 9:99.999"
+label_settings = SubResource("LabelSettings_3nei4")
+horizontal_alignment = 2

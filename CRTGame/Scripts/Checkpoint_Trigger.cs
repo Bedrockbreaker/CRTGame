@@ -10,13 +10,6 @@ public partial class Checkpoint_Trigger : Area2D
 	public override void _Ready()
 	{
 		checkpointManager = GetParent().GetNode("P_CheckpointManager") as CheckpointManager;
-	}
-
-	private void OnBodyEntered(PhysicsBody2D body)
-	{
-		if (body.IsInGroup("Player"))
-		{
-			checkpointManager.lastLocation = GetNode<Marker2D>("RespawnPoint").GlobalPosition;
-		}
+		checkpointManager.lastLocation = GetNode<Marker2D>("RespawnPoint").GlobalPosition;
 	}
 }

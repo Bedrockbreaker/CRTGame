@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://y7n01w7miaw" path="res://CRTGame/Scenes/P_Player_Obj.tscn" id="1_mfbrv"]
 [ext_resource type="Script" uid="uid://clirt4i8i417l" path="res://CRTGame/Scripts/MainLevelStarter.cs" id="1_tg71s"]
 [ext_resource type="PackedScene" uid="uid://bdh7egwxplubc" path="res://CRTGame/Scenes/P_TempWall_Obj.tscn" id="2_ruqsc"]
+[ext_resource type="Script" uid="uid://673cxocju0ad" path="res://CRTGame/Scripts/SpeedrunStart_Trigger.cs" id="5_lkadk"]
 [ext_resource type="PackedScene" uid="uid://d2eciw8cb5esh" path="res://CRTGame/Scenes/Levels/S_Level_01.tscn" id="5_mfbrv"]
 [ext_resource type="PackedScene" uid="uid://dth6bg08xhmi4" path="res://CRTGame/Scenes/P_NextLevel_Trigger.tscn" id="6_qhqqy"]
 [ext_resource type="PackedScene" uid="uid://b72nxmx4xjgma" path="res://CRTGame/Scenes/P_CheckpointManager.tscn" id="7_bfyf4"]
@@ -38,7 +39,7 @@ shader_parameter/crt_pixel_size = 1.0000000475
 script = ExtResource("1_tg71s")
 Player = NodePath("../P_Player_Obj")
 SpawnStart = NodePath("../P_CheckpointManager/P_Checkpoint_Trigger")
-LevelWin = NodePath("../P_NextLevel_Trigger")
+LevelWin = NodePath("../P_NextLevel_Trigger2")
 LevelWinSpawn = NodePath("../Node2D")
 TimeToPlayerSpawn = 0.0
 
@@ -65,10 +66,12 @@ position = Vector2(127, -4)
 rotation = -1.5707964
 scale = Vector2(0.1180593, 2.1716092)
 
-[node name="P_NextLevel_Trigger" parent="." unique_id=1309058265 instance=ExtResource("6_qhqqy")]
+[node name="P_NextLevel_Trigger2" parent="." unique_id=1309058265 instance=ExtResource("6_qhqqy")]
 position = Vector2(-61, 73.97186)
 scale = Vector2(0.47463936, 0.47463936)
+script = ExtResource("5_lkadk")
 nextLevel = ExtResource("5_mfbrv")
+levelWinSound = null
 
 [node name="P_CheckpointManager" parent="." unique_id=979586994 instance=ExtResource("7_bfyf4")]
 position = Vector2(-75, 76)

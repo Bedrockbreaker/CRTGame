@@ -22,7 +22,7 @@ public partial class NextLevel_Trigger : Area2D
 		Modulate = Color.FromHsv(hue, 1f, 1f);
 	}
 
-	private void OnBodyEntered(PhysicsBody2D body)
+	protected virtual void OnBodyEntered(PhysicsBody2D body)
 	{
 		if (body.IsInGroup("Player"))
 		{

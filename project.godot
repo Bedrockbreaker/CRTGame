@@ -22,6 +22,7 @@ config/windows_native_icon="res://CRTGame/Assets/PnoqLOGO.ico"
 
 PlayerData="*uid://chagexuysc8ne"
 MusicPlayer="*uid://dd4m24oqjkto0"
+PSpeedrunTimer="*uid://c52xfw1w0f4wl"
 
 [display]
 

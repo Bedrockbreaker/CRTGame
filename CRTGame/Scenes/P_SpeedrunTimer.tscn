@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://c52xfw1w0f4wl"]
+
+[ext_resource type="Script" uid="uid://dktvo1lo6wgds" path="res://CRTGame/Scripts/SpeedrunTimer.cs" id="1_i3xrh"]
+
+[node name="PSpeedrunTimer" type="Node" unique_id=1448282921]
+script = ExtResource("1_i3xrh")
