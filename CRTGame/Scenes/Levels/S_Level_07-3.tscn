@@ -48,11 +48,11 @@ position = Vector2(135, 107.00001)
 scale = Vector2(0.40159774, 0.11000719)
 
 [node name="Sheet" parent="." unique_id=3925472 instance=ExtResource("3_noeff")]
-position = Vector2(215, 162)
+position = Vector2(216, 158)
 Color = Color(1, 0, 0, 0.5882353)
 
 [node name="Sheet3" parent="." unique_id=959544771 instance=ExtResource("3_noeff")]
-position = Vector2(-46, 161)
+position = Vector2(-47, 160)
 ColorLayer = 4
 Color = Color(0, 0, 1, 0.5882353)
 

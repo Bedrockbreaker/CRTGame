@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://byk7kcem4g0aa" path="res://CRTGame/Scenes/P_Sheet.tscn" id="3_631gy"]
 [ext_resource type="PackedScene" uid="uid://cjupevbhmpo2e" path="res://CRTGame/Scenes/P_RemovableWall.tscn" id="4_o3llb"]
 [ext_resource type="PackedScene" uid="uid://dth6bg08xhmi4" path="res://CRTGame/Scenes/P_NextLevel_Trigger.tscn" id="6_dnjqp"]
-[ext_resource type="PackedScene" uid="uid://lhauk3m1cqts" path="res://CRTGame/Scenes/Levels/S_Level_04.tscn" id="6_sjld3"]
+[ext_resource type="PackedScene" uid="uid://dyiui8jq0pnk4" path="res://CRTGame/Scenes/Levels/S_Level_05.tscn" id="6_sjld3"]
 [ext_resource type="PackedScene" uid="uid://b72nxmx4xjgma" path="res://CRTGame/Scenes/P_CheckpointManager.tscn" id="7_j1e45"]
 [ext_resource type="PackedScene" uid="uid://d4cvm61eymhlu" path="res://CRTGame/Scenes/P_Checkpoint_Trigger.tscn" id="8_mk2gr"]
 [ext_resource type="Shader" uid="uid://da2fn4r6hxtqp" path="res://CRTGame/Scenes/CRTShader.gdshader" id="9_7p1j3"]
@@ -67,11 +67,11 @@ rotation = -1.5707964
 scale = Vector2(0.05, 0.31655365)
 
 [node name="Sheet" parent="." unique_id=3925472 instance=ExtResource("3_631gy")]
-position = Vector2(44, -21)
+position = Vector2(40, -26)
 Color = Color(1, 0, 0, 0.5882353)
 
 [node name="Sheet2" parent="." unique_id=1893159727 instance=ExtResource("3_631gy")]
-position = Vector2(146, -20)
+position = Vector2(144, -26)
 ColorLayer = 2
 Color = Color(0, 1, 0, 0.5882353)
 

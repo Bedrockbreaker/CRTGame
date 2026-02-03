@@ -55,12 +55,12 @@ rotation = -1.5707964
 scale = Vector2(0.049100343, -0.35936058)
 
 [node name="Sheet2" parent="." unique_id=1893159727 instance=ExtResource("3_ttvhj")]
-position = Vector2(76.00003, 149)
+position = Vector2(85, 158)
 ColorLayer = 2
 Color = Color(0, 1, 0, 0.5882353)
 
 [node name="Sheet3" parent="." unique_id=959544771 instance=ExtResource("3_ttvhj")]
-position = Vector2(76.000046, 71)
+position = Vector2(85, 74)
 ColorLayer = 4
 Color = Color(0, 0, 1, 0.5882353)
 

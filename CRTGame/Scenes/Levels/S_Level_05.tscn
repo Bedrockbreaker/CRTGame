@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://maq345s0yxvm" path="res://CRTGame/Scenes/P_Death_Trigger.tscn" id="5_euyoi"]
 [ext_resource type="PackedScene" uid="uid://dth6bg08xhmi4" path="res://CRTGame/Scenes/P_NextLevel_Trigger.tscn" id="6_ppb7o"]
 [ext_resource type="PackedScene" uid="uid://b72nxmx4xjgma" path="res://CRTGame/Scenes/P_CheckpointManager.tscn" id="7_8nywk"]
-[ext_resource type="PackedScene" uid="uid://fmuqhyn8o53o" path="res://CRTGame/Scenes/Levels/S_Level_06.tscn" id="7_k0s75"]
+[ext_resource type="PackedScene" uid="uid://lhauk3m1cqts" path="res://CRTGame/Scenes/Levels/S_Level_04.tscn" id="7_k0s75"]
 [ext_resource type="PackedScene" uid="uid://d4cvm61eymhlu" path="res://CRTGame/Scenes/P_Checkpoint_Trigger.tscn" id="8_wrsga"]
 [ext_resource type="Shader" uid="uid://da2fn4r6hxtqp" path="res://CRTGame/Scenes/CRTShader.gdshader" id="9_argnu"]
 
@@ -76,11 +76,11 @@ rotation = -1.5707964
 scale = Vector2(0.049774345, 2.275016)
 
 [node name="Sheet" parent="." unique_id=3925472 instance=ExtResource("3_p4jrb")]
-position = Vector2(35, 60)
+position = Vector2(25, 56)
 Color = Color(1, 0, 0, 0.5882353)
 
 [node name="Sheet2" parent="." unique_id=1893159727 instance=ExtResource("3_p4jrb")]
-position = Vector2(65, 60.000004)
+position = Vector2(67, 56)
 ColorLayer = 2
 Color = Color(0, 1, 0, 0.5882353)
 

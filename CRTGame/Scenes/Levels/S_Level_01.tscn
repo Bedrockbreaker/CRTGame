@@ -60,7 +60,7 @@ rotation = -1.5707964
 scale = Vector2(0.1180593, 2.1716092)
 
 [node name="Sheet" parent="." unique_id=3925472 instance=ExtResource("3_7jl2x")]
-position = Vector2(-16, -20)
+position = Vector2(-21, -28)
 Color = Color(1, 0, 0, 0.5882353)
 
 [node name="PRemovableWall" parent="." unique_id=1832529673 instance=ExtResource("4_oh12d")]

@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dv75i1jylyua2" path="res://CRTGame/Scripts/Sheet.cs" id="1_pw20y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bg7fr"]
-size = Vector2(90.000015, 90)
+size = Vector2(100.000046, 100.000046)
 
 [node name="Sheet" type="Area2D" unique_id=3925472 node_paths=PackedStringArray("ColorRect", "Collider")]
 scale = Vector2(0.8, 0.8)
@@ -12,15 +12,15 @@ ColorRect = NodePath("CollisionShape2D/ColorRect")
 Collider = NodePath("CollisionShape2D")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=249633031]
-position = Vector2(44.999992, 44.999992)
-scale = Vector2(0.9999995, 0.9999995)
+position = Vector2(49.999992, 49.999996)
+scale = Vector2(0.9999991, 0.9999991)
 shape = SubResource("RectangleShape2D_bg7fr")
 
 [node name="ColorRect" type="ColorRect" parent="CollisionShape2D" unique_id=852058932]
-offset_left = -45.000015
-offset_top = -45.000015
-offset_right = 44.999985
-offset_bottom = 44.999985
+offset_left = -50.000027
+offset_top = -50.000027
+offset_right = 49.999973
+offset_bottom = 49.999973
 
 [connection signal="mouse_entered" from="CollisionShape2D/ColorRect" to="." method="OnMouseEnter"]
 [connection signal="mouse_exited" from="CollisionShape2D/ColorRect" to="." method="OnMouseExit"]

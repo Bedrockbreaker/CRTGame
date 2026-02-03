@@ -42,17 +42,17 @@ scale = Vector2(0.08376193, 0.08348762)
 speed = 125.0
 
 [node name="Sheet" parent="." unique_id=3925472 instance=ExtResource("3_at406")]
-position = Vector2(218, -34.999985)
+position = Vector2(217, -25)
 Color = Color(1, 0, 0, 0.5882353)
 
 [node name="Sheet2" parent="." unique_id=1893159727 instance=ExtResource("3_at406")]
-position = Vector2(223, 120)
+position = Vector2(220, 112)
 scale = Vector2(0.7932075, 0.8)
 ColorLayer = 2
 Color = Color(0, 1, 0, 0.5882353)
 
 [node name="Sheet3" parent="." unique_id=959544771 instance=ExtResource("3_at406")]
-position = Vector2(-33.999992, 61.000008)
+position = Vector2(-46, 57.999996)
 ColorLayer = 4
 Color = Color(0, 0, 1, 0.5882353)
 

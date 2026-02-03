@@ -6,8 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://cjupevbhmpo2e" path="res://CRTGame/Scenes/P_RemovableWall.tscn" id="4_uqgdo"]
 [ext_resource type="PackedScene" uid="uid://b72nxmx4xjgma" path="res://CRTGame/Scenes/P_CheckpointManager.tscn" id="5_tauqh"]
 [ext_resource type="PackedScene" uid="uid://dth6bg08xhmi4" path="res://CRTGame/Scenes/P_NextLevel_Trigger.tscn" id="6_0o18i"]
-[ext_resource type="PackedScene" uid="uid://dyiui8jq0pnk4" path="res://CRTGame/Scenes/Levels/S_Level_05.tscn" id="6_tauqh"]
 [ext_resource type="PackedScene" uid="uid://d4cvm61eymhlu" path="res://CRTGame/Scenes/P_Checkpoint_Trigger.tscn" id="6_vypat"]
+[ext_resource type="PackedScene" uid="uid://fmuqhyn8o53o" path="res://CRTGame/Scenes/Levels/S_Level_06.tscn" id="8_tauqh"]
 [ext_resource type="Shader" uid="uid://da2fn4r6hxtqp" path="res://CRTGame/Scenes/CRTShader.gdshader" id="9_5o0l5"]
 
 [sub_resource type="Environment" id="Environment_613lf"]
@@ -81,11 +81,11 @@ rotation = -1.5707964
 scale = Vector2(0.1180593, 2.1716092)
 
 [node name="Sheet" parent="." unique_id=3925472 instance=ExtResource("3_qsae1")]
-position = Vector2(-10.000002, 163)
+position = Vector2(-19, 162)
 Color = Color(1, 0, 0, 0.5882353)
 
 [node name="Sheet2" parent="." unique_id=1893159727 instance=ExtResource("3_qsae1")]
-position = Vector2(197.00002, -44)
+position = Vector2(194, -49)
 ColorLayer = 2
 Color = Color(0, 1, 0, 0.5882353)
 
@@ -1531,7 +1531,7 @@ scale = Vector2(0.33801043, 0.37335715)
 [node name="P_NextLevel_Trigger" parent="." unique_id=1309058265 instance=ExtResource("6_0o18i")]
 position = Vector2(22, 24)
 scale = Vector2(0.22063582, 0.22744262)
-nextLevel = ExtResource("6_tauqh")
+nextLevel = ExtResource("8_tauqh")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1166395278]
 environment = SubResource("Environment_613lf")
