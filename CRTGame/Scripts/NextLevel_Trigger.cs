@@ -37,7 +37,7 @@ public partial class NextLevel_Trigger : Area2D
 			audioOutput.PitchScale = Random.Randf() * 0.3f + 0.85f;
 			audioOutput.Play();
 
-			Player_Data.Instance.lastPosition = player.Position;
+			// Player_Data.Instance.lastPosition = Position;
 			Player_Data.Instance.lastVelocity = player.Velocity;
 
 			CallDeferred(nameof(ChangeSceneDeferred), nextLevel);

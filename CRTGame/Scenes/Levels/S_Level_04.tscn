@@ -4,8 +4,10 @@
 [ext_resource type="PackedScene" uid="uid://bdh7egwxplubc" path="res://CRTGame/Scenes/P_TempWall_Obj.tscn" id="2_vypat"]
 [ext_resource type="PackedScene" uid="uid://byk7kcem4g0aa" path="res://CRTGame/Scenes/P_Sheet.tscn" id="3_qsae1"]
 [ext_resource type="PackedScene" uid="uid://cjupevbhmpo2e" path="res://CRTGame/Scenes/P_RemovableWall.tscn" id="4_uqgdo"]
+[ext_resource type="PackedScene" uid="uid://b72nxmx4xjgma" path="res://CRTGame/Scenes/P_CheckpointManager.tscn" id="5_tauqh"]
 [ext_resource type="PackedScene" uid="uid://dth6bg08xhmi4" path="res://CRTGame/Scenes/P_NextLevel_Trigger.tscn" id="6_0o18i"]
 [ext_resource type="PackedScene" uid="uid://dyiui8jq0pnk4" path="res://CRTGame/Scenes/Levels/S_Level_05.tscn" id="6_tauqh"]
+[ext_resource type="PackedScene" uid="uid://d4cvm61eymhlu" path="res://CRTGame/Scenes/P_Checkpoint_Trigger.tscn" id="6_vypat"]
 [ext_resource type="Shader" uid="uid://da2fn4r6hxtqp" path="res://CRTGame/Scenes/CRTShader.gdshader" id="9_5o0l5"]
 
 [sub_resource type="Environment" id="Environment_613lf"]
@@ -32,7 +34,7 @@ shader_parameter/crt_pixel_size = 1.0000000475
 [node name="SMainGame" type="Node2D" unique_id=1561625556]
 
 [node name="P_Player_Obj" parent="." unique_id=494675637 instance=ExtResource("1_tauqh")]
-position = Vector2(230, 164.99998)
+position = Vector2(235.99998, 170)
 scale = Vector2(0.08376193, 0.08348762)
 speed = 125.0
 
@@ -1517,6 +1519,14 @@ Color = Color(1, 0, 0, 1)
 [node name="PRemovableWall500" parent="." unique_id=435792188 instance=ExtResource("4_uqgdo")]
 position = Vector2(251, 177)
 Color = Color(1, 0, 0, 1)
+
+[node name="P_CheckpointManager" parent="." unique_id=979586994 instance=ExtResource("5_tauqh")]
+position = Vector2(228, 162)
+scale = Vector2(0.22063582, 0.22744262)
+
+[node name="P_Checkpoint_Trigger" parent="P_CheckpointManager" unique_id=1097131134 instance=ExtResource("6_vypat")]
+position = Vector2(36.258827, 35.1737)
+scale = Vector2(0.33801043, 0.37335715)
 
 [node name="P_NextLevel_Trigger" parent="." unique_id=1309058265 instance=ExtResource("6_0o18i")]
 position = Vector2(22, 24)

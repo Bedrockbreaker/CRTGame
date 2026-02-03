@@ -6,7 +6,12 @@ public partial class Checkpoint_Trigger : Area2D
 {
 	public CheckpointManager checkpointManager;
 
-	// Called when the node enters the scene tree for the first time.
+	public override void _EnterTree()
+	{
+		Player_Data.Instance.lastPosition = GlobalPosition;
+	}
+
+
 	public override void _Ready()
 	{
 		checkpointManager = GetParent().GetNode("P_CheckpointManager") as CheckpointManager;
