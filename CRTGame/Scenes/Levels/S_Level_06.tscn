@@ -74,7 +74,7 @@ rotation = -3.1415927
 scale = Vector2(0.1, 2.172)
 
 [node name="Sheet3" parent="." unique_id=959544771 instance=ExtResource("3_cwleb")]
-position = Vector2(90, 56.999996)
+position = Vector2(90, 56)
 ColorLayer = 4
 Color = Color(0, 0, 1, 0.5882353)
 
