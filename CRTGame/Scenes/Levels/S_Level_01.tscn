@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://c75gghwls1f4e" path="res://CRTGame/Scenes/Levels/S_Level_01-2.tscn" id="6_v652r"]
 [ext_resource type="PackedScene" uid="uid://d4cvm61eymhlu" path="res://CRTGame/Scenes/P_Checkpoint_Trigger.tscn" id="7_r6fs5"]
 [ext_resource type="Shader" uid="uid://da2fn4r6hxtqp" path="res://CRTGame/Scenes/CRTShader.gdshader" id="8_x66bf"]
+[ext_resource type="Texture2D" uid="uid://2jf01awiolm6" path="res://CRTGame/Assets/hand2.png" id="9_y1j7d"]
 [ext_resource type="Texture2D" uid="uid://bovb4yv2rkan5" path="res://CRTGame/Assets/Arrow.png" id="10_0s75u"]
 
 [sub_resource type="Environment" id="Environment_613lf"]
@@ -59,7 +60,7 @@ rotation = -1.5707964
 scale = Vector2(0.1180593, 2.1716092)
 
 [node name="Sheet" parent="." unique_id=3925472 instance=ExtResource("3_7jl2x")]
-position = Vector2(-42, -28)
+position = Vector2(-34, -35)
 Color = Color(1, 0, 0, 0.5882353)
 
 [node name="PRemovableWall" parent="." unique_id=1832529673 instance=ExtResource("4_oh12d")]
@@ -191,7 +192,7 @@ position = Vector2(127, 189)
 Color = Color(1, 0, 0, 1)
 
 [node name="P_NextLevel_Trigger" parent="." unique_id=1309058265 instance=ExtResource("6_0s75u")]
-position = Vector2(225, 97)
+position = Vector2(215, 97)
 scale = Vector2(0.4660597, 0.47664526)
 nextLevel = ExtResource("6_v652r")
 
@@ -205,9 +206,15 @@ scale = Vector2(0.33801043, 0.37335715)
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1166395278]
 environment = SubResource("Environment_613lf")
 
+[node name="Hand2" type="Sprite2D" parent="." unique_id=1573852190]
+texture_filter = 1
+position = Vector2(110, 23)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("9_y1j7d")
+
 [node name="Arrow" type="Sprite2D" parent="." unique_id=611347792]
 texture_filter = 1
-position = Vector2(73, 31)
+position = Vector2(81, 24)
 rotation = -3.1415925
 texture = ExtResource("10_0s75u")
 

@@ -40,22 +40,27 @@ scale = Vector2(0.08376193, 0.08348762)
 speed = 125.0
 
 [node name="P_TempWall_obj" parent="." unique_id=2132844915 instance=ExtResource("2_dggmq")]
-position = Vector2(260, 84)
-scale = Vector2(0.1180593, 2.1716092)
+position = Vector2(260, 63)
+scale = Vector2(0.11184203, 1.2339013)
 
 [node name="P_TempWall_obj2" parent="." unique_id=1882632523 instance=ExtResource("2_dggmq")]
 position = Vector2(-4.0000005, 94)
 scale = Vector2(0.1180593, 2.1716092)
 
 [node name="P_TempWall_obj3" parent="." unique_id=229794668 instance=ExtResource("2_dggmq")]
-position = Vector2(130, 196)
+position = Vector2(74, 193.99998)
 rotation = -1.5707964
-scale = Vector2(0.1180593, 2.1716092)
+scale = Vector2(0.09829852, 1.6680734)
 
-[node name="P_TempWall_obj5" parent="." unique_id=983072565 instance=ExtResource("2_dggmq")]
-position = Vector2(213, 161)
+[node name="P_TempWall_obj5" parent="." unique_id=529365288 instance=ExtResource("2_dggmq")]
+position = Vector2(172, 165)
 rotation = -1.5707964
-scale = Vector2(0.49930927, 0.7091504)
+scale = Vector2(-0.49840552, -0.050309297)
+
+[node name="P_TempWall_obj6" parent="." unique_id=1050364002 instance=ExtResource("2_dggmq")]
+position = Vector2(215.00002, 134)
+rotation = -1.5707964
+scale = Vector2(-0.05076708, -0.76711226)
 
 [node name="P_TempWall_obj4" parent="." unique_id=513998305 instance=ExtResource("2_dggmq")]
 position = Vector2(127, -4)
@@ -63,7 +68,7 @@ rotation = -1.5707964
 scale = Vector2(0.1180593, 2.1716092)
 
 [node name="Sheet" parent="." unique_id=3925472 instance=ExtResource("3_a08ta")]
-position = Vector2(-54, -40.999992)
+position = Vector2(185, 147)
 Color = Color(1, 0, 0, 0.5882353)
 
 [node name="PRemovableWall" parent="." unique_id=1832529673 instance=ExtResource("4_h37cv")]
@@ -554,6 +559,56 @@ Color = Color(1, 0, 0, 1)
 position = Vector2(151, 131)
 Color = Color(1, 0, 0, 1)
 
+[node name="PRemovableWall121" parent="." unique_id=1432872479 instance=ExtResource("4_h37cv")]
+visible = false
+position = Vector2(185, 147)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall127" parent="." unique_id=229362004 instance=ExtResource("4_h37cv")]
+visible = false
+position = Vector2(185, 163)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall130" parent="." unique_id=1315128553 instance=ExtResource("4_h37cv")]
+visible = false
+position = Vector2(185, 180)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall128" parent="." unique_id=1761580507 instance=ExtResource("4_h37cv")]
+visible = false
+position = Vector2(239, 163)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall131" parent="." unique_id=1103762925 instance=ExtResource("4_h37cv")]
+visible = false
+position = Vector2(239, 180)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall129" parent="." unique_id=1168313750 instance=ExtResource("4_h37cv")]
+visible = false
+position = Vector2(203, 147)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall134" parent="." unique_id=1471778535 instance=ExtResource("4_h37cv")]
+visible = false
+position = Vector2(222, 147)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall132" parent="." unique_id=1409740807 instance=ExtResource("4_h37cv")]
+visible = false
+position = Vector2(203, 180)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall135" parent="." unique_id=116016193 instance=ExtResource("4_h37cv")]
+visible = false
+position = Vector2(222, 180)
+Color = Color(1, 0, 0, 1)
+
+[node name="PRemovableWall140" parent="." unique_id=1510517045 instance=ExtResource("4_h37cv")]
+visible = false
+position = Vector2(239, 147)
+Color = Color(1, 0, 0, 1)
+
 [node name="PRemovableWall61" parent="." unique_id=208179058 instance=ExtResource("4_h37cv")]
 position = Vector2(157, 131)
 Color = Color(1, 0, 0, 1)
@@ -567,8 +622,30 @@ position = Vector2(169, 131)
 Color = Color(1, 0, 0, 1)
 
 [node name="P_Death_Trigger" parent="." unique_id=1762642872 instance=ExtResource("5_hjsjq")]
-position = Vector2(127, 95)
-scale = Vector2(-2.2174761, 1.801711)
+position = Vector2(127, 125)
+scale = Vector2(-1.9362736, 0.15264225)
+
+[node name="P_Death_Trigger2" parent="." unique_id=1538487747 instance=ExtResource("5_hjsjq")]
+position = Vector2(127, 65)
+scale = Vector2(-1.9362736, 0.15264225)
+
+[node name="P_Death_Trigger5" parent="." unique_id=54134434 instance=ExtResource("5_hjsjq")]
+position = Vector2(127, 88)
+scale = Vector2(0.7, 0.153)
+
+[node name="P_Death_Trigger6" parent="." unique_id=814762984 instance=ExtResource("5_hjsjq")]
+position = Vector2(127, 102)
+scale = Vector2(0.7, 0.153)
+
+[node name="P_Death_Trigger3" parent="." unique_id=1741116964 instance=ExtResource("5_hjsjq")]
+position = Vector2(162.68, 95)
+rotation = 1.5707964
+scale = Vector2(-1.3592935, 0.15264527)
+
+[node name="P_Death_Trigger4" parent="." unique_id=1354719692 instance=ExtResource("5_hjsjq")]
+position = Vector2(91.32, 95)
+rotation = 1.5707964
+scale = Vector2(-1.3592935, 0.15264527)
 
 [node name="P_NextLevel_Trigger" parent="." unique_id=1309058265 instance=ExtResource("6_v74xs")]
 position = Vector2(127, 160)
