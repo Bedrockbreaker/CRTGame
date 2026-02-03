@@ -74,7 +74,7 @@ rotation = -3.1415927
 scale = Vector2(0.1, 2.172)
 
 [node name="Sheet3" parent="." unique_id=959544771 instance=ExtResource("3_cwleb")]
-position = Vector2(80, 59.999996)
+position = Vector2(94, 59.999996)
 ColorLayer = 4
 Color = Color(0, 0, 1, 0.5882353)
 
@@ -934,6 +934,7 @@ scale = Vector2(0.33801043, 0.37335715)
 environment = SubResource("Environment_613lf")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=932884743]
+visible = false
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=630225158]
 material = SubResource("ShaderMaterial_jeo66")

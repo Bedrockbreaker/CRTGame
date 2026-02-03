@@ -48,7 +48,7 @@ position = Vector2(14, 94.97)
 scale = Vector2(0.050403226, 0.75048196)
 
 [node name="Sheet2" parent="." unique_id=1893159727 instance=ExtResource("3_040s2")]
-position = Vector2(83, 59.000008)
+position = Vector2(94, 58.999996)
 ColorLayer = 2
 Color = Color(0, 1, 0, 0.5882353)
 
