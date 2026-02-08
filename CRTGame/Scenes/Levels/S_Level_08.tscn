@@ -39,964 +39,948 @@ position = Vector2(233.99998, 16.999996)
 scale = Vector2(0.08376193, 0.08348762)
 speed = 125.0
 
-[node name="P_TempWall_obj" parent="." unique_id=2132844915 instance=ExtResource("2_4sea2")]
-position = Vector2(260, 84)
-scale = Vector2(0.1180593, 2.1716092)
-
-[node name="P_TempWall_obj2" parent="." unique_id=1882632523 instance=ExtResource("2_4sea2")]
-position = Vector2(-4.0000005, 94)
-scale = Vector2(0.1180593, 2.1716092)
-
-[node name="P_TempWall_obj4" parent="." unique_id=513998305 instance=ExtResource("2_4sea2")]
-position = Vector2(130, 63)
-rotation = -1.5707964
-scale = Vector2(0.07252706, 0.26312298)
-
 [node name="P_TempWall_obj17" parent="." unique_id=1602956079 instance=ExtResource("2_4sea2")]
-position = Vector2(60.000008, 63.000004)
+position = Vector2(58.000004, 53.999996)
 rotation = -1.5707964
-scale = Vector2(0.07252706, 0.10312297)
+scale = Vector2(0.05, 0.16)
 
-[node name="P_TempWall_obj18" parent="." unique_id=738376700 instance=ExtResource("2_4sea2")]
-position = Vector2(57, 128)
-rotation = -1.5707965
-scale = Vector2(0.05067074, -0.15518428)
-
-[node name="P_TempWall_obj12" parent="." unique_id=1557037921 instance=ExtResource("2_4sea2")]
-position = Vector2(130, 1)
+[node name="P_TempWall_obj19" parent="." unique_id=2132844915 instance=ExtResource("2_4sea2")]
+position = Vector2(52.000004, 59.999996)
 rotation = -1.5707964
-scale = Vector2(0.07252706, 0.26312298)
+scale = Vector2(0.05, 0.05)
 
-[node name="P_TempWall_obj13" parent="." unique_id=956601324 instance=ExtResource("2_4sea2")]
-position = Vector2(50, 1)
+[node name="P_TempWall_obj33" parent="." unique_id=2061879975 instance=ExtResource("2_4sea2")]
+position = Vector2(52.000004, 132.00002)
 rotation = -1.5707964
-scale = Vector2(0.07252706, 0.26312298)
+scale = Vector2(0.05, 0.05)
 
-[node name="P_TempWall_obj14" parent="." unique_id=51562130 instance=ExtResource("2_4sea2")]
-position = Vector2(18.999996, 1)
+[node name="P_TempWall_obj18" parent="." unique_id=849355387 instance=ExtResource("2_4sea2")]
+position = Vector2(58.000004, 138)
 rotation = -1.5707964
-scale = Vector2(0.07252706, 0.26312298)
+scale = Vector2(0.05, 0.15)
 
-[node name="P_TempWall_obj15" parent="." unique_id=1906535123 instance=ExtResource("2_4sea2")]
-position = Vector2(50.000004, 191)
+[node name="P_TempWall_obj20" parent="." unique_id=833758563 instance=ExtResource("2_4sea2")]
+position = Vector2(130, 54)
 rotation = -1.5707964
-scale = Vector2(0.07252706, 0.26312298)
+scale = Vector2(0.05, 0.25)
 
-[node name="P_TempWall_obj16" parent="." unique_id=1174178830 instance=ExtResource("2_4sea2")]
-position = Vector2(19, 191)
+[node name="P_TempWall_obj21" parent="." unique_id=1417214343 instance=ExtResource("2_4sea2")]
+position = Vector2(130, -3.907985e-14)
 rotation = -1.5707964
-scale = Vector2(0.07252706, 0.26312298)
+scale = Vector2(0.05, 0.25)
 
-[node name="P_TempWall_obj5" parent="." unique_id=704967055 instance=ExtResource("2_4sea2")]
-position = Vector2(129, 127.99999)
+[node name="P_TempWall_obj22" parent="." unique_id=1455614342 instance=ExtResource("2_4sea2")]
+position = Vector2(226, 54)
 rotation = -1.5707964
-scale = Vector2(0.04996307, 0.25635093)
+scale = Vector2(0.05, 0.55)
 
-[node name="P_TempWall_obj19" parent="." unique_id=1153281619 instance=ExtResource("2_4sea2")]
-position = Vector2(128.99998, 191)
+[node name="P_TempWall_obj25" parent="." unique_id=1494629170 instance=ExtResource("2_4sea2")]
+position = Vector2(226, -4.5474735e-13)
 rotation = -1.5707964
-scale = Vector2(0.07252706, 0.26312298)
+scale = Vector2(0.05, 0.55)
 
-[node name="P_TempWall_obj8" parent="." unique_id=707170143 instance=ExtResource("2_4sea2")]
-position = Vector2(223, 63.000004)
+[node name="P_TempWall_obj30" parent="." unique_id=1691845437 instance=ExtResource("2_4sea2")]
+position = Vector2(33.999996, -2.842171e-14)
 rotation = -1.5707964
-scale = Vector2(0.07252706, 0.5031254)
+scale = Vector2(0.05, 0.55)
 
-[node name="P_TempWall_obj9" parent="." unique_id=981491719 instance=ExtResource("2_4sea2")]
-position = Vector2(228, 95)
+[node name="P_TempWall_obj31" parent="." unique_id=1470956970 instance=ExtResource("2_4sea2")]
+position = Vector2(34, 192)
 rotation = -1.5707964
-scale = Vector2(0.5065383, -0.5482973)
+scale = Vector2(0.05, 0.55)
 
-[node name="P_TempWall_obj10" parent="." unique_id=250095887 instance=ExtResource("2_4sea2")]
-position = Vector2(225.00002, 128)
+[node name="P_TempWall_obj32" parent="." unique_id=1374797925 instance=ExtResource("2_4sea2")]
+position = Vector2(1.10134124e-13, 159)
 rotation = -1.5707964
-scale = Vector2(0.07252706, 0.5031254)
+scale = Vector2(0.5, 0.05)
 
-[node name="P_TempWall_obj6" parent="." unique_id=1354430790 instance=ExtResource("2_4sea2")]
-position = Vector2(223, -2)
+[node name="P_TempWall_obj34" parent="." unique_id=2076274468 instance=ExtResource("2_4sea2")]
+position = Vector2(-2.3841858e-07, 33)
 rotation = -1.5707964
-scale = Vector2(0.07252706, 0.5031254)
+scale = Vector2(0.5, 0.05)
 
-[node name="P_TempWall_obj7" parent="." unique_id=1479519232 instance=ExtResource("2_4sea2")]
-position = Vector2(223.00002, 0.99999976)
+[node name="P_TempWall_obj26" parent="." unique_id=215159170 instance=ExtResource("2_4sea2")]
+position = Vector2(225, 192)
 rotation = -1.5707964
-scale = Vector2(0.07252706, 0.5031254)
+scale = Vector2(0.05, 0.55)
 
-[node name="P_TempWall_obj11" parent="." unique_id=348567201 instance=ExtResource("2_4sea2")]
-position = Vector2(223.00002, 191.00002)
+[node name="P_TempWall_obj28" parent="." unique_id=1668977499 instance=ExtResource("2_4sea2")]
+position = Vector2(256, 170)
 rotation = -1.5707964
-scale = Vector2(0.07252706, 0.5031254)
+scale = Vector2(0.5, 0.05)
+
+[node name="P_TempWall_obj29" parent="." unique_id=336995909 instance=ExtResource("2_4sea2")]
+position = Vector2(256, 24)
+rotation = -1.5707964
+scale = Vector2(0.5, 0.05)
+
+[node name="P_TempWall_obj27" parent="." unique_id=1698164847 instance=ExtResource("2_4sea2")]
+position = Vector2(226, 138)
+rotation = -1.5707964
+scale = Vector2(0.05, 0.55)
 
 [node name="Sheet2" parent="." unique_id=1893159727 instance=ExtResource("3_oyyew")]
-position = Vector2(-37, -30)
+position = Vector2(-41, 151)
 ColorLayer = 2
 Color = Color(0, 1, 0, 0.5882353)
 
 [node name="Sheet3" parent="." unique_id=959544771 instance=ExtResource("3_oyyew")]
-position = Vector2(-33, 141.00002)
+position = Vector2(-41, -41.999996)
 ColorLayer = 4
 Color = Color(0, 0, 1, 0.5882353)
 
-[node name="PRemovableWall" parent="." unique_id=1832529673 instance=ExtResource("4_w4caj")]
-position = Vector2(193, 53)
-ColorLayer = 6
-Color = Color(0, 1, 1, 1)
-
 [node name="PRemovableWall2" parent="." unique_id=2077384586 instance=ExtResource("4_w4caj")]
-position = Vector2(193, 47)
+position = Vector2(187, 45)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
 [node name="PRemovableWall3" parent="." unique_id=782703753 instance=ExtResource("4_w4caj")]
-position = Vector2(193, 41)
+position = Vector2(187, 39)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
 [node name="PRemovableWall4" parent="." unique_id=3933417 instance=ExtResource("4_w4caj")]
-position = Vector2(193, 35)
+position = Vector2(187, 33)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
 [node name="PRemovableWall5" parent="." unique_id=1279498626 instance=ExtResource("4_w4caj")]
-position = Vector2(193, 29)
+position = Vector2(187, 27)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
 [node name="PRemovableWall6" parent="." unique_id=1109292756 instance=ExtResource("4_w4caj")]
-position = Vector2(193, 23)
+position = Vector2(187, 21)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
 [node name="PRemovableWall7" parent="." unique_id=1390392995 instance=ExtResource("4_w4caj")]
-position = Vector2(193, 17)
+position = Vector2(187, 15)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
 [node name="PRemovableWall8" parent="." unique_id=2127324717 instance=ExtResource("4_w4caj")]
-position = Vector2(193, 11)
+position = Vector2(187, 9)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
 [node name="PRemovableWall9" parent="." unique_id=227750240 instance=ExtResource("4_w4caj")]
-position = Vector2(193, 5)
+position = Vector2(187, 3)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
-[node name="PRemovableWall10" parent="." unique_id=267198882 instance=ExtResource("4_w4caj")]
-position = Vector2(193, -1)
-ColorLayer = 5
-Color = Color(0, 1, 1, 1)
-
-[node name="PRemovableWall11" parent="." unique_id=1854429277 instance=ExtResource("4_w4caj")]
-position = Vector2(127, 53)
-ColorLayer = 6
-Color = Color(0, 1, 1, 1)
-
-[node name="PRemovableWall21" parent="." unique_id=98379487 instance=ExtResource("4_w4caj")]
-position = Vector2(146, 59)
+[node name="PRemovableWall22" parent="." unique_id=629307655 instance=ExtResource("4_w4caj")]
+position = Vector2(151, 51)
 ColorLayer = 4
 Color = Color(0, 0, 1, 1)
 
-[node name="PRemovableWall22" parent="." unique_id=629307655 instance=ExtResource("4_w4caj")]
-position = Vector2(152, 59)
+[node name="PRemovableWall45" parent="." unique_id=408973566 instance=ExtResource("4_w4caj")]
+position = Vector2(145, 51)
 ColorLayer = 4
 Color = Color(0, 0, 1, 1)
 
 [node name="PRemovableWall23" parent="." unique_id=1805585340 instance=ExtResource("4_w4caj")]
-position = Vector2(158, 59)
+position = Vector2(157, 51)
 ColorLayer = 4
 Color = Color(0, 0, 1, 1)
 
 [node name="PRemovableWall24" parent="." unique_id=2072262872 instance=ExtResource("4_w4caj")]
-position = Vector2(164, 59)
+position = Vector2(163, 51)
 ColorLayer = 4
 Color = Color(0, 0, 1, 1)
 
 [node name="PRemovableWall25" parent="." unique_id=1775570999 instance=ExtResource("4_w4caj")]
-position = Vector2(170, 59)
+position = Vector2(169, 51)
 ColorLayer = 4
 Color = Color(0, 0, 1, 1)
 
 [node name="PRemovableWall26" parent="." unique_id=537831634 instance=ExtResource("4_w4caj")]
-position = Vector2(176, 59)
+position = Vector2(175, 51)
 ColorLayer = 4
 Color = Color(0, 0, 1, 1)
 
 [node name="PRemovableWall27" parent="." unique_id=881188406 instance=ExtResource("4_w4caj")]
-position = Vector2(182, 59)
+position = Vector2(181, 51)
 ColorLayer = 4
 Color = Color(0, 0, 1, 1)
 
 [node name="PRemovableWall28" parent="." unique_id=1757087669 instance=ExtResource("4_w4caj")]
-position = Vector2(188, 59)
-ColorLayer = 4
-Color = Color(0, 0, 1, 1)
-
-[node name="PRemovableWall125" parent="." unique_id=890484151 instance=ExtResource("4_w4caj")]
-position = Vector2(65, 187)
-ColorLayer = 4
-Color = Color(0, 0, 1, 1)
-
-[node name="PRemovableWall126" parent="." unique_id=2053792417 instance=ExtResource("4_w4caj")]
-position = Vector2(71, 187)
-ColorLayer = 4
-Color = Color(0, 0, 1, 1)
-
-[node name="PRemovableWall127" parent="." unique_id=720097624 instance=ExtResource("4_w4caj")]
-position = Vector2(77, 187)
-ColorLayer = 4
-Color = Color(0, 0, 1, 1)
-
-[node name="PRemovableWall128" parent="." unique_id=987613605 instance=ExtResource("4_w4caj")]
-position = Vector2(83, 187)
-ColorLayer = 4
-Color = Color(0, 0, 1, 1)
-
-[node name="PRemovableWall129" parent="." unique_id=739352190 instance=ExtResource("4_w4caj")]
-position = Vector2(89, 187)
-ColorLayer = 4
-Color = Color(0, 0, 1, 1)
-
-[node name="PRemovableWall130" parent="." unique_id=121346438 instance=ExtResource("4_w4caj")]
-position = Vector2(95, 187)
-ColorLayer = 4
-Color = Color(0, 0, 1, 1)
-
-[node name="PRemovableWall131" parent="." unique_id=30715000 instance=ExtResource("4_w4caj")]
-position = Vector2(101, 187)
-ColorLayer = 4
-Color = Color(0, 0, 1, 1)
-
-[node name="PRemovableWall132" parent="." unique_id=1421765451 instance=ExtResource("4_w4caj")]
-position = Vector2(107, 187)
-ColorLayer = 4
-Color = Color(0, 0, 1, 1)
-
-[node name="PRemovableWall153" parent="." unique_id=1810449658 instance=ExtResource("4_w4caj")]
-position = Vector2(145, 125)
-ColorLayer = 4
-Color = Color(0, 0, 1, 1)
-
-[node name="PRemovableWall154" parent="." unique_id=441087688 instance=ExtResource("4_w4caj")]
-position = Vector2(151, 125)
-ColorLayer = 4
-Color = Color(0, 0, 1, 1)
-
-[node name="PRemovableWall155" parent="." unique_id=1712792494 instance=ExtResource("4_w4caj")]
-position = Vector2(157, 125)
-ColorLayer = 4
-Color = Color(0, 0, 1, 1)
-
-[node name="PRemovableWall156" parent="." unique_id=1009015581 instance=ExtResource("4_w4caj")]
-position = Vector2(163, 125)
-ColorLayer = 4
-Color = Color(0, 0, 1, 1)
-
-[node name="PRemovableWall157" parent="." unique_id=1613761317 instance=ExtResource("4_w4caj")]
-position = Vector2(169, 125)
-ColorLayer = 4
-Color = Color(0, 0, 1, 1)
-
-[node name="PRemovableWall158" parent="." unique_id=1462068221 instance=ExtResource("4_w4caj")]
-position = Vector2(175, 125)
-ColorLayer = 4
-Color = Color(0, 0, 1, 1)
-
-[node name="PRemovableWall159" parent="." unique_id=151484079 instance=ExtResource("4_w4caj")]
-position = Vector2(181, 125)
-ColorLayer = 4
-Color = Color(0, 0, 1, 1)
-
-[node name="PRemovableWall160" parent="." unique_id=2063930497 instance=ExtResource("4_w4caj")]
-position = Vector2(187, 125)
-ColorLayer = 4
-Color = Color(0, 0, 1, 1)
-
-[node name="PRemovableWall180" parent="." unique_id=855862123 instance=ExtResource("4_w4caj")]
-position = Vector2(193, 125)
+position = Vector2(187, 51)
 ColorLayer = 4
 Color = Color(0, 0, 1, 1)
 
 [node name="PRemovableWall54" parent="." unique_id=2087320881 instance=ExtResource("4_w4caj")]
-position = Vector2(66, -1)
+position = Vector2(67, -3)
 ColorLayer = 4
 Color = Color(0, 0, 1, 1)
 
 [node name="PRemovableWall55" parent="." unique_id=2028516733 instance=ExtResource("4_w4caj")]
-position = Vector2(72, -1)
+position = Vector2(73, -3)
 ColorLayer = 4
 Color = Color(0, 0, 1, 1)
 
 [node name="PRemovableWall56" parent="." unique_id=426438330 instance=ExtResource("4_w4caj")]
-position = Vector2(78, -1)
+position = Vector2(79, -3)
 ColorLayer = 4
 Color = Color(0, 0, 1, 1)
 
 [node name="PRemovableWall57" parent="." unique_id=1618994112 instance=ExtResource("4_w4caj")]
-position = Vector2(84, -1)
+position = Vector2(85, -3)
 ColorLayer = 4
 Color = Color(0, 0, 1, 1)
 
 [node name="PRemovableWall58" parent="." unique_id=1858262228 instance=ExtResource("4_w4caj")]
-position = Vector2(90, -1)
+position = Vector2(91, -3)
 ColorLayer = 4
 Color = Color(0, 0, 1, 1)
 
 [node name="PRemovableWall59" parent="." unique_id=2035561977 instance=ExtResource("4_w4caj")]
-position = Vector2(96, -1)
+position = Vector2(97, -3)
 ColorLayer = 4
 Color = Color(0, 0, 1, 1)
 
 [node name="PRemovableWall60" parent="." unique_id=1894923096 instance=ExtResource("4_w4caj")]
-position = Vector2(102, -1)
+position = Vector2(103, -3)
 ColorLayer = 4
 Color = Color(0, 0, 1, 1)
 
 [node name="PRemovableWall61" parent="." unique_id=60264584 instance=ExtResource("4_w4caj")]
-position = Vector2(108, -1)
+position = Vector2(109, -3)
 ColorLayer = 4
 Color = Color(0, 0, 1, 1)
 
-[node name="PRemovableWall29" parent="." unique_id=285134120 instance=ExtResource("4_w4caj")]
-position = Vector2(146, -1)
+[node name="PRemovableWall30" parent="." unique_id=192031800 instance=ExtResource("4_w4caj")]
+position = Vector2(151, -3)
 ColorLayer = 2
 Color = Color(0, 0.95686275, 0, 1)
 
-[node name="PRemovableWall30" parent="." unique_id=192031800 instance=ExtResource("4_w4caj")]
-position = Vector2(152, -1)
+[node name="PRemovableWall47" parent="." unique_id=595956436 instance=ExtResource("4_w4caj")]
+position = Vector2(145, -3)
 ColorLayer = 2
 Color = Color(0, 0.95686275, 0, 1)
 
 [node name="PRemovableWall31" parent="." unique_id=1839248551 instance=ExtResource("4_w4caj")]
-position = Vector2(158, -1)
+position = Vector2(157, -3)
 ColorLayer = 2
 Color = Color(0, 0.95686275, 0, 1)
 
 [node name="PRemovableWall32" parent="." unique_id=2104578537 instance=ExtResource("4_w4caj")]
-position = Vector2(164, -1)
+position = Vector2(163, -3)
 ColorLayer = 2
 Color = Color(0, 0.95686275, 0, 1)
 
 [node name="PRemovableWall33" parent="." unique_id=1237718811 instance=ExtResource("4_w4caj")]
-position = Vector2(170, -1)
+position = Vector2(169, -3)
 ColorLayer = 2
 Color = Color(0, 0.95686275, 0, 1)
 
 [node name="PRemovableWall34" parent="." unique_id=1615124166 instance=ExtResource("4_w4caj")]
-position = Vector2(176, -1)
+position = Vector2(175, -3)
 ColorLayer = 2
 Color = Color(0, 0.95686275, 0, 1)
 
 [node name="PRemovableWall35" parent="." unique_id=478041304 instance=ExtResource("4_w4caj")]
-position = Vector2(182, -1)
+position = Vector2(181, -3)
 ColorLayer = 2
 Color = Color(0, 0.95686275, 0, 1)
 
 [node name="PRemovableWall36" parent="." unique_id=401907899 instance=ExtResource("4_w4caj")]
-position = Vector2(188, -1)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
-
-[node name="PRemovableWall37" parent="." unique_id=85839741 instance=ExtResource("4_w4caj")]
-position = Vector2(66, 59)
+position = Vector2(187, -3)
 ColorLayer = 2
 Color = Color(0, 0.95686275, 0, 1)
 
 [node name="PRemovableWall38" parent="." unique_id=1313277448 instance=ExtResource("4_w4caj")]
-position = Vector2(72, 59)
+position = Vector2(67, 51)
 ColorLayer = 2
 Color = Color(0, 0.95686275, 0, 1)
 
 [node name="PRemovableWall39" parent="." unique_id=49013797 instance=ExtResource("4_w4caj")]
-position = Vector2(78, 59)
+position = Vector2(73, 51)
 ColorLayer = 2
 Color = Color(0, 0.95686275, 0, 1)
 
 [node name="PRemovableWall40" parent="." unique_id=871511032 instance=ExtResource("4_w4caj")]
-position = Vector2(84, 59)
+position = Vector2(79, 51)
 ColorLayer = 2
 Color = Color(0, 0.95686275, 0, 1)
 
 [node name="PRemovableWall41" parent="." unique_id=1771357627 instance=ExtResource("4_w4caj")]
-position = Vector2(90, 59)
+position = Vector2(85, 51)
 ColorLayer = 2
 Color = Color(0, 0.95686275, 0, 1)
 
 [node name="PRemovableWall42" parent="." unique_id=1206838168 instance=ExtResource("4_w4caj")]
-position = Vector2(96, 59)
+position = Vector2(91, 51)
 ColorLayer = 2
 Color = Color(0, 0.95686275, 0, 1)
 
 [node name="PRemovableWall43" parent="." unique_id=554185721 instance=ExtResource("4_w4caj")]
-position = Vector2(102, 59)
+position = Vector2(97, 51)
 ColorLayer = 2
 Color = Color(0, 0.95686275, 0, 1)
 
 [node name="PRemovableWall44" parent="." unique_id=1465517101 instance=ExtResource("4_w4caj")]
-position = Vector2(108, 59)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
-
-[node name="PRemovableWall117" parent="." unique_id=1860198858 instance=ExtResource("4_w4caj")]
-position = Vector2(66, 59)
+position = Vector2(103, 51)
 ColorLayer = 2
 Color = Color(0, 0.95686275, 0, 1)
 
 [node name="PRemovableWall118" parent="." unique_id=1715617043 instance=ExtResource("4_w4caj")]
-position = Vector2(72, 59)
+position = Vector2(67, 51)
 ColorLayer = 2
 Color = Color(0, 0.95686275, 0, 1)
 
 [node name="PRemovableWall119" parent="." unique_id=1258640722 instance=ExtResource("4_w4caj")]
-position = Vector2(78, 59)
+position = Vector2(73, 51)
 ColorLayer = 2
 Color = Color(0, 0.95686275, 0, 1)
 
 [node name="PRemovableWall120" parent="." unique_id=1565581233 instance=ExtResource("4_w4caj")]
-position = Vector2(84, 59)
+position = Vector2(79, 51)
 ColorLayer = 2
 Color = Color(0, 0.95686275, 0, 1)
 
 [node name="PRemovableWall121" parent="." unique_id=202045452 instance=ExtResource("4_w4caj")]
-position = Vector2(90, 59)
+position = Vector2(85, 51)
 ColorLayer = 2
 Color = Color(0, 0.95686275, 0, 1)
 
 [node name="PRemovableWall122" parent="." unique_id=2028646485 instance=ExtResource("4_w4caj")]
-position = Vector2(96, 59)
+position = Vector2(91, 51)
 ColorLayer = 2
 Color = Color(0, 0.95686275, 0, 1)
 
 [node name="PRemovableWall123" parent="." unique_id=587373032 instance=ExtResource("4_w4caj")]
-position = Vector2(102, 59)
+position = Vector2(97, 51)
 ColorLayer = 2
 Color = Color(0, 0.95686275, 0, 1)
 
 [node name="PRemovableWall124" parent="." unique_id=327549964 instance=ExtResource("4_w4caj")]
-position = Vector2(108, 59)
+position = Vector2(103, 51)
+ColorLayer = 2
+Color = Color(0, 0.95686275, 0, 1)
+
+[node name="PRemovableWall133" parent="." unique_id=333539054 instance=ExtResource("4_w4caj")]
+position = Vector2(109, 51)
 ColorLayer = 2
 Color = Color(0, 0.95686275, 0, 1)
 
 [node name="PRemovableWall79" parent="." unique_id=1116745537 instance=ExtResource("4_w4caj")]
-position = Vector2(6, 59)
+position = Vector2(7, 57)
 ColorLayer = 2
 Color = Color(0, 0.95686275, 0, 1)
 
 [node name="PRemovableWall87" parent="." unique_id=1687928511 instance=ExtResource("4_w4caj")]
-position = Vector2(0, 59)
+position = Vector2(1, 57)
 ColorLayer = 2
 Color = Color(0, 0.95686275, 0, 1)
 
 [node name="PRemovableWall80" parent="." unique_id=1696942529 instance=ExtResource("4_w4caj")]
-position = Vector2(12, 59)
+position = Vector2(13, 57)
 ColorLayer = 2
 Color = Color(0, 0.95686275, 0, 1)
 
 [node name="PRemovableWall81" parent="." unique_id=836835943 instance=ExtResource("4_w4caj")]
-position = Vector2(18, 59)
+position = Vector2(19, 57)
 ColorLayer = 2
 Color = Color(0, 0.95686275, 0, 1)
 
 [node name="PRemovableWall82" parent="." unique_id=243670004 instance=ExtResource("4_w4caj")]
-position = Vector2(24, 59)
+position = Vector2(25, 57)
 ColorLayer = 2
 Color = Color(0, 0.95686275, 0, 1)
 
 [node name="PRemovableWall83" parent="." unique_id=587479873 instance=ExtResource("4_w4caj")]
-position = Vector2(30, 59)
+position = Vector2(31, 57)
 ColorLayer = 2
 Color = Color(0, 0.95686275, 0, 1)
 
 [node name="PRemovableWall84" parent="." unique_id=1790805858 instance=ExtResource("4_w4caj")]
-position = Vector2(36, 59)
+position = Vector2(37, 57)
 ColorLayer = 2
 Color = Color(0, 0.95686275, 0, 1)
 
 [node name="PRemovableWall85" parent="." unique_id=1401280573 instance=ExtResource("4_w4caj")]
-position = Vector2(42, 59)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
-
-[node name="PRemovableWall86" parent="." unique_id=363466581 instance=ExtResource("4_w4caj")]
-position = Vector2(48, 59)
+position = Vector2(43, 57)
 ColorLayer = 2
 Color = Color(0, 0.95686275, 0, 1)
 
 [node name="PRemovableWall97" parent="." unique_id=1800817723 instance=ExtResource("4_w4caj")]
-position = Vector2(48, 65)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
+position = Vector2(49, 63.000004)
+ColorLayer = 6
+Color = Color(0, 0.95686275, 1, 1)
 
 [node name="PRemovableWall98" parent="." unique_id=889092707 instance=ExtResource("4_w4caj")]
-position = Vector2(48, 71)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
+position = Vector2(49, 69)
+ColorLayer = 6
+Color = Color(0, 0.95686275, 1, 1)
 
 [node name="PRemovableWall99" parent="." unique_id=254737689 instance=ExtResource("4_w4caj")]
-position = Vector2(48, 77)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
+position = Vector2(49, 75)
+ColorLayer = 6
+Color = Color(0, 0.95686275, 1, 1)
 
 [node name="PRemovableWall100" parent="." unique_id=2050153623 instance=ExtResource("4_w4caj")]
-position = Vector2(48, 83)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
+position = Vector2(49, 81)
+ColorLayer = 6
+Color = Color(0, 0.95686275, 1, 1)
 
 [node name="PRemovableWall101" parent="." unique_id=1478547675 instance=ExtResource("4_w4caj")]
-position = Vector2(48, 89)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
+position = Vector2(49, 87)
+ColorLayer = 6
+Color = Color(0, 0.95686275, 1, 1)
 
 [node name="PRemovableWall102" parent="." unique_id=2022100970 instance=ExtResource("4_w4caj")]
-position = Vector2(48, 95)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
+position = Vector2(49, 93)
+ColorLayer = 6
+Color = Color(0, 0.95686275, 1, 1)
 
 [node name="PRemovableWall103" parent="." unique_id=2028081703 instance=ExtResource("4_w4caj")]
-position = Vector2(48, 101)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
+position = Vector2(49, 99)
+ColorLayer = 6
+Color = Color(0, 0.95686275, 1, 1)
 
 [node name="PRemovableWall104" parent="." unique_id=664133819 instance=ExtResource("4_w4caj")]
-position = Vector2(48, 107)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
+position = Vector2(49, 105)
+ColorLayer = 6
+Color = Color(0, 0.95686275, 1, 1)
 
 [node name="PRemovableWall105" parent="." unique_id=250199989 instance=ExtResource("4_w4caj")]
-position = Vector2(48, 113)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
+position = Vector2(49, 111)
+ColorLayer = 6
+Color = Color(0, 0.95686275, 1, 1)
 
 [node name="PRemovableWall106" parent="." unique_id=1027839979 instance=ExtResource("4_w4caj")]
-position = Vector2(48, 119)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
+position = Vector2(49, 117)
+ColorLayer = 6
+Color = Color(0, 0.95686275, 1, 1)
+
+[node name="PRemovableWall165" parent="." unique_id=172595236 instance=ExtResource("4_w4caj")]
+position = Vector2(49, 123)
+ColorLayer = 6
+Color = Color(0, 0.95686275, 1, 1)
+
+[node name="PRemovableWall168" parent="." unique_id=707593689 instance=ExtResource("4_w4caj")]
+position = Vector2(-3, 123)
+ColorLayer = 6
+Color = Color(0, 0.95686275, 1, 1)
+
+[node name="PRemovableWall169" parent="." unique_id=1459967116 instance=ExtResource("4_w4caj")]
+position = Vector2(-3, 117)
+ColorLayer = 6
+Color = Color(0, 0.95686275, 1, 1)
+
+[node name="PRemovableWall170" parent="." unique_id=198887604 instance=ExtResource("4_w4caj")]
+position = Vector2(-3, 111)
+ColorLayer = 6
+Color = Color(0, 0.95686275, 1, 1)
+
+[node name="PRemovableWall171" parent="." unique_id=5163642 instance=ExtResource("4_w4caj")]
+position = Vector2(-3, 105)
+ColorLayer = 6
+Color = Color(0, 0.95686275, 1, 1)
+
+[node name="PRemovableWall172" parent="." unique_id=871941501 instance=ExtResource("4_w4caj")]
+position = Vector2(-3, 99)
+ColorLayer = 6
+Color = Color(0, 0.95686275, 1, 1)
+
+[node name="PRemovableWall173" parent="." unique_id=502125398 instance=ExtResource("4_w4caj")]
+position = Vector2(-3, 93)
+ColorLayer = 6
+Color = Color(0, 0.95686275, 1, 1)
+
+[node name="PRemovableWall174" parent="." unique_id=263047527 instance=ExtResource("4_w4caj")]
+position = Vector2(-3, 87)
+ColorLayer = 6
+Color = Color(0, 0.95686275, 1, 1)
+
+[node name="PRemovableWall175" parent="." unique_id=15460932 instance=ExtResource("4_w4caj")]
+position = Vector2(-3, 81)
+ColorLayer = 6
+Color = Color(0, 0.95686275, 1, 1)
+
+[node name="PRemovableWall176" parent="." unique_id=367669877 instance=ExtResource("4_w4caj")]
+position = Vector2(-3, 75)
+ColorLayer = 6
+Color = Color(0, 0.95686275, 1, 1)
+
+[node name="PRemovableWall177" parent="." unique_id=682041991 instance=ExtResource("4_w4caj")]
+position = Vector2(-3, 69)
+ColorLayer = 6
+Color = Color(0, 0.95686275, 1, 1)
+
+[node name="PRemovableWall178" parent="." unique_id=627935998 instance=ExtResource("4_w4caj")]
+position = Vector2(-3, 63)
+ColorLayer = 6
+Color = Color(0, 0.95686275, 1, 1)
 
 [node name="PRemovableWall88" parent="." unique_id=1124967165 instance=ExtResource("4_w4caj")]
-position = Vector2(6, 125)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
+position = Vector2(7, 129)
+ColorLayer = 4
+Color = Color(0, 0, 1, 1)
 
 [node name="PRemovableWall89" parent="." unique_id=1355781542 instance=ExtResource("4_w4caj")]
-position = Vector2(0, 125)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
+position = Vector2(1, 129)
+ColorLayer = 4
+Color = Color(0, 0, 1, 1)
 
 [node name="PRemovableWall90" parent="." unique_id=1780983794 instance=ExtResource("4_w4caj")]
-position = Vector2(12, 125)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
+position = Vector2(13, 129)
+ColorLayer = 4
+Color = Color(0, 0, 1, 1)
 
 [node name="PRemovableWall91" parent="." unique_id=1512797510 instance=ExtResource("4_w4caj")]
-position = Vector2(18, 125)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
+position = Vector2(19, 129)
+ColorLayer = 4
+Color = Color(0, 0, 1, 1)
 
 [node name="PRemovableWall92" parent="." unique_id=1204130939 instance=ExtResource("4_w4caj")]
-position = Vector2(24, 125)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
+position = Vector2(25, 129)
+ColorLayer = 4
+Color = Color(0, 0, 1, 1)
 
 [node name="PRemovableWall93" parent="." unique_id=185361682 instance=ExtResource("4_w4caj")]
-position = Vector2(30, 125)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
+position = Vector2(31, 129)
+ColorLayer = 4
+Color = Color(0, 0, 1, 1)
 
 [node name="PRemovableWall94" parent="." unique_id=1130981263 instance=ExtResource("4_w4caj")]
-position = Vector2(36, 125)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
+position = Vector2(37, 129)
+ColorLayer = 4
+Color = Color(0, 0, 1, 1)
 
-[node name="PRemovableWall95" parent="." unique_id=1908639756 instance=ExtResource("4_w4caj")]
-position = Vector2(42, 125)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
-
-[node name="PRemovableWall96" parent="." unique_id=542218832 instance=ExtResource("4_w4caj")]
-position = Vector2(48, 125)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
-
-[node name="PRemovableWall71" parent="." unique_id=827247731 instance=ExtResource("4_w4caj")]
-position = Vector2(66, 125)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
-
-[node name="PRemovableWall72" parent="." unique_id=66852334 instance=ExtResource("4_w4caj")]
-position = Vector2(72, 125)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
-
-[node name="PRemovableWall73" parent="." unique_id=133144959 instance=ExtResource("4_w4caj")]
-position = Vector2(78, 125)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
-
-[node name="PRemovableWall74" parent="." unique_id=1199123649 instance=ExtResource("4_w4caj")]
-position = Vector2(84, 125)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
-
-[node name="PRemovableWall75" parent="." unique_id=768969842 instance=ExtResource("4_w4caj")]
-position = Vector2(90, 125)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
-
-[node name="PRemovableWall76" parent="." unique_id=1805621944 instance=ExtResource("4_w4caj")]
-position = Vector2(96, 125)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
-
-[node name="PRemovableWall77" parent="." unique_id=1621492415 instance=ExtResource("4_w4caj")]
-position = Vector2(102, 125)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
-
-[node name="PRemovableWall78" parent="." unique_id=608501704 instance=ExtResource("4_w4caj")]
-position = Vector2(108, 125)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
-
-[node name="PRemovableWall161" parent="." unique_id=1795206437 instance=ExtResource("4_w4caj")]
-position = Vector2(145, 187)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
-
-[node name="PRemovableWall162" parent="." unique_id=593468801 instance=ExtResource("4_w4caj")]
-position = Vector2(151, 187)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
-
-[node name="PRemovableWall163" parent="." unique_id=2015980403 instance=ExtResource("4_w4caj")]
-position = Vector2(157, 187)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
-
-[node name="PRemovableWall164" parent="." unique_id=1420060228 instance=ExtResource("4_w4caj")]
-position = Vector2(163, 187)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
-
-[node name="PRemovableWall165" parent="." unique_id=1493984903 instance=ExtResource("4_w4caj")]
-position = Vector2(169, 187)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
-
-[node name="PRemovableWall166" parent="." unique_id=1351439601 instance=ExtResource("4_w4caj")]
-position = Vector2(175, 187)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
-
-[node name="PRemovableWall167" parent="." unique_id=495110722 instance=ExtResource("4_w4caj")]
-position = Vector2(181, 187)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
-
-[node name="PRemovableWall168" parent="." unique_id=494812412 instance=ExtResource("4_w4caj")]
-position = Vector2(187, 187)
-ColorLayer = 2
-Color = Color(0, 0.95686275, 0, 1)
+[node name="PRemovableWall164" parent="." unique_id=1965569244 instance=ExtResource("4_w4caj")]
+position = Vector2(43, 129)
+ColorLayer = 4
+Color = Color(0, 0, 1, 1)
 
 [node name="PRemovableWall12" parent="." unique_id=185708929 instance=ExtResource("4_w4caj")]
-position = Vector2(127, 47)
+position = Vector2(127, 45)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
 [node name="PRemovableWall13" parent="." unique_id=1817560457 instance=ExtResource("4_w4caj")]
-position = Vector2(127, 41)
+position = Vector2(127, 39)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
 [node name="PRemovableWall14" parent="." unique_id=1118356099 instance=ExtResource("4_w4caj")]
-position = Vector2(127, 35)
+position = Vector2(127, 33)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
 [node name="PRemovableWall15" parent="." unique_id=285197433 instance=ExtResource("4_w4caj")]
-position = Vector2(127, 29)
+position = Vector2(127, 27)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
 [node name="PRemovableWall16" parent="." unique_id=1468229945 instance=ExtResource("4_w4caj")]
-position = Vector2(127, 23)
+position = Vector2(127, 21)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
 [node name="PRemovableWall17" parent="." unique_id=384205274 instance=ExtResource("4_w4caj")]
-position = Vector2(127, 17)
+position = Vector2(127, 15)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
 [node name="PRemovableWall18" parent="." unique_id=995092883 instance=ExtResource("4_w4caj")]
-position = Vector2(127, 11)
+position = Vector2(127, 9)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
 [node name="PRemovableWall19" parent="." unique_id=1648669271 instance=ExtResource("4_w4caj")]
-position = Vector2(127, 5)
-ColorLayer = 6
-Color = Color(0, 1, 1, 1)
-
-[node name="PRemovableWall133" parent="." unique_id=1422434308 instance=ExtResource("4_w4caj")]
-position = Vector2(113, 175)
-ColorLayer = 6
-Color = Color(0, 1, 1, 1)
-
-[node name="PRemovableWall142" parent="." unique_id=1248198907 instance=ExtResource("4_w4caj")]
-position = Vector2(113, 181)
-ColorLayer = 6
-Color = Color(0, 1, 1, 1)
-
-[node name="PRemovableWall134" parent="." unique_id=1279657951 instance=ExtResource("4_w4caj")]
-position = Vector2(113, 169)
-ColorLayer = 6
-Color = Color(0, 1, 1, 1)
-
-[node name="PRemovableWall135" parent="." unique_id=968519643 instance=ExtResource("4_w4caj")]
-position = Vector2(113, 163)
-ColorLayer = 6
-Color = Color(0, 1, 1, 1)
-
-[node name="PRemovableWall136" parent="." unique_id=2005644764 instance=ExtResource("4_w4caj")]
-position = Vector2(113, 157)
-ColorLayer = 6
-Color = Color(0, 1, 1, 1)
-
-[node name="PRemovableWall137" parent="." unique_id=593733039 instance=ExtResource("4_w4caj")]
-position = Vector2(113, 151)
-ColorLayer = 6
-Color = Color(0, 1, 1, 1)
-
-[node name="PRemovableWall138" parent="." unique_id=2002103466 instance=ExtResource("4_w4caj")]
-position = Vector2(113, 145)
-ColorLayer = 6
-Color = Color(0, 1, 1, 1)
-
-[node name="PRemovableWall139" parent="." unique_id=1271301265 instance=ExtResource("4_w4caj")]
-position = Vector2(113, 139)
-ColorLayer = 6
-Color = Color(0, 1, 1, 1)
-
-[node name="PRemovableWall140" parent="." unique_id=670918116 instance=ExtResource("4_w4caj")]
-position = Vector2(113, 133)
-ColorLayer = 6
-Color = Color(0, 1, 1, 1)
-
-[node name="PRemovableWall141" parent="." unique_id=73668421 instance=ExtResource("4_w4caj")]
-position = Vector2(113, 127)
-ColorLayer = 6
-Color = Color(0, 1, 1, 1)
-
-[node name="PRemovableWall143" parent="." unique_id=572577577 instance=ExtResource("4_w4caj")]
-position = Vector2(139, 175)
-ColorLayer = 6
-Color = Color(0, 1, 1, 1)
-
-[node name="PRemovableWall144" parent="." unique_id=838817563 instance=ExtResource("4_w4caj")]
-position = Vector2(139, 181)
-ColorLayer = 6
-Color = Color(0, 1, 1, 1)
-
-[node name="PRemovableWall145" parent="." unique_id=2046732701 instance=ExtResource("4_w4caj")]
-position = Vector2(139, 169)
-ColorLayer = 6
-Color = Color(0, 1, 1, 1)
-
-[node name="PRemovableWall146" parent="." unique_id=1518440242 instance=ExtResource("4_w4caj")]
-position = Vector2(139, 163)
-ColorLayer = 6
-Color = Color(0, 1, 1, 1)
-
-[node name="PRemovableWall147" parent="." unique_id=552749794 instance=ExtResource("4_w4caj")]
-position = Vector2(139, 157)
-ColorLayer = 6
-Color = Color(0, 1, 1, 1)
-
-[node name="PRemovableWall148" parent="." unique_id=1337948522 instance=ExtResource("4_w4caj")]
-position = Vector2(139, 151)
-ColorLayer = 6
-Color = Color(0, 1, 1, 1)
-
-[node name="PRemovableWall149" parent="." unique_id=1814606929 instance=ExtResource("4_w4caj")]
-position = Vector2(139, 145)
-ColorLayer = 6
-Color = Color(0, 1, 1, 1)
-
-[node name="PRemovableWall150" parent="." unique_id=1218802768 instance=ExtResource("4_w4caj")]
-position = Vector2(139, 139)
-ColorLayer = 6
-Color = Color(0, 1, 1, 1)
-
-[node name="PRemovableWall151" parent="." unique_id=1216354955 instance=ExtResource("4_w4caj")]
-position = Vector2(139, 133)
-ColorLayer = 6
-Color = Color(0, 1, 1, 1)
-
-[node name="PRemovableWall178" parent="." unique_id=226296943 instance=ExtResource("4_w4caj")]
-position = Vector2(139, 127)
-ColorLayer = 6
-Color = Color(0, 1, 1, 1)
-
-[node name="PRemovableWall152" parent="." unique_id=1061765709 instance=ExtResource("4_w4caj")]
-position = Vector2(139, 125)
-ColorLayer = 6
-Color = Color(0, 1, 1, 1)
-
-[node name="PRemovableWall62" parent="." unique_id=2066450636 instance=ExtResource("4_w4caj")]
-position = Vector2(54, 53)
+position = Vector2(127, 3)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
 [node name="PRemovableWall63" parent="." unique_id=1327389038 instance=ExtResource("4_w4caj")]
-position = Vector2(54, 47)
+position = Vector2(67, 45)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
 [node name="PRemovableWall64" parent="." unique_id=1133937371 instance=ExtResource("4_w4caj")]
-position = Vector2(54, 41)
+position = Vector2(67, 39)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
 [node name="PRemovableWall65" parent="." unique_id=179886665 instance=ExtResource("4_w4caj")]
-position = Vector2(54, 35)
+position = Vector2(67, 33)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
 [node name="PRemovableWall66" parent="." unique_id=240210535 instance=ExtResource("4_w4caj")]
-position = Vector2(54, 29)
+position = Vector2(67, 27)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
 [node name="PRemovableWall67" parent="." unique_id=896359837 instance=ExtResource("4_w4caj")]
-position = Vector2(54, 23)
+position = Vector2(67, 21)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
 [node name="PRemovableWall68" parent="." unique_id=2146113802 instance=ExtResource("4_w4caj")]
-position = Vector2(54, 17)
+position = Vector2(67, 15)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
 [node name="PRemovableWall69" parent="." unique_id=771569826 instance=ExtResource("4_w4caj")]
-position = Vector2(54, 11)
+position = Vector2(67, 9)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
 [node name="PRemovableWall70" parent="." unique_id=600791677 instance=ExtResource("4_w4caj")]
-position = Vector2(54, 5)
+position = Vector2(67, 3)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
-[node name="PRemovableWall107" parent="." unique_id=308580318 instance=ExtResource("4_w4caj")]
-position = Vector2(60, 179)
+[node name="P_TempWall_obj23" parent="." unique_id=893389635 instance=ExtResource("2_4sea2")]
+position = Vector2(130, 192)
+rotation = -1.5707964
+scale = Vector2(0.05, 0.25)
+
+[node name="P_TempWall_obj24" parent="." unique_id=642166770 instance=ExtResource("2_4sea2")]
+position = Vector2(130, 138)
+rotation = -1.5707964
+scale = Vector2(0.05, 0.25)
+
+[node name="PRemovableWall10" parent="." unique_id=2119388696 instance=ExtResource("4_w4caj")]
+position = Vector2(187, 183)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
-[node name="PRemovableWall116" parent="." unique_id=634510845 instance=ExtResource("4_w4caj")]
-position = Vector2(60, 185)
+[node name="PRemovableWall11" parent="." unique_id=200722961 instance=ExtResource("4_w4caj")]
+position = Vector2(187, 177)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
-[node name="PRemovableWall108" parent="." unique_id=1650319746 instance=ExtResource("4_w4caj")]
-position = Vector2(60, 173)
+[node name="PRemovableWall20" parent="." unique_id=1152856863 instance=ExtResource("4_w4caj")]
+position = Vector2(187, 171)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
-[node name="PRemovableWall109" parent="." unique_id=168676618 instance=ExtResource("4_w4caj")]
-position = Vector2(60, 167)
+[node name="PRemovableWall21" parent="." unique_id=1069358888 instance=ExtResource("4_w4caj")]
+position = Vector2(187, 165)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
-[node name="PRemovableWall110" parent="." unique_id=664266549 instance=ExtResource("4_w4caj")]
-position = Vector2(60, 161)
+[node name="PRemovableWall48" parent="." unique_id=654634164 instance=ExtResource("4_w4caj")]
+position = Vector2(187, 159)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
-[node name="PRemovableWall111" parent="." unique_id=1620917878 instance=ExtResource("4_w4caj")]
-position = Vector2(60, 155)
+[node name="PRemovableWall49" parent="." unique_id=1848667083 instance=ExtResource("4_w4caj")]
+position = Vector2(187, 153)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
-[node name="PRemovableWall112" parent="." unique_id=49023401 instance=ExtResource("4_w4caj")]
-position = Vector2(60, 149)
+[node name="PRemovableWall50" parent="." unique_id=810226096 instance=ExtResource("4_w4caj")]
+position = Vector2(187, 147)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
-[node name="PRemovableWall113" parent="." unique_id=1349467535 instance=ExtResource("4_w4caj")]
-position = Vector2(60, 143)
+[node name="PRemovableWall51" parent="." unique_id=1907014137 instance=ExtResource("4_w4caj")]
+position = Vector2(187, 141)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
-[node name="PRemovableWall114" parent="." unique_id=1976744128 instance=ExtResource("4_w4caj")]
-position = Vector2(60, 137)
+[node name="PRemovableWall52" parent="." unique_id=2031065165 instance=ExtResource("4_w4caj")]
+position = Vector2(151, 189)
+ColorLayer = 4
+Color = Color(0, 0, 1, 1)
+
+[node name="PRemovableWall53" parent="." unique_id=1978575391 instance=ExtResource("4_w4caj")]
+position = Vector2(145, 189)
+ColorLayer = 4
+Color = Color(0, 0, 1, 1)
+
+[node name="PRemovableWall71" parent="." unique_id=552127951 instance=ExtResource("4_w4caj")]
+position = Vector2(157, 189)
+ColorLayer = 4
+Color = Color(0, 0, 1, 1)
+
+[node name="PRemovableWall72" parent="." unique_id=1623410696 instance=ExtResource("4_w4caj")]
+position = Vector2(163, 189)
+ColorLayer = 4
+Color = Color(0, 0, 1, 1)
+
+[node name="PRemovableWall73" parent="." unique_id=1392937568 instance=ExtResource("4_w4caj")]
+position = Vector2(169, 189)
+ColorLayer = 4
+Color = Color(0, 0, 1, 1)
+
+[node name="PRemovableWall74" parent="." unique_id=580232049 instance=ExtResource("4_w4caj")]
+position = Vector2(175, 189)
+ColorLayer = 4
+Color = Color(0, 0, 1, 1)
+
+[node name="PRemovableWall75" parent="." unique_id=1155884628 instance=ExtResource("4_w4caj")]
+position = Vector2(181, 189)
+ColorLayer = 4
+Color = Color(0, 0, 1, 1)
+
+[node name="PRemovableWall76" parent="." unique_id=2046521614 instance=ExtResource("4_w4caj")]
+position = Vector2(187, 189)
+ColorLayer = 4
+Color = Color(0, 0, 1, 1)
+
+[node name="PRemovableWall78" parent="." unique_id=866684189 instance=ExtResource("4_w4caj")]
+position = Vector2(67, 135)
+ColorLayer = 4
+Color = Color(0, 0, 1, 1)
+
+[node name="PRemovableWall96" parent="." unique_id=1558101537 instance=ExtResource("4_w4caj")]
+position = Vector2(73, 135)
+ColorLayer = 4
+Color = Color(0, 0, 1, 1)
+
+[node name="PRemovableWall107" parent="." unique_id=588556662 instance=ExtResource("4_w4caj")]
+position = Vector2(79, 135)
+ColorLayer = 4
+Color = Color(0, 0, 1, 1)
+
+[node name="PRemovableWall108" parent="." unique_id=1605889725 instance=ExtResource("4_w4caj")]
+position = Vector2(85, 135)
+ColorLayer = 4
+Color = Color(0, 0, 1, 1)
+
+[node name="PRemovableWall109" parent="." unique_id=1125685651 instance=ExtResource("4_w4caj")]
+position = Vector2(91, 135)
+ColorLayer = 4
+Color = Color(0, 0, 1, 1)
+
+[node name="PRemovableWall110" parent="." unique_id=1778220366 instance=ExtResource("4_w4caj")]
+position = Vector2(97, 135)
+ColorLayer = 4
+Color = Color(0, 0, 1, 1)
+
+[node name="PRemovableWall111" parent="." unique_id=566778356 instance=ExtResource("4_w4caj")]
+position = Vector2(103, 135)
+ColorLayer = 4
+Color = Color(0, 0, 1, 1)
+
+[node name="PRemovableWall112" parent="." unique_id=1603671611 instance=ExtResource("4_w4caj")]
+position = Vector2(109, 135)
+ColorLayer = 4
+Color = Color(0, 0, 1, 1)
+
+[node name="PRemovableWall113" parent="." unique_id=559993676 instance=ExtResource("4_w4caj")]
+position = Vector2(151, 135)
+ColorLayer = 2
+Color = Color(0, 0.95686275, 0, 1)
+
+[node name="PRemovableWall114" parent="." unique_id=1102424974 instance=ExtResource("4_w4caj")]
+position = Vector2(145, 135)
+ColorLayer = 2
+Color = Color(0, 0.95686275, 0, 1)
+
+[node name="PRemovableWall115" parent="." unique_id=1614220233 instance=ExtResource("4_w4caj")]
+position = Vector2(157, 135)
+ColorLayer = 2
+Color = Color(0, 0.95686275, 0, 1)
+
+[node name="PRemovableWall116" parent="." unique_id=988180677 instance=ExtResource("4_w4caj")]
+position = Vector2(163, 135)
+ColorLayer = 2
+Color = Color(0, 0.95686275, 0, 1)
+
+[node name="PRemovableWall125" parent="." unique_id=689027391 instance=ExtResource("4_w4caj")]
+position = Vector2(169, 135)
+ColorLayer = 2
+Color = Color(0, 0.95686275, 0, 1)
+
+[node name="PRemovableWall126" parent="." unique_id=497577571 instance=ExtResource("4_w4caj")]
+position = Vector2(175, 135)
+ColorLayer = 2
+Color = Color(0, 0.95686275, 0, 1)
+
+[node name="PRemovableWall127" parent="." unique_id=1286599783 instance=ExtResource("4_w4caj")]
+position = Vector2(181, 135)
+ColorLayer = 2
+Color = Color(0, 0.95686275, 0, 1)
+
+[node name="PRemovableWall128" parent="." unique_id=864102134 instance=ExtResource("4_w4caj")]
+position = Vector2(187, 135)
+ColorLayer = 2
+Color = Color(0, 0.95686275, 0, 1)
+
+[node name="PRemovableWall131" parent="." unique_id=847722083 instance=ExtResource("4_w4caj")]
+position = Vector2(67, 189)
+ColorLayer = 2
+Color = Color(0, 0.95686275, 0, 1)
+
+[node name="PRemovableWall132" parent="." unique_id=261433435 instance=ExtResource("4_w4caj")]
+position = Vector2(73, 189)
+ColorLayer = 2
+Color = Color(0, 0.95686275, 0, 1)
+
+[node name="PRemovableWall134" parent="." unique_id=381904762 instance=ExtResource("4_w4caj")]
+position = Vector2(79, 189)
+ColorLayer = 2
+Color = Color(0, 0.95686275, 0, 1)
+
+[node name="PRemovableWall135" parent="." unique_id=1990043358 instance=ExtResource("4_w4caj")]
+position = Vector2(85, 189)
+ColorLayer = 2
+Color = Color(0, 0.95686275, 0, 1)
+
+[node name="PRemovableWall136" parent="." unique_id=367601073 instance=ExtResource("4_w4caj")]
+position = Vector2(91, 189)
+ColorLayer = 2
+Color = Color(0, 0.95686275, 0, 1)
+
+[node name="PRemovableWall137" parent="." unique_id=1139517824 instance=ExtResource("4_w4caj")]
+position = Vector2(97, 189)
+ColorLayer = 2
+Color = Color(0, 0.95686275, 0, 1)
+
+[node name="PRemovableWall138" parent="." unique_id=1653543751 instance=ExtResource("4_w4caj")]
+position = Vector2(103, 189)
+ColorLayer = 2
+Color = Color(0, 0.95686275, 0, 1)
+
+[node name="PRemovableWall140" parent="." unique_id=1185937776 instance=ExtResource("4_w4caj")]
+position = Vector2(67, 189)
+ColorLayer = 2
+Color = Color(0, 0.95686275, 0, 1)
+
+[node name="PRemovableWall141" parent="." unique_id=164884150 instance=ExtResource("4_w4caj")]
+position = Vector2(73, 189)
+ColorLayer = 2
+Color = Color(0, 0.95686275, 0, 1)
+
+[node name="PRemovableWall142" parent="." unique_id=1393573575 instance=ExtResource("4_w4caj")]
+position = Vector2(79, 189)
+ColorLayer = 2
+Color = Color(0, 0.95686275, 0, 1)
+
+[node name="PRemovableWall143" parent="." unique_id=215380550 instance=ExtResource("4_w4caj")]
+position = Vector2(85, 189)
+ColorLayer = 2
+Color = Color(0, 0.95686275, 0, 1)
+
+[node name="PRemovableWall144" parent="." unique_id=1665197351 instance=ExtResource("4_w4caj")]
+position = Vector2(91, 189)
+ColorLayer = 2
+Color = Color(0, 0.95686275, 0, 1)
+
+[node name="PRemovableWall145" parent="." unique_id=1476231350 instance=ExtResource("4_w4caj")]
+position = Vector2(97, 189)
+ColorLayer = 2
+Color = Color(0, 0.95686275, 0, 1)
+
+[node name="PRemovableWall146" parent="." unique_id=785104045 instance=ExtResource("4_w4caj")]
+position = Vector2(103, 189)
+ColorLayer = 2
+Color = Color(0, 0.95686275, 0, 1)
+
+[node name="PRemovableWall147" parent="." unique_id=2067931381 instance=ExtResource("4_w4caj")]
+position = Vector2(109, 189)
+ColorLayer = 2
+Color = Color(0, 0.95686275, 0, 1)
+
+[node name="PRemovableWall148" parent="." unique_id=551155552 instance=ExtResource("4_w4caj")]
+position = Vector2(127, 183)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
-[node name="PRemovableWall169" parent="." unique_id=1708936878 instance=ExtResource("4_w4caj")]
-position = Vector2(195, 175)
+[node name="PRemovableWall149" parent="." unique_id=405437811 instance=ExtResource("4_w4caj")]
+position = Vector2(127, 177)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
-[node name="PRemovableWall177" parent="." unique_id=928181851 instance=ExtResource("4_w4caj")]
-position = Vector2(195, 181)
+[node name="PRemovableWall150" parent="." unique_id=1996948055 instance=ExtResource("4_w4caj")]
+position = Vector2(127, 171)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
-[node name="PRemovableWall170" parent="." unique_id=258139279 instance=ExtResource("4_w4caj")]
-position = Vector2(195, 169)
+[node name="PRemovableWall151" parent="." unique_id=611405794 instance=ExtResource("4_w4caj")]
+position = Vector2(127, 165)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
-[node name="PRemovableWall171" parent="." unique_id=1381767719 instance=ExtResource("4_w4caj")]
-position = Vector2(195, 163)
+[node name="PRemovableWall152" parent="." unique_id=1636576556 instance=ExtResource("4_w4caj")]
+position = Vector2(127, 159)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
-[node name="PRemovableWall172" parent="." unique_id=1620542675 instance=ExtResource("4_w4caj")]
-position = Vector2(195, 157)
+[node name="PRemovableWall153" parent="." unique_id=543448307 instance=ExtResource("4_w4caj")]
+position = Vector2(127, 153)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
-[node name="PRemovableWall173" parent="." unique_id=726744785 instance=ExtResource("4_w4caj")]
-position = Vector2(195, 151)
+[node name="PRemovableWall154" parent="." unique_id=1585929823 instance=ExtResource("4_w4caj")]
+position = Vector2(127, 147)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
-[node name="PRemovableWall174" parent="." unique_id=835260833 instance=ExtResource("4_w4caj")]
-position = Vector2(195, 145)
+[node name="PRemovableWall155" parent="." unique_id=1137386726 instance=ExtResource("4_w4caj")]
+position = Vector2(127, 141)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
-[node name="PRemovableWall175" parent="." unique_id=408232886 instance=ExtResource("4_w4caj")]
-position = Vector2(195, 139)
+[node name="PRemovableWall156" parent="." unique_id=529318954 instance=ExtResource("4_w4caj")]
+position = Vector2(67, 183)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
-[node name="PRemovableWall176" parent="." unique_id=1414471929 instance=ExtResource("4_w4caj")]
-position = Vector2(195, 133)
+[node name="PRemovableWall157" parent="." unique_id=245617610 instance=ExtResource("4_w4caj")]
+position = Vector2(67, 177)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
-[node name="PRemovableWall179" parent="." unique_id=342595986 instance=ExtResource("4_w4caj")]
-position = Vector2(195, 127)
+[node name="PRemovableWall158" parent="." unique_id=701260451 instance=ExtResource("4_w4caj")]
+position = Vector2(67, 171)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
-[node name="PRemovableWall115" parent="." unique_id=1695594558 instance=ExtResource("4_w4caj")]
-position = Vector2(60, 131)
+[node name="PRemovableWall159" parent="." unique_id=1925956033 instance=ExtResource("4_w4caj")]
+position = Vector2(67, 165)
+ColorLayer = 6
+Color = Color(0, 1, 1, 1)
+
+[node name="PRemovableWall160" parent="." unique_id=545465490 instance=ExtResource("4_w4caj")]
+position = Vector2(67, 159)
+ColorLayer = 6
+Color = Color(0, 1, 1, 1)
+
+[node name="PRemovableWall161" parent="." unique_id=1663344072 instance=ExtResource("4_w4caj")]
+position = Vector2(67, 153)
+ColorLayer = 6
+Color = Color(0, 1, 1, 1)
+
+[node name="PRemovableWall162" parent="." unique_id=550815573 instance=ExtResource("4_w4caj")]
+position = Vector2(67, 147)
+ColorLayer = 6
+Color = Color(0, 1, 1, 1)
+
+[node name="PRemovableWall163" parent="." unique_id=475592779 instance=ExtResource("4_w4caj")]
+position = Vector2(67, 141)
 ColorLayer = 6
 Color = Color(0, 1, 1, 1)
 
 [node name="P_Death_Trigger" parent="." unique_id=1762642872 instance=ExtResource("5_a3rt0")]
-position = Vector2(122.99999, 95)
-scale = Vector2(3.3031673, 1.240572)
+position = Vector2(155, 66)
+scale = Vector2(4.7, 0.149)
+
+[node name="P_Death_Trigger4" parent="." unique_id=916036448 instance=ExtResource("5_a3rt0")]
+position = Vector2(155, 126)
+scale = Vector2(4.7, 0.149)
+
+[node name="P_Death_Trigger5" parent="." unique_id=2015805236 instance=ExtResource("5_a3rt0")]
+position = Vector2(246, 96)
+scale = Vector2(0.149, 1.5)
+
+[node name="P_Death_Trigger6" parent="." unique_id=1665756530 instance=ExtResource("5_a3rt0")]
+position = Vector2(63.999985, 95)
+scale = Vector2(0.149, 1.5)
 
 [node name="P_Death_Trigger2" parent="." unique_id=990912339 instance=ExtResource("5_a3rt0")]
-position = Vector2(73, -28.999992)
+position = Vector2(130, -34)
 scale = Vector2(6.1807365, 1.3995515)
 
 [node name="P_Death_Trigger3" parent="." unique_id=869612739 instance=ExtResource("5_a3rt0")]
-position = Vector2(75.00001, 221)
+position = Vector2(129, 225)
 scale = Vector2(6.1807365, 1.3995515)
 
 [node name="P_NextLevel_Trigger" parent="." unique_id=1309058265 instance=ExtResource("6_1afrj")]

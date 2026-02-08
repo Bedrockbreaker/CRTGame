@@ -47,8 +47,8 @@ public partial class Player_Script : CharacterBody2D
 			audioOutput.PitchScale = Random.Randf() * 0.3f + 0.85f;
 			audioOutput.Play();
 			
-			 var screenShake = GetTree().Root.GetNode<ScreenShake>("SMainGame");
-	screenShake.Shake(12.0f);
+			var screenShake = GetTree().Root.GetNode<ScreenShake>("SMainGame");
+			screenShake.Shake(0.1f);
 			
 		}
 	}
