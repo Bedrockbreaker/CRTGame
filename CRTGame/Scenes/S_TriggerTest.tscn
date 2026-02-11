@@ -1,12 +1,14 @@
 [gd_scene format=3 uid="uid://sau6aab4qoir"]
 
 [ext_resource type="PackedScene" uid="uid://bdh7egwxplubc" path="res://CRTGame/Scenes/P_TempWall_Obj.tscn" id="1_ft4f0"]
-[ext_resource type="PackedScene" uid="uid://pa6nw5bb6f0h" path="res://CRTGame/Scenes/P_Death_Trigger.tscn" id="2_sn3wh"]
+[ext_resource type="Script" uid="uid://b707nqhgrmusw" path="res://CRTGame/Scripts/ScreenShake.cs" id="1_sn3wh"]
+[ext_resource type="PackedScene" uid="uid://maq345s0yxvm" path="res://CRTGame/Scenes/P_Death_Trigger.tscn" id="2_sn3wh"]
 [ext_resource type="PackedScene" uid="uid://b72nxmx4xjgma" path="res://CRTGame/Scenes/P_CheckpointManager.tscn" id="3_ft4f0"]
-[ext_resource type="PackedScene" uid="uid://b6qw0rswr3jdf" path="res://CRTGame/Scenes/P_Checkpoint_Trigger.tscn" id="4_i3q48"]
+[ext_resource type="PackedScene" uid="uid://d4cvm61eymhlu" path="res://CRTGame/Scenes/P_Checkpoint_Trigger.tscn" id="4_i3q48"]
 [ext_resource type="PackedScene" uid="uid://y7n01w7miaw" path="res://CRTGame/Scenes/P_Player_Obj.tscn" id="5_bqol6"]
 
 [node name="STriggerTest" type="Node2D" unique_id=37790107]
+script = ExtResource("1_sn3wh")
 
 [node name="P_TempWall_obj" parent="." unique_id=2132844915 instance=ExtResource("1_ft4f0")]
 position = Vector2(570, 6)

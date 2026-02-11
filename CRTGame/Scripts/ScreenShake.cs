@@ -5,8 +5,10 @@ public partial class ScreenShake : Node2D
 {
 	[Export]
 	
-	public float ShakeDecay = 15.0f;
-	public float _shakeStrength = 0.0f;
+	public float ShakeDecay = 1.0f;
+	
+	[Export]
+	public float ShakeStrength = 0.0f;
 	
 	private Vector2 _originalPosition;
 
@@ -19,15 +21,15 @@ public partial class ScreenShake : Node2D
 	//shake strength process
 	public override void _Process(double delta)
 	{
-		if (_shakeStrength > 0.0f)
+		if (ShakeStrength > 0.0f)
 		{
-			_shakeStrength = Mathf.Max(
-				_shakeStrength - ShakeDecay * (float)delta,
+			ShakeStrength = Mathf.Max(
+				ShakeStrength - ShakeDecay * (float)delta,
 				0.0f
 			);
 			Position = _originalPosition + new Vector2(
-				(float)GD.RandRange(-_shakeStrength, _shakeStrength),
-				(float)GD.RandRange(-_shakeStrength, _shakeStrength)
+				(float)GD.RandRange(-ShakeStrength, ShakeStrength),
+				(float)GD.RandRange(-ShakeStrength, ShakeStrength)
 			);
 		}
 		else
@@ -39,6 +41,6 @@ public partial class ScreenShake : Node2D
 //Shake amount and function
 	public void Shake(float amount)
 	{
-		_shakeStrength = Mathf.Max(_shakeStrength, amount);
+		ShakeStrength = Mathf.Max(ShakeStrength, amount);
 	}
 }

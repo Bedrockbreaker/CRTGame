@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://d4dkb05qfvlvc"]
 
 [ext_resource type="PackedScene" uid="uid://y7n01w7miaw" path="res://CRTGame/Scenes/P_Player_Obj.tscn" id="1_7m1sa"]
+[ext_resource type="Script" uid="uid://b707nqhgrmusw" path="res://CRTGame/Scripts/ScreenShake.cs" id="1_noeff"]
 [ext_resource type="PackedScene" uid="uid://bdh7egwxplubc" path="res://CRTGame/Scenes/P_TempWall_Obj.tscn" id="2_67hxb"]
 [ext_resource type="PackedScene" uid="uid://byk7kcem4g0aa" path="res://CRTGame/Scenes/P_Sheet.tscn" id="3_noeff"]
 [ext_resource type="PackedScene" uid="uid://cjupevbhmpo2e" path="res://CRTGame/Scenes/P_RemovableWall.tscn" id="4_b0wb5"]
@@ -33,11 +34,15 @@ shader_parameter/crt_color = 4.6000002185
 shader_parameter/crt_pixel_size = 1.0000000475
 
 [node name="SMainGame" type="Node2D" unique_id=1561625556]
+script = ExtResource("1_noeff")
+ShakeDecay = 1.0
+ShakeStrength = 1.0
 
 [node name="P_Player_Obj" parent="." unique_id=494675637 instance=ExtResource("1_7m1sa")]
 position = Vector2(41, 77)
 scale = Vector2(0.08376193, 0.08348762)
 speed = 125.0
+Shake = 0.6
 
 [node name="P_TempWall_obj2" parent="." unique_id=1882632523 instance=ExtResource("2_67hxb")]
 position = Vector2(324.00003, 112)

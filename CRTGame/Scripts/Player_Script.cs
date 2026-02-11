@@ -15,6 +15,9 @@ public partial class Player_Script : CharacterBody2D
 
 	[Export]
 	public PackedScene bounceParticle;
+	
+	[Export]
+	public float Shake = 0.6f;
 
 	private RandomNumberGenerator Random = new();
 
@@ -48,7 +51,7 @@ public partial class Player_Script : CharacterBody2D
 			audioOutput.Play();
 			
 			var screenShake = GetTree().Root.GetNode<ScreenShake>("SMainGame");
-			screenShake.Shake(0.1f);
+			screenShake.Shake(Shake);
 			
 		}
 	}

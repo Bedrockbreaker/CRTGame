@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://8te61yxr2in8"]
 
+[ext_resource type="Script" uid="uid://b707nqhgrmusw" path="res://CRTGame/Scripts/ScreenShake.cs" id="1_ttvhj"]
 [ext_resource type="PackedScene" uid="uid://y7n01w7miaw" path="res://CRTGame/Scenes/P_Player_Obj.tscn" id="1_yysfx"]
 [ext_resource type="PackedScene" uid="uid://bdh7egwxplubc" path="res://CRTGame/Scenes/P_TempWall_Obj.tscn" id="2_gn3wx"]
 [ext_resource type="PackedScene" uid="uid://byk7kcem4g0aa" path="res://CRTGame/Scenes/P_Sheet.tscn" id="3_ttvhj"]
@@ -33,6 +34,7 @@ shader_parameter/crt_color = 4.6000002185
 shader_parameter/crt_pixel_size = 1.0000000475
 
 [node name="SMainGame" type="Node2D" unique_id=1561625556]
+script = ExtResource("1_ttvhj")
 
 [node name="P_Player_Obj" parent="." unique_id=494675637 instance=ExtResource("1_yysfx")]
 position = Vector2(221, 172)

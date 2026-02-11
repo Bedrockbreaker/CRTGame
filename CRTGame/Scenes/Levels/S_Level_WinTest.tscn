@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://cucpltd6ylvqn"]
 
 [ext_resource type="PackedScene" uid="uid://bdh7egwxplubc" path="res://CRTGame/Scenes/P_TempWall_Obj.tscn" id="1_fyr63"]
+[ext_resource type="Script" uid="uid://b707nqhgrmusw" path="res://CRTGame/Scripts/ScreenShake.cs" id="1_lmpf7"]
 [ext_resource type="PackedScene" uid="uid://y7n01w7miaw" path="res://CRTGame/Scenes/P_Player_Obj.tscn" id="2_clspk"]
 [ext_resource type="PackedScene" uid="uid://bqadkibup2vc7" path="res://CRTGame/Scenes/P_Win_Trigger.tscn" id="3_clspk"]
-[ext_resource type="PackedScene" uid="uid://djw3nr6dtd7yt" path="res://CRTGame/Scenes/P_Win_Screen.tscn" id="5_lmpf7"]
+[ext_resource type="PackedScene" uid="uid://v44x3niut827" path="res://CRTGame/Scenes/P_Win_Screen.tscn" id="5_lmpf7"]
 
 [node name="SLevelWinTest" type="Node2D" unique_id=517776933]
+script = ExtResource("1_lmpf7")
 
 [node name="P_TempWall_obj" parent="." unique_id=2132844915 instance=ExtResource("1_fyr63")]
 position = Vector2(581, -3)
@@ -33,5 +35,8 @@ scale = Vector2(7.1281896, 7.1281896)
 winScreen = NodePath("../P_Win_Screen")
 
 [node name="P_Win_Screen" parent="." unique_id=1371838822 instance=ExtResource("5_lmpf7")]
-position = Vector2(571.99994, 208)
+offset_left = 571.99994
+offset_top = 208.0
+offset_right = 955.99994
+offset_bottom = 400.0
 scale = Vector2(2.6200004, 2.6200004)
