@@ -25,9 +25,6 @@ public partial class Sheet : Area2D
 
 	public override void _Ready()
 	{
-		initialLocation = GlobalPosition;
-        GD.Print("Resetting sheet to: " + initialLocation);
-
         CollisionLayer = ColorLayer << 8;
 		CollisionMask = CollisionLayer;
 

@@ -9,8 +9,6 @@ public partial class CheckpointManager : Node2D
 	public Vector2 lastPlayerLocation;
 	public CharacterBody2D player;
 
-	public List<Sheet> sheets = new List<Sheet>();
-
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -20,10 +18,6 @@ public partial class CheckpointManager : Node2D
 
 	public void ResetAtCheckpoint()
 	{
-		foreach (Sheet sheet in sheets)
-		{
-			sheet.ResetPosition();
-		}
-        player.GlobalPosition = lastPlayerLocation;
+        GetTree().ReloadCurrentScene();
     }
 }
