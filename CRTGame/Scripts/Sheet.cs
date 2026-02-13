@@ -1,5 +1,6 @@
 using Godot;
 using Godot.Collections;
+using System.Diagnostics;
 
 namespace CRTGame;
 
@@ -17,12 +18,17 @@ public partial class Sheet : Area2D
 	[Export]
 	public CollisionShape2D Collider;
 
-	private Vector2 DragOffset;
+	public Vector2 initialLocation { get; private set; }
+
+    private Vector2 DragOffset;
 	private bool bDragging;
 
 	public override void _Ready()
 	{
-		CollisionLayer = ColorLayer << 8;
+		initialLocation = GlobalPosition;
+        GD.Print("Resetting sheet to: " + initialLocation);
+
+        CollisionLayer = ColorLayer << 8;
 		CollisionMask = CollisionLayer;
 
 		Modulate = Color;
@@ -126,4 +132,10 @@ public partial class Sheet : Area2D
 		Input.SetDefaultCursorShape(Input.CursorShape.Arrow);
 		ColorRect.MouseDefaultCursorShape = Control.CursorShape.Arrow;
 	}
+
+	public void ResetPosition()
+	{
+		GlobalPosition = initialLocation;
+        GD.Print("Resetting sheet to: " + initialLocation);
+    }
 }

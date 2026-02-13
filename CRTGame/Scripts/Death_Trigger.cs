@@ -34,7 +34,7 @@ public partial class Death_Trigger : Area2D
 
 	private void KillPlayer()
 	{
-		player.Position = checkpointManager.lastLocation;
+		player.Position = checkpointManager.lastPlayerLocation;
 		audioOutput.Stream = deathSound;
 		audioOutput.PitchScale = Random.Randf() * 0.3f + 0.85f;
 		audioOutput.Play();
