@@ -18,6 +18,9 @@ public partial class Sheet : Area2D
 	[Export]
 	public CollisionShape2D Collider;
 
+	[Export]
+	public float[] screenBoundaryPercentage = new float[2] { 0.8f, 1.0f };
+
 	public Vector2 initialLocation { get; private set; }
 
     private Vector2 DragOffset;
@@ -46,7 +49,9 @@ public partial class Sheet : Area2D
 		{
 			MusicPlayer.Instance.PlayBlueMusic();
 		}
-	}
+
+        //Input.MouseMode = Input.MouseModeEnum.Confined;
+    }
 
 	public override void _Process(double delta)
 	{
@@ -95,8 +100,8 @@ public partial class Sheet : Area2D
 		bDragging &= Input.IsActionPressed("Click");
 		if (!bDragging) return;
 
-		Position = GetGlobalMousePosition() - DragOffset;
-	}
+        ClampMouseBoundary(mousePos);
+    }
 
 	public override void _ExitTree()
 	{
@@ -134,5 +139,52 @@ public partial class Sheet : Area2D
 	{
 		GlobalPosition = initialLocation;
         GD.Print("Resetting sheet to: " + initialLocation);
+    }
+
+	public void ClampMouseBoundary(Vector2 mousePos)
+	{
+        /*
+        // Create a mouse boundary based on the size of the screen/aspect ratio
+        Vector2 screenSize = GetViewportRect().Size;
+        Vector2 dividedScreenBoundary = new Vector2
+		(
+			screenSize.X * mouseBoundPercentage[0], 
+			screenSize.Y * mouseBoundPercentage[1]
+		);
+        Vector2 centeredBoundsPos = (screenSize - dividedScreenBoundary) / 2f;
+        Rect2 mouseBounds = new Rect2(centeredBoundsPos, dividedScreenBoundary);
+
+        // Convert Rect2 (mouseBounds) to a vector
+        Vector2 clampedMousePos = new Vector2
+		(
+            Mathf.Clamp(mousePos.X, mouseBounds.Position.X, mouseBounds.End.X),
+            Mathf.Clamp(mousePos.Y, mouseBounds.Position.Y, mouseBounds.End.Y)
+        );
+
+        // Clamp the mouse position when the Sheet is selected
+        Position = clampedMousePos - DragOffset;
+		*/
+
+		// Get a boundary based on screen size and center it to the screen
+        Vector2 screenSize = GetViewportRect().Size;
+        Vector2 screenBoundary = new Vector2
+        (
+            screenSize.X * screenBoundaryPercentage[0],
+            screenSize.Y * screenBoundaryPercentage[1]
+        );
+        Vector2 centeredBoundsPos = (screenSize - screenBoundary) / 2f;
+
+		// Get the size of this rectangle (the sheet)
+        Rect2 sheetRect = Collider.Shape.GetRect();
+
+		if(!(sheetRect.Position.X < centeredBoundsPos.X - screenBoundary.X) 
+			|| (sheetRect.Position.Y < centeredBoundsPos.Y - screenBoundary.Y)
+            || (sheetRect.Position.X + sheetRect.Size.X > centeredBoundsPos.X + screenBoundary.X)
+            || (sheetRect.Position.Y + sheetRect.Size.Y > centeredBoundsPos.Y + screenBoundary.Y)
+        )
+        {
+            // Clamp the mouse position when the Sheet is selected
+            Position = mousePos - DragOffset;
+        }
     }
 }
