@@ -15,6 +15,7 @@ script = ExtResource("1_ky0se")
 bounce = ExtResource("2_712bt")
 audioOutput = NodePath("AudioStreamPlayer2D")
 bounceParticle = ExtResource("3_gj25g")
+Shake = 0.0
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1795927814]
 position = Vector2(0, 1.9073486e-06)
