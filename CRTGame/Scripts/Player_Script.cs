@@ -10,8 +10,8 @@ public partial class Player_Script : CharacterBody2D
 	[Export]
 	public AudioStreamWav bounce;
 
-    [Export]
-    public int maxBounceSounds = 1;
+	[Export]
+	public int maxBounceSounds = 1;
 	private int bounceTimes = 0;
 
 	[Export]
@@ -19,9 +19,9 @@ public partial class Player_Script : CharacterBody2D
 
 	[Export]
 	public PackedScene bounceParticle;
-	
+
 	[Export]
-	public float Shake = 0.6f;
+	public float Shake = 0.0f;
 
 	private RandomNumberGenerator Random = new();
 
@@ -51,10 +51,10 @@ public partial class Player_Script : CharacterBody2D
 			GetParent().AddChild(particle);
 
 			PlayBounceSound();
-			
+
 			var screenShake = GetTree().Root.GetNode<ScreenShake>("SMainGame");
 			screenShake.Shake(Shake);
-			
+
 		}
 	}
 
@@ -62,12 +62,12 @@ public partial class Player_Script : CharacterBody2D
 	{
 		if (bounceTimes <= maxBounceSounds)
 		{
-            audioOutput.Stream = bounce;
-            audioOutput.PitchScale = Random.Randf() * 0.3f + 0.85f;
-            audioOutput.Play();
+			audioOutput.Stream = bounce;
+			audioOutput.PitchScale = Random.Randf() * 0.3f + 0.85f;
+			audioOutput.Play();
 			bounceTimes++;
 			await ToSignal(audioOutput, "finished");
 			bounceTimes--;
-        }
-    }
+		}
+	}
 }
