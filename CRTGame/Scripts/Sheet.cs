@@ -23,12 +23,12 @@ public partial class Sheet : Area2D
 
 	public Vector2 initialLocation { get; private set; }
 
-    private Vector2 DragOffset;
+	private Vector2 DragOffset;
 	private bool bDragging;
 
 	public override void _Ready()
 	{
-        CollisionLayer = ColorLayer << 8;
+		CollisionLayer = ColorLayer << 8;
 		CollisionMask = CollisionLayer;
 
 		Modulate = Color;
@@ -50,8 +50,8 @@ public partial class Sheet : Area2D
 			MusicPlayer.Instance.PlayBlueMusic();
 		}
 
-        //Input.MouseMode = Input.MouseModeEnum.Confined;
-    }
+		//Input.MouseMode = Input.MouseModeEnum.Confined;
+	}
 
 	public override void _Process(double delta)
 	{
@@ -100,8 +100,8 @@ public partial class Sheet : Area2D
 		bDragging &= Input.IsActionPressed("Click");
 		if (!bDragging) return;
 
-        ClampMouseBoundary(mousePos);
-    }
+		ClampMouseBoundary(mousePos);
+	}
 
 	public override void _ExitTree()
 	{
@@ -138,8 +138,8 @@ public partial class Sheet : Area2D
 	public void ResetPosition()
 	{
 		GlobalPosition = initialLocation;
-        GD.Print("Resetting sheet to: " + initialLocation);
-    }
+		GD.Print("Resetting sheet to: " + initialLocation);
+	}
 
 	public void ClampMouseBoundary(Vector2 mousePos)
 	{

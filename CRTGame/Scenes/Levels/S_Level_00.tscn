@@ -79,9 +79,10 @@ levelWinSound = null
 [node name="P_CheckpointManager" parent="." unique_id=979586994 instance=ExtResource("7_bfyf4")]
 position = Vector2(-75, 76)
 
-[node name="P_Checkpoint_Trigger" parent="P_CheckpointManager" unique_id=1097131134 instance=ExtResource("8_lsgob")]
+[node name="P_Checkpoint_Trigger" parent="P_CheckpointManager" unique_id=1097131134 node_paths=PackedStringArray("checkpointManager") instance=ExtResource("8_lsgob")]
 position = Vector2(205.00002, 100)
 scale = Vector2(0.33801043, 0.37335715)
+checkpointManager = NodePath("..")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1166395278]
 environment = SubResource("Environment_613lf")
