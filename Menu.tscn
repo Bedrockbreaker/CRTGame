@@ -32,7 +32,42 @@ offset_right = 259.0
 offset_bottom = 191.0
 color = Color(0, 0, 0, 0)
 
+[node name="HSlider" type="HSlider" parent="Menu/SettingsMenu" unique_id=1247123253]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 63.0
+offset_right = 211.0
+offset_bottom = 79.0
+max_value = 1.0
+value = 1.0
+
+[node name="HSlider" type="HSlider" parent="Menu/SettingsMenu/HSlider" unique_id=1633099781]
+layout_mode = 0
+offset_top = 44.0
+offset_right = 153.0
+offset_bottom = 60.0
+max_value = 1.0
+value = 1.0
+
+[node name="HSlider2" type="HSlider" parent="Menu/SettingsMenu/HSlider" unique_id=1726732375]
+layout_mode = 0
+offset_top = 66.0
+offset_right = 153.0
+offset_bottom = 82.0
+max_value = 1.0
+value = 1.0
+
+[node name="HSlider2" type="HSlider" parent="Menu/SettingsMenu" unique_id=68442637]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 85.0
+offset_right = 211.0
+offset_bottom = 101.0
+max_value = 1.0
+value = 1.0
+
 [node name="PauseMenu" type="ColorRect" parent="Menu" unique_id=926629252]
+visible = false
 layout_mode = 0
 offset_right = 260.0
 offset_bottom = 193.0
@@ -44,7 +79,7 @@ offset_left = 19.0
 offset_top = 56.0
 offset_right = 214.0
 offset_bottom = 87.0
-color = Color(0.011764706, 0.011764706, 0.011764706, 0.36078432)
+color = Color(0.011764706, 0.011764706, 0.011764706, 0.6039216)
 
 [node name="Music" type="Sprite2D" parent="Menu/PauseMenu/ColorRect2" unique_id=1872518555]
 position = Vector2(16, 14)
@@ -61,7 +96,7 @@ max_value = 1.0
 step = 0.001
 value = 1.0
 script = ExtResource("2_dlksc")
-BusName = "Music"
+busName = "Music"
 
 [node name="ColorRect3" type="ColorRect" parent="Menu/PauseMenu" unique_id=587176676]
 layout_mode = 0
@@ -69,7 +104,7 @@ offset_left = 19.0
 offset_top = 91.0
 offset_right = 215.0
 offset_bottom = 122.0
-color = Color(0.011764706, 0.011764706, 0.011764706, 0.36078432)
+color = Color(0.011764706, 0.011764706, 0.011764706, 0.6039216)
 
 [node name="Volume" type="Sprite2D" parent="Menu/PauseMenu/ColorRect3" unique_id=874050235]
 position = Vector2(15.999996, 16.000008)
@@ -100,16 +135,6 @@ icon = ExtResource("5_dolsu")
 flat = true
 script = ExtResource("5_hcwhg")
 
-[node name="SettingsButton" type="Button" parent="Menu/PauseMenu" unique_id=1122798598]
-layout_mode = 0
-offset_left = 25.0
-offset_top = 137.0
-offset_right = 65.0
-offset_bottom = 177.0
-icon = ExtResource("6_n4eug")
-flat = true
-script = ExtResource("9_5qkn8")
-
 [node name="ColorRect" type="ColorRect" parent="Menu" unique_id=1332071060]
 layout_mode = 0
 offset_left = 8.0
@@ -122,7 +147,7 @@ color = Color(0.011764706, 0.011764706, 0.011764706, 0.36078432)
 position = Vector2(20, 20)
 texture = ExtResource("1_uubjt")
 
-[node name="ExitButton" type="Button" parent="Menu" unique_id=174604352 node_paths=PackedStringArray("canvasLayer")]
+[node name="ExitButton" type="Button" parent="Menu" unique_id=174604352 node_paths=PackedStringArray("canvasLayer", "settingsMenu", "pauseMenu")]
 layout_mode = 0
 offset_left = 190.0
 offset_top = 13.0
@@ -133,7 +158,21 @@ icon = ExtResource("6_dlksc")
 flat = true
 script = ExtResource("10_1igrg")
 canvasLayer = NodePath("../..")
+settingsMenu = NodePath("../SettingsMenu")
+pauseMenu = NodePath("../PauseMenu")
+
+[node name="SettingsButton" type="Button" parent="Menu" unique_id=1122798598 node_paths=PackedStringArray("settingsMenu", "pauseMenu")]
+layout_mode = 0
+offset_left = 151.0
+offset_top = 13.0
+offset_right = 191.0
+offset_bottom = 53.0
+icon = ExtResource("6_n4eug")
+flat = true
+script = ExtResource("9_5qkn8")
+settingsMenu = NodePath("../SettingsMenu")
+pauseMenu = NodePath("../PauseMenu")
 
 [connection signal="pressed" from="Menu/PauseMenu/QuitButton" to="Menu/PauseMenu/QuitButton" method="OnPressed"]
-[connection signal="pressed" from="Menu/PauseMenu/SettingsButton" to="Menu/PauseMenu/SettingsButton" method="OnPressed"]
 [connection signal="pressed" from="Menu/ExitButton" to="Menu/ExitButton" method="OnPressed"]
+[connection signal="pressed" from="Menu/SettingsButton" to="Menu/SettingsButton" method="OnPressed"]

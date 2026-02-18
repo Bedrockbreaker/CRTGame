@@ -27,7 +27,7 @@ adjustment_saturation = 0.97
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jeo66"]
 shader = ExtResource("9_8gnxt")
 shader_parameter/crt_brightness = 1.0000000475
-shader_parameter/crt_ghost = 0.1810000085975
+shader_parameter/crt_ghost = 0.30000001425
 shader_parameter/crt_grid = 0.0
 shader_parameter/crt_white_noise = 0.0050000002375
 shader_parameter/crt_curve = 0.06000000285
