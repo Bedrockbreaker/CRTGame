@@ -49,7 +49,6 @@ TimeToPlayerSpawn = 0.0
 position = Vector2(319, -70)
 scale = Vector2(0.08376193, 0.08348762)
 speed = 125.0
-Shake = 0.6
 
 [node name="P_TempWall_obj" parent="." unique_id=2132844915 instance=ExtResource("2_ruqsc")]
 position = Vector2(260, 84)

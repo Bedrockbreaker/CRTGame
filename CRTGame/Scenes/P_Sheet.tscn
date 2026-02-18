@@ -10,6 +10,7 @@ scale = Vector2(0.8, 0.8)
 script = ExtResource("1_pw20y")
 ColorRect = NodePath("CollisionShape2D/ColorRect")
 Collider = NodePath("CollisionShape2D")
+screenBoundaryPercentage = PackedFloat32Array(1.5, 1.7)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=249633031]
 position = Vector2(49.999992, 49.999996)

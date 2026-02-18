@@ -11,7 +11,6 @@
 [ext_resource type="PackedScene" uid="uid://c0a0fdklxu808" path="res://CRTGame/Scenes/Levels/S_Level 01-3.tscn" id="7_dggmq"]
 [ext_resource type="PackedScene" uid="uid://d4cvm61eymhlu" path="res://CRTGame/Scenes/P_Checkpoint_Trigger.tscn" id="8_k84wv"]
 [ext_resource type="Shader" uid="uid://da2fn4r6hxtqp" path="res://CRTGame/Scenes/CRTShader.gdshader" id="9_8gnxt"]
-[ext_resource type="PackedScene" uid="uid://d23of6mtvfubo" path="res://Static_FX.tscn" id="12_h37cv"]
 [ext_resource type="PackedScene" uid="uid://dwrks4ty21o7j" path="res://InnerStaticFX.tscn" id="12_hjsjq"]
 
 [sub_resource type="Environment" id="Environment_613lf"]
@@ -683,199 +682,46 @@ color = Color(18.892157, 18.892157, 18.892157, 1)
 [node name="StaticFX" type="Node" parent="." unique_id=1900903142]
 
 [node name="Node2D55" parent="StaticFX" unique_id=1378337605 instance=ExtResource("12_hjsjq")]
-position = Vector2(100, 74)
+z_index = -7
+position = Vector2(104, 78)
 scale = Vector2(0.5, 0.5)
 
 [node name="Node2D56" parent="StaticFX" unique_id=593627740 instance=ExtResource("12_hjsjq")]
-position = Vector2(153, 74)
+z_index = -7
+position = Vector2(148, 79)
 scale = Vector2(0.5, 0.5)
 
 [node name="Node2D57" parent="StaticFX" unique_id=1587065358 instance=ExtResource("12_hjsjq")]
-position = Vector2(152, 114)
+z_index = -7
+position = Vector2(149, 111)
 scale = Vector2(0.5, 0.5)
 
 [node name="Node2D58" parent="StaticFX" unique_id=28950329 instance=ExtResource("12_hjsjq")]
-position = Vector2(101, 116)
+z_index = -7
+position = Vector2(105, 111)
 scale = Vector2(0.5, 0.5)
 
 [node name="Node2D59" parent="StaticFX" unique_id=1603868093 instance=ExtResource("12_hjsjq")]
-position = Vector2(100, 97)
+z_index = -7
+position = Vector2(104, 97)
 scale = Vector2(0.5, 0.5)
 
 [node name="Node2D60" parent="StaticFX" unique_id=68158603 instance=ExtResource("12_hjsjq")]
-position = Vector2(153, 94)
+z_index = -7
+position = Vector2(147, 96)
 scale = Vector2(0.5, 0.5)
 
 [node name="Node2D61" parent="StaticFX" unique_id=1101494659 instance=ExtResource("12_hjsjq")]
-position = Vector2(127, 74)
+z_index = -7
+position = Vector2(126, 79)
 scale = Vector2(0.5, 0.5)
 
 [node name="Node2D62" parent="StaticFX" unique_id=2068103807 instance=ExtResource("12_hjsjq")]
-position = Vector2(126, 115)
+z_index = -7
+position = Vector2(127, 111)
 scale = Vector2(0.5, 0.5)
 
 [node name="Node2D63" parent="StaticFX" unique_id=257654264 instance=ExtResource("12_hjsjq")]
+z_index = -7
 position = Vector2(127, 95)
 scale = Vector2(0.5, 0.5)
-
-[node name="Node2D" parent="StaticFX" unique_id=319059775 instance=ExtResource("12_h37cv")]
-position = Vector2(91, 125)
-
-[node name="Node2D2" parent="StaticFX" unique_id=1667928548 instance=ExtResource("12_h37cv")]
-position = Vector2(97, 125)
-
-[node name="Node2D3" parent="StaticFX" unique_id=911328171 instance=ExtResource("12_h37cv")]
-position = Vector2(103, 125)
-
-[node name="Node2D4" parent="StaticFX" unique_id=682661221 instance=ExtResource("12_h37cv")]
-position = Vector2(109, 125)
-
-[node name="Node2D5" parent="StaticFX" unique_id=30251074 instance=ExtResource("12_h37cv")]
-position = Vector2(115, 125)
-
-[node name="Node2D6" parent="StaticFX" unique_id=74346932 instance=ExtResource("12_h37cv")]
-position = Vector2(121, 125)
-
-[node name="Node2D7" parent="StaticFX" unique_id=142159126 instance=ExtResource("12_h37cv")]
-position = Vector2(127, 125)
-
-[node name="Node2D8" parent="StaticFX" unique_id=698810063 instance=ExtResource("12_h37cv")]
-position = Vector2(133, 125)
-
-[node name="Node2D9" parent="StaticFX" unique_id=1327104741 instance=ExtResource("12_h37cv")]
-position = Vector2(139, 125)
-
-[node name="Node2D10" parent="StaticFX" unique_id=1437492669 instance=ExtResource("12_h37cv")]
-position = Vector2(145, 125)
-
-[node name="Node2D11" parent="StaticFX" unique_id=1945571488 instance=ExtResource("12_h37cv")]
-position = Vector2(151, 125)
-
-[node name="Node2D12" parent="StaticFX" unique_id=2112174938 instance=ExtResource("12_h37cv")]
-position = Vector2(157, 125)
-
-[node name="Node2D13" parent="StaticFX" unique_id=1765418931 instance=ExtResource("12_h37cv")]
-position = Vector2(163, 125)
-
-[node name="Node2D19" parent="StaticFX" unique_id=607111605 instance=ExtResource("12_h37cv")]
-position = Vector2(91, 65)
-
-[node name="Node2D37" parent="StaticFX" unique_id=653379895 instance=ExtResource("12_h37cv")]
-position = Vector2(91, 71)
-
-[node name="Node2D38" parent="StaticFX" unique_id=155254895 instance=ExtResource("12_h37cv")]
-position = Vector2(91, 77)
-
-[node name="Node2D39" parent="StaticFX" unique_id=187632758 instance=ExtResource("12_h37cv")]
-position = Vector2(91, 83)
-
-[node name="Node2D40" parent="StaticFX" unique_id=131108275 instance=ExtResource("12_h37cv")]
-position = Vector2(91, 89)
-
-[node name="Node2D41" parent="StaticFX" unique_id=1072365818 instance=ExtResource("12_h37cv")]
-position = Vector2(91, 95)
-
-[node name="Node2D42" parent="StaticFX" unique_id=678218683 instance=ExtResource("12_h37cv")]
-position = Vector2(91, 101)
-
-[node name="Node2D43" parent="StaticFX" unique_id=238915533 instance=ExtResource("12_h37cv")]
-position = Vector2(91, 107)
-
-[node name="Node2D44" parent="StaticFX" unique_id=16705653 instance=ExtResource("12_h37cv")]
-position = Vector2(91, 113)
-
-[node name="Node2D45" parent="StaticFX" unique_id=1426709902 instance=ExtResource("12_h37cv")]
-position = Vector2(91, 119)
-
-[node name="Node2D46" parent="StaticFX" unique_id=1693683346 instance=ExtResource("12_h37cv")]
-position = Vector2(163, 71)
-
-[node name="Node2D47" parent="StaticFX" unique_id=1114367880 instance=ExtResource("12_h37cv")]
-position = Vector2(163, 77)
-
-[node name="Node2D48" parent="StaticFX" unique_id=1058279640 instance=ExtResource("12_h37cv")]
-position = Vector2(163, 83)
-
-[node name="Node2D49" parent="StaticFX" unique_id=1726665631 instance=ExtResource("12_h37cv")]
-position = Vector2(163, 89)
-
-[node name="Node2D50" parent="StaticFX" unique_id=635145730 instance=ExtResource("12_h37cv")]
-position = Vector2(163, 95)
-
-[node name="Node2D51" parent="StaticFX" unique_id=622634359 instance=ExtResource("12_h37cv")]
-position = Vector2(163, 101)
-
-[node name="Node2D52" parent="StaticFX" unique_id=710302138 instance=ExtResource("12_h37cv")]
-position = Vector2(163, 107)
-
-[node name="Node2D53" parent="StaticFX" unique_id=768144681 instance=ExtResource("12_h37cv")]
-position = Vector2(163, 113)
-
-[node name="Node2D54" parent="StaticFX" unique_id=35407864 instance=ExtResource("12_h37cv")]
-position = Vector2(163, 119)
-
-[node name="Node2D25" parent="StaticFX" unique_id=1820030861 instance=ExtResource("12_h37cv")]
-position = Vector2(97, 65)
-
-[node name="Node2D26" parent="StaticFX" unique_id=1005628573 instance=ExtResource("12_h37cv")]
-position = Vector2(103, 65)
-
-[node name="Node2D27" parent="StaticFX" unique_id=228118353 instance=ExtResource("12_h37cv")]
-position = Vector2(109, 65)
-
-[node name="Node2D28" parent="StaticFX" unique_id=1314281768 instance=ExtResource("12_h37cv")]
-position = Vector2(115, 65)
-
-[node name="Node2D29" parent="StaticFX" unique_id=1309137028 instance=ExtResource("12_h37cv")]
-position = Vector2(121, 65)
-
-[node name="Node2D30" parent="StaticFX" unique_id=804880594 instance=ExtResource("12_h37cv")]
-position = Vector2(127, 65)
-
-[node name="Node2D31" parent="StaticFX" unique_id=361890923 instance=ExtResource("12_h37cv")]
-position = Vector2(133, 65)
-
-[node name="Node2D32" parent="StaticFX" unique_id=1391572721 instance=ExtResource("12_h37cv")]
-position = Vector2(139, 65)
-
-[node name="Node2D33" parent="StaticFX" unique_id=1194882986 instance=ExtResource("12_h37cv")]
-position = Vector2(145, 65)
-
-[node name="Node2D34" parent="StaticFX" unique_id=1288598740 instance=ExtResource("12_h37cv")]
-position = Vector2(151, 65)
-
-[node name="Node2D35" parent="StaticFX" unique_id=779339574 instance=ExtResource("12_h37cv")]
-position = Vector2(157, 65)
-
-[node name="Node2D36" parent="StaticFX" unique_id=882958703 instance=ExtResource("12_h37cv")]
-position = Vector2(163, 65)
-
-[node name="Node2D14" parent="StaticFX" unique_id=1723123781 instance=ExtResource("12_h37cv")]
-position = Vector2(115, 102)
-
-[node name="Node2D15" parent="StaticFX" unique_id=361572878 instance=ExtResource("12_h37cv")]
-position = Vector2(121, 102)
-
-[node name="Node2D16" parent="StaticFX" unique_id=1104734305 instance=ExtResource("12_h37cv")]
-position = Vector2(127, 102)
-
-[node name="Node2D17" parent="StaticFX" unique_id=1584538492 instance=ExtResource("12_h37cv")]
-position = Vector2(133, 102)
-
-[node name="Node2D18" parent="StaticFX" unique_id=1802651653 instance=ExtResource("12_h37cv")]
-position = Vector2(139, 102)
-
-[node name="Node2D20" parent="StaticFX" unique_id=992989684 instance=ExtResource("12_h37cv")]
-position = Vector2(115, 88)
-
-[node name="Node2D21" parent="StaticFX" unique_id=245713726 instance=ExtResource("12_h37cv")]
-position = Vector2(121, 88)
-
-[node name="Node2D22" parent="StaticFX" unique_id=1599573387 instance=ExtResource("12_h37cv")]
-position = Vector2(127, 88)
-
-[node name="Node2D23" parent="StaticFX" unique_id=1773565564 instance=ExtResource("12_h37cv")]
-position = Vector2(133, 88)
-
-[node name="Node2D24" parent="StaticFX" unique_id=1736783013 instance=ExtResource("12_h37cv")]
-position = Vector2(139, 88)

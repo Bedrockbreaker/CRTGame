@@ -147,24 +147,24 @@ public partial class Sheet : Area2D
 		// NEW CODE BUT DOESN'T WORK
 
 		// Get a boundary based on screen size and center it to the screen
-        Vector2 screenSize = GetViewportRect().Size;
-        Vector2 screenBoundary = new Vector2
-        (
-            screenSize.X * screenBoundaryPercentage[0],
-            screenSize.Y * screenBoundaryPercentage[1]
-        );
-        Vector2 centeredBoundsMin = (screenSize - screenBoundary) / 2f;
+		Vector2 screenSize = GetViewportRect().Size;
+		Vector2 screenBoundary = new Vector2
+		(
+			screenSize.X * screenBoundaryPercentage[0],
+			screenSize.Y * screenBoundaryPercentage[1]
+		);
+		Vector2 centeredBoundsMin = (screenSize - screenBoundary) / 2f;
 		Vector2 centeredBoundsMax = centeredBoundsMin + screenBoundary;
 
-        // Get the size of this rectangle (the sheet)
-        Rect2 sheetRect = Collider.Shape.GetRect();
+		// Get the size of this rectangle (the sheet)
+		Rect2 sheetRect = Collider.Shape.GetRect();
 
 		// Potential new mouse position?
-        Vector2 potentialPos = mousePos - DragOffset;
+		Vector2 potentialPos = mousePos - DragOffset;
 
 		potentialPos.X = Mathf.Clamp(potentialPos.X, centeredBoundsMin.X, centeredBoundsMax.X - sheetRect.Size.X);
 		potentialPos.Y = Mathf.Clamp(potentialPos.Y, centeredBoundsMin.Y, centeredBoundsMax.Y - sheetRect.Size.Y);
 
 		Position = potentialPos;
-    }
+	}
 }
