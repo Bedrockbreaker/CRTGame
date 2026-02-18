@@ -8,7 +8,6 @@
 [ext_resource type="PackedScene" uid="uid://d4dkb05qfvlvc" path="res://CRTGame/Scenes/Levels/S_Level_07-3.tscn" id="7_2jk0f"]
 [ext_resource type="PackedScene" uid="uid://b72nxmx4xjgma" path="res://CRTGame/Scenes/P_CheckpointManager.tscn" id="7_h82lj"]
 [ext_resource type="PackedScene" uid="uid://d4cvm61eymhlu" path="res://CRTGame/Scenes/P_Checkpoint_Trigger.tscn" id="8_g0l1c"]
-[ext_resource type="Shader" uid="uid://da2fn4r6hxtqp" path="res://CRTGame/Scenes/CRTShader.gdshader" id="9_bm6oy"]
 [ext_resource type="PackedScene" uid="uid://cjupevbhmpo2e" path="res://CRTGame/Scenes/P_RemovableWall.tscn" id="10_2jk0f"]
 
 [sub_resource type="Environment" id="Environment_613lf"]
@@ -21,16 +20,6 @@ adjustment_enabled = true
 adjustment_brightness = 3.25
 adjustment_contrast = 0.9
 adjustment_saturation = 0.97
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_jeo66"]
-shader = ExtResource("9_bm6oy")
-shader_parameter/crt_brightness = 1.0000000475
-shader_parameter/crt_ghost = 0.1810000085975
-shader_parameter/crt_grid = 0.0
-shader_parameter/crt_white_noise = 0.0050000002375
-shader_parameter/crt_curve = 0.06000000285
-shader_parameter/crt_color = 4.6000002185
-shader_parameter/crt_pixel_size = 1.0000000475
 
 [node name="SMainGame2" type="Node2D" unique_id=1561625556]
 script = ExtResource("1_2jk0f")
@@ -80,17 +69,6 @@ scale = Vector2(0.33801043, 0.37335715)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1166395278]
 environment = SubResource("Environment_613lf")
-
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=932884743]
-
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=630225158]
-material = SubResource("ShaderMaterial_jeo66")
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(18.892157, 18.892157, 18.892157, 1)
 
 [node name="PRemovableWall5" parent="." unique_id=1747179094 instance=ExtResource("10_2jk0f")]
 position = Vector2(218, 49)

@@ -9,7 +9,6 @@
 [ext_resource type="PackedScene" uid="uid://b72nxmx4xjgma" path="res://CRTGame/Scenes/P_CheckpointManager.tscn" id="6_jldcg"]
 [ext_resource type="PackedScene" uid="uid://dth6bg08xhmi4" path="res://CRTGame/Scenes/P_NextLevel_Trigger.tscn" id="6_m3f2b"]
 [ext_resource type="PackedScene" uid="uid://d4cvm61eymhlu" path="res://CRTGame/Scenes/P_Checkpoint_Trigger.tscn" id="7_6ihjy"]
-[ext_resource type="PackedScene" uid="uid://um64cng0kgaa" path="res://CRTGame/Scenes/P_Shader.tscn" id="11_bme62"]
 [ext_resource type="PackedScene" uid="uid://y7qsvsyk2gju" path="res://CRTGame/Scenes/Menu.tscn" id="11_bwgae"]
 
 [sub_resource type="Environment" id="Environment_613lf"]
@@ -96,5 +95,3 @@ checkpointManager = NodePath("..")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1166395278]
 environment = SubResource("Environment_613lf")
-
-[node name="CanvasLayer" parent="." unique_id=1878606139 instance=ExtResource("11_bme62")]

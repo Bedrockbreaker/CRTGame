@@ -1,9 +1,12 @@
 using Godot;
 using System;
+namespace CRTGame;
 
 public partial class WhiteNoiseSlider : HSlider
 {
-	// Called when the node enters the scene tree for the first time.
+	[Export]
+	public CanvasLayer menuCanvas;
+	
 	public override void _Ready()
 	{
 		ValueChanged += OnValueChanged;
@@ -11,7 +14,9 @@ public partial class WhiteNoiseSlider : HSlider
 	
 	private void OnValueChanged(double value)
 	{
-		ColorRect variablename = GetNode<ColorRect>("/root/SMainGame/CanvasLayer/ColorRect");
+		ColorRect variablename = menuCanvas.GetNode<ColorRect>("../CanvasLayer/ColorRect");
 		((ShaderMaterial)variablename.GetMaterial()).SetShaderParameter("crt_white_noise", value);
+
+		
 	}
 }

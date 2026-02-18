@@ -17,6 +17,10 @@
 [ext_resource type="Texture2D" uid="uid://cdqpkrrauaq0j" path="res://CRTGame/Assets/settings.png" id="6_n4eug"]
 [ext_resource type="Script" uid="uid://4p1qmi7h5eh5" path="res://CRTGame/Scripts/SettingsButton.cs" id="9_5qkn8"]
 [ext_resource type="Script" uid="uid://dwg20byfxoqep" path="res://CRTGame/Scripts/ExitButton.cs" id="10_1igrg"]
+[ext_resource type="Texture2D" uid="uid://biwljnjbsovhx" path="res://CRTGame/Assets/RKey.png" id="13_popq8"]
+[ext_resource type="Texture2D" uid="uid://doo7auudy3qnb" path="res://CRTGame/Assets/PKey.png" id="14_x0l7f"]
+[ext_resource type="Texture2D" uid="uid://m2m0twh3hoji" path="res://CRTGame/Assets/resetIcon.png" id="15_dkuom"]
+[ext_resource type="Texture2D" uid="uid://0anw3bm46gqo" path="res://CRTGame/Assets/restartIcon.png" id="16_p4ts1"]
 
 [node name="MenuCanvasLayer" type="CanvasLayer" unique_id=558463798]
 process_mode = 2
@@ -32,12 +36,13 @@ offset_bottom = 193.0
 color = Color(0.004899827, 0.004899827, 0.004899827, 0.27058825)
 
 [node name="SettingsMenu" type="ColorRect" parent="Menu" unique_id=1814193394]
+visible = false
 layout_mode = 0
 offset_right = 259.0
 offset_bottom = 191.0
 color = Color(0, 0, 0, 0)
 
-[node name="CurvatureCheck" type="CheckButton" parent="Menu/SettingsMenu" unique_id=555413696]
+[node name="CurvatureCheck" type="CheckButton" parent="Menu/SettingsMenu" unique_id=555413696 node_paths=PackedStringArray("menuCanvas")]
 layout_mode = 0
 offset_left = 49.0
 offset_top = 103.0
@@ -46,8 +51,9 @@ offset_bottom = 127.0
 mouse_default_cursor_shape = 2
 button_pressed = true
 script = ExtResource("2_elwp8")
+menuCanvas = NodePath("../../..")
 
-[node name="ScanlineCheck" type="CheckButton" parent="Menu/SettingsMenu" unique_id=611713864]
+[node name="ScanlineCheck" type="CheckButton" parent="Menu/SettingsMenu" unique_id=611713864 node_paths=PackedStringArray("menuCanvas")]
 layout_mode = 0
 offset_left = 49.0
 offset_top = 125.0
@@ -56,6 +62,7 @@ offset_bottom = 149.0
 mouse_default_cursor_shape = 2
 button_pressed = true
 script = ExtResource("3_h06ok")
+menuCanvas = NodePath("../../..")
 
 [node name="FastCheck" type="CheckButton" parent="Menu/SettingsMenu" unique_id=886740422]
 visible = false
@@ -75,7 +82,7 @@ offset_right = 214.0
 offset_bottom = 82.0
 color = Color(0.011764706, 0.011764706, 0.011764706, 0.6039216)
 
-[node name="GlowSlider" type="HSlider" parent="Menu/SettingsMenu/ColorRect2" unique_id=1247123253]
+[node name="GlowSlider" type="HSlider" parent="Menu/SettingsMenu/ColorRect2" unique_id=1247123253 node_paths=PackedStringArray("menuCanvas")]
 layout_mode = 0
 offset_left = 25.0
 offset_top = 3.0
@@ -87,6 +94,7 @@ max_value = 10.0
 step = 0.1
 value = 4.5
 script = ExtResource("2_xucoo")
+menuCanvas = NodePath("../../../..")
 
 [node name="ColorRect3" type="ColorRect" parent="Menu/SettingsMenu" unique_id=433273066]
 layout_mode = 0
@@ -96,7 +104,7 @@ offset_right = 214.0
 offset_bottom = 104.0
 color = Color(0.011764706, 0.011764706, 0.011764706, 0.6039216)
 
-[node name="WhiteNoiseSlider" type="HSlider" parent="Menu/SettingsMenu/ColorRect3" unique_id=68442637]
+[node name="WhiteNoiseSlider" type="HSlider" parent="Menu/SettingsMenu/ColorRect3" unique_id=68442637 node_paths=PackedStringArray("menuCanvas")]
 layout_mode = 0
 offset_left = 25.0
 offset_top = 3.0
@@ -107,9 +115,9 @@ max_value = 0.1
 step = 0.01
 value = 0.01
 script = ExtResource("6_h06ok")
+menuCanvas = NodePath("../../../..")
 
 [node name="PauseMenu" type="ColorRect" parent="Menu" unique_id=926629252]
-visible = false
 layout_mode = 0
 offset_right = 260.0
 offset_bottom = 193.0
@@ -176,6 +184,26 @@ mouse_default_cursor_shape = 2
 icon = ExtResource("5_dolsu")
 flat = true
 script = ExtResource("5_hcwhg")
+
+[node name="RKey" type="Sprite2D" parent="Menu/PauseMenu" unique_id=932804841]
+position = Vector2(38.000004, 151)
+scale = Vector2(1.171875, 1.171875)
+texture = ExtResource("13_popq8")
+
+[node name="PKey" type="Sprite2D" parent="Menu/PauseMenu" unique_id=1097258902]
+position = Vector2(114.00001, 151)
+scale = Vector2(1.1562501, 1.1562501)
+texture = ExtResource("14_x0l7f")
+
+[node name="ResetIcon" type="Sprite2D" parent="Menu/PauseMenu" unique_id=1506753248]
+position = Vector2(73.99999, 150)
+scale = Vector2(1.2734375, 1.2734375)
+texture = ExtResource("15_dkuom")
+
+[node name="RestartIcon" type="Sprite2D" parent="Menu/PauseMenu" unique_id=1357154180]
+position = Vector2(149, 151)
+scale = Vector2(1.1718749, 1.1718749)
+texture = ExtResource("16_p4ts1")
 
 [node name="ColorRect" type="ColorRect" parent="Menu" unique_id=1332071060]
 layout_mode = 0

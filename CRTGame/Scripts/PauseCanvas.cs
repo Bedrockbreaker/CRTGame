@@ -6,7 +6,8 @@ public partial class PauseCanvas : CanvasLayer
 {
 	[Export]
 	public CheckpointManager checkpointManager;
-	
+	[Export]
+	public CanvasLayer shaderCanvas;
 	
 	public override void _Input(InputEvent @event)
 	{
