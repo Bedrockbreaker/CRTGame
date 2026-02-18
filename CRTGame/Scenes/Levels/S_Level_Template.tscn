@@ -9,8 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://b72nxmx4xjgma" path="res://CRTGame/Scenes/P_CheckpointManager.tscn" id="6_jldcg"]
 [ext_resource type="PackedScene" uid="uid://dth6bg08xhmi4" path="res://CRTGame/Scenes/P_NextLevel_Trigger.tscn" id="6_m3f2b"]
 [ext_resource type="PackedScene" uid="uid://d4cvm61eymhlu" path="res://CRTGame/Scenes/P_Checkpoint_Trigger.tscn" id="7_6ihjy"]
-[ext_resource type="Shader" uid="uid://da2fn4r6hxtqp" path="res://CRTGame/Scenes/CRTShader.gdshader" id="8_hr2xe"]
-[ext_resource type="PackedScene" uid="uid://y7qsvsyk2gju" path="res://Menu.tscn" id="11_bwgae"]
+[ext_resource type="PackedScene" uid="uid://um64cng0kgaa" path="res://CRTGame/Scenes/P_Shader.tscn" id="11_bme62"]
+[ext_resource type="PackedScene" uid="uid://y7qsvsyk2gju" path="res://CRTGame/Scenes/Menu.tscn" id="11_bwgae"]
 
 [sub_resource type="Environment" id="Environment_613lf"]
 background_mode = 3
@@ -22,16 +22,6 @@ adjustment_enabled = true
 adjustment_brightness = 3.25
 adjustment_contrast = 0.9
 adjustment_saturation = 0.97
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_jeo66"]
-shader = ExtResource("8_hr2xe")
-shader_parameter/crt_brightness = 1.0000000475
-shader_parameter/crt_ghost = 0.1810000085975
-shader_parameter/crt_grid = 0.0
-shader_parameter/crt_white_noise = 0.0050000002375
-shader_parameter/crt_curve = 0.06000000285
-shader_parameter/crt_color = 4.6000002185
-shader_parameter/crt_pixel_size = 1.0000000475
 
 [node name="SMainGame" type="Node2D" unique_id=1561625556]
 script = ExtResource("1_m3f2b")
@@ -101,26 +91,10 @@ position = Vector2(150.00002, 17.999996)
 scale = Vector2(0.33801043, 0.37335715)
 
 [node name="Menu" parent="P_CheckpointManager" unique_id=432836943 node_paths=PackedStringArray("checkpointManager") instance=ExtResource("11_bwgae")]
-layer = 2
 visible = false
 checkpointManager = NodePath("..")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1166395278]
 environment = SubResource("Environment_613lf")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=932884743]
-process_mode = 4
-process_priority = -1
-process_physics_priority = -1
-physics_interpolation_mode = 2
-layer = 2
-
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=630225158]
-material = SubResource("ShaderMaterial_jeo66")
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-color = Color(18.892157, 18.892157, 18.892157, 1)
+[node name="CanvasLayer" parent="." unique_id=1878606139 instance=ExtResource("11_bme62")]

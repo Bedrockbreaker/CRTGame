@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://b72nxmx4xjgma" path="res://CRTGame/Scenes/P_CheckpointManager.tscn" id="7_mlyhc"]
 [ext_resource type="PackedScene" uid="uid://d4cvm61eymhlu" path="res://CRTGame/Scenes/P_Checkpoint_Trigger.tscn" id="8_mjjl8"]
 [ext_resource type="Shader" uid="uid://da2fn4r6hxtqp" path="res://CRTGame/Scenes/CRTShader.gdshader" id="9_lj458"]
-[ext_resource type="PackedScene" uid="uid://d23of6mtvfubo" path="res://Static_FX.tscn" id="10_23g4d"]
+[ext_resource type="PackedScene" uid="uid://d23of6mtvfubo" path="res://CRTGame/Scenes/Static_FX.tscn" id="10_23g4d"]
 
 [sub_resource type="Environment" id="Environment_613lf"]
 background_mode = 3

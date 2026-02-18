@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://um64cng0kgaa"]
+
+[ext_resource type="Shader" uid="uid://da2fn4r6hxtqp" path="res://CRTGame/Scenes/CRTShader.gdshader" id="1_lgefi"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jeo66"]
+shader = ExtResource("1_lgefi")
+shader_parameter/crt_brightness = 1.0000000475
+shader_parameter/crt_ghost = 0.1810000085975
+shader_parameter/crt_grid = 0.0
+shader_parameter/crt_white_noise = 0.0050000002375
+shader_parameter/crt_curve = 0.06000000285
+shader_parameter/crt_color = 4.6000002185
+shader_parameter/crt_pixel_size = 1.0000000475
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1878606139]
+process_mode = 4
+process_priority = -1
+process_physics_priority = -1
+physics_interpolation_mode = 2
+layer = 3
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1004003487]
+material = SubResource("ShaderMaterial_jeo66")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(18.892157, 18.892157, 18.892157, 1)

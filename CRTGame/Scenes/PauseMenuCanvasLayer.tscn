@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://br6sd8foh7mkr"]
 
 [ext_resource type="Script" uid="uid://bhxfheie1uoev" path="res://CRTGame/Scripts/PauseCanvas.cs" id="1_3ktb7"]
-[ext_resource type="PackedScene" uid="uid://y7qsvsyk2gju" path="res://Menu.tscn" id="2_mws7o"]
+[ext_resource type="PackedScene" uid="uid://y7qsvsyk2gju" path="res://CRTGame/Scenes/Menu.tscn" id="2_mws7o"]
 
 [node name="CanvasLayer" type="CanvasLayer" unique_id=171181728]
 process_mode = 2
