@@ -9,6 +9,4 @@ layer = 2
 script = ExtResource("1_3ktb7")
 
 [node name="PauseMenu" parent="." unique_id=432836943 instance=ExtResource("2_mws7o")]
-offset_left = 0.0
-offset_right = 256.0
 script = null

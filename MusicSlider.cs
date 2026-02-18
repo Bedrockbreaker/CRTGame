@@ -5,20 +5,20 @@ namespace CRTGame;
 public partial class MusicSlider : HSlider
 {
 	[Export]
-	public string BusName { get; set; }
+	public string busName { get; set; }
 	
-	private int BusIndex;
+	private int busIndex;
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-		BusIndex = AudioServer.GetBusIndex(BusName);
+		busIndex = AudioServer.GetBusIndex(busName);
 		ValueChanged += OnValueChanged;
 	}
 	
 	private void OnValueChanged(double value)
 	{
-		AudioServer.SetBusVolumeDb(BusIndex, Mathf.LinearToDb((float)value));
+		AudioServer.SetBusVolumeDb(busIndex, Mathf.LinearToDb((float)value));
 	}
 
 }
