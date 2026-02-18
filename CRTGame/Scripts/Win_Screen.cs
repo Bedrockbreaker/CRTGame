@@ -28,6 +28,6 @@ public partial class Win_Screen : ColorRect
 		ulong seconds = (time - minutes * 60_000_000) / 1_000_000;
 		ulong milliseconds = (time - minutes * 60_000_000 - seconds * 1_000_000) / 1000;
 
-		timeLabel.Text = $"Time: {minutes:00}:{seconds:00}.{milliseconds:000}";
+		timeLabel.Text = $"{minutes:00}:{seconds:00}.{milliseconds:000}";
 	}
 }
