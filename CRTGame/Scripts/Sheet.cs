@@ -143,13 +143,12 @@ public partial class Sheet : Area2D
 
 	public void ClampMouseBoundary(Vector2 mousePos)
 	{
-        /*
         // Create a mouse boundary based on the size of the screen/aspect ratio
         Vector2 screenSize = GetViewportRect().Size;
         Vector2 dividedScreenBoundary = new Vector2
 		(
-			screenSize.X * mouseBoundPercentage[0], 
-			screenSize.Y * mouseBoundPercentage[1]
+			screenSize.X * screenBoundaryPercentage[0], 
+			screenSize.Y * screenBoundaryPercentage[1]
 		);
         Vector2 centeredBoundsPos = (screenSize - dividedScreenBoundary) / 2f;
         Rect2 mouseBounds = new Rect2(centeredBoundsPos, dividedScreenBoundary);
@@ -163,7 +162,10 @@ public partial class Sheet : Area2D
 
         // Clamp the mouse position when the Sheet is selected
         Position = clampedMousePos - DragOffset;
-		*/
+
+		/*
+
+		// NEW CODE BUT DOESN'T WORK...TEMPORARY ABOVE
 
 		// Get a boundary based on screen size and center it to the screen
         Vector2 screenSize = GetViewportRect().Size;
@@ -177,7 +179,7 @@ public partial class Sheet : Area2D
 		// Get the size of this rectangle (the sheet)
         Rect2 sheetRect = Collider.Shape.GetRect();
 
-		if(!(sheetRect.Position.X < centeredBoundsPos.X - screenBoundary.X) 
+		if((sheetRect.Position.X < centeredBoundsPos.X - screenBoundary.X) 
 			|| (sheetRect.Position.Y < centeredBoundsPos.Y - screenBoundary.Y)
             || (sheetRect.Position.X + sheetRect.Size.X > centeredBoundsPos.X + screenBoundary.X)
             || (sheetRect.Position.Y + sheetRect.Size.Y > centeredBoundsPos.Y + screenBoundary.Y)
@@ -186,5 +188,6 @@ public partial class Sheet : Area2D
             // Clamp the mouse position when the Sheet is selected
             Position = mousePos - DragOffset;
         }
+		*/
     }
 }
