@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://b72nxmx4xjgma" path="res://CRTGame/Scenes/P_CheckpointManager.tscn" id="7_mlyhc"]
 [ext_resource type="PackedScene" uid="uid://d4cvm61eymhlu" path="res://CRTGame/Scenes/P_Checkpoint_Trigger.tscn" id="8_mjjl8"]
 [ext_resource type="Shader" uid="uid://da2fn4r6hxtqp" path="res://CRTGame/Scenes/CRTShader.gdshader" id="9_lj458"]
+[ext_resource type="PackedScene" uid="uid://d23of6mtvfubo" path="res://Static_FX.tscn" id="10_23g4d"]
 
 [sub_resource type="Environment" id="Environment_613lf"]
 background_mode = 3
@@ -444,10 +445,6 @@ position = Vector2(116, 0)
 ColorLayer = 2
 Color = Color(0, 1, 0, 1)
 
-[node name="P_Death_Trigger2" parent="PRemovableWall34" unique_id=1762642872 instance=ExtResource("5_x8r5l")]
-position = Vector2(95.00002, 17.999992)
-scale = Vector2(0.182, 1.024)
-
 [node name="PRemovableWall35" parent="." unique_id=714215226 instance=ExtResource("4_h7mxc")]
 position = Vector2(72, 131)
 ColorLayer = 2
@@ -528,13 +525,17 @@ position = Vector2(72, 41)
 ColorLayer = 2
 Color = Color(0, 1, 0, 1)
 
+[node name="P_Death_Trigger4" parent="." unique_id=1762642872 instance=ExtResource("5_x8r5l")]
+position = Vector2(142.00003, 20.999992)
+scale = Vector2(0.145, 1.024)
+
 [node name="P_Death_Trigger" parent="." unique_id=1491358630 instance=ExtResource("5_x8r5l")]
 position = Vector2(-53.999992, 43)
 scale = Vector2(0.182, 1.024)
 
 [node name="P_Death_Trigger2" parent="." unique_id=1590777447 instance=ExtResource("5_x8r5l")]
 position = Vector2(50.000004, 120)
-scale = Vector2(0.182, 1.024)
+scale = Vector2(0.142, 1.05)
 
 [node name="P_Death_Trigger3" parent="." unique_id=1650630717 instance=ExtResource("5_x8r5l")]
 position = Vector2(-38.999992, 36)
@@ -556,7 +557,6 @@ scale = Vector2(0.33801043, 0.37335715)
 environment = SubResource("Environment_613lf")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=932884743]
-visible = false
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=630225158]
 material = SubResource("ShaderMaterial_jeo66")
@@ -566,3 +566,47 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(18.892157, 18.892157, 18.892157, 1)
+
+[node name="Node" type="Node" parent="." unique_id=1112742012]
+
+[node name="Node2D" parent="Node" unique_id=319059775 instance=ExtResource("10_23g4d")]
+position = Vector2(50, 102)
+
+[node name="Node2D2" parent="Node" unique_id=1991385488 instance=ExtResource("10_23g4d")]
+position = Vector2(50, 108)
+
+[node name="Node2D3" parent="Node" unique_id=1402239911 instance=ExtResource("10_23g4d")]
+position = Vector2(50, 114)
+
+[node name="Node2D4" parent="Node" unique_id=1169645296 instance=ExtResource("10_23g4d")]
+position = Vector2(50, 120)
+
+[node name="Node2D5" parent="Node" unique_id=1435553373 instance=ExtResource("10_23g4d")]
+position = Vector2(50, 126)
+
+[node name="Node2D6" parent="Node" unique_id=264062406 instance=ExtResource("10_23g4d")]
+position = Vector2(50, 132)
+
+[node name="Node2D7" parent="Node" unique_id=642736320 instance=ExtResource("10_23g4d")]
+position = Vector2(50, 138)
+
+[node name="Node2D8" parent="Node" unique_id=849354398 instance=ExtResource("10_23g4d")]
+position = Vector2(142, 3)
+
+[node name="Node2D9" parent="Node" unique_id=1524803303 instance=ExtResource("10_23g4d")]
+position = Vector2(142, 9)
+
+[node name="Node2D10" parent="Node" unique_id=1101118652 instance=ExtResource("10_23g4d")]
+position = Vector2(142, 15)
+
+[node name="Node2D11" parent="Node" unique_id=186110720 instance=ExtResource("10_23g4d")]
+position = Vector2(142, 21)
+
+[node name="Node2D12" parent="Node" unique_id=249640548 instance=ExtResource("10_23g4d")]
+position = Vector2(142, 27)
+
+[node name="Node2D13" parent="Node" unique_id=517428821 instance=ExtResource("10_23g4d")]
+position = Vector2(142, 33)
+
+[node name="Node2D14" parent="Node" unique_id=2046298349 instance=ExtResource("10_23g4d")]
+position = Vector2(142, 39)
