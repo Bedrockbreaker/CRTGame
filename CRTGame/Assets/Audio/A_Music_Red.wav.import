@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://8ac87u7umyqt"
-path="res://.godot/imported/A_Music_Red.wav-96554a22c0dcd8364a94afc571d07b8c.sample"
+path="res://.godot/imported/A_Music_Red.wav-5bf63a930c257c6a935806413eefac52.sample"
 
 [deps]
 
-source_file="res://CRTGame/Assets/A_Music_Red.wav"
-dest_files=["res://.godot/imported/A_Music_Red.wav-96554a22c0dcd8364a94afc571d07b8c.sample"]
+source_file="res://CRTGame/Assets/Audio/A_Music_Red.wav"
+dest_files=["res://.godot/imported/A_Music_Red.wav-5bf63a930c257c6a935806413eefac52.sample"]
 
 [params]
 

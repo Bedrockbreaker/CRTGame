@@ -28,6 +28,7 @@ scale = Vector2(1, 5.885754)
 [node name="P_Player_Obj" parent="." unique_id=494675637 instance=ExtResource("2_clspk")]
 position = Vector2(147, 132)
 bounce = null
+Shake = 0.6
 
 [node name="P_Win_Trigger" parent="." unique_id=650866840 node_paths=PackedStringArray("winScreen") instance=ExtResource("3_clspk")]
 position = Vector2(748.00006, 348)

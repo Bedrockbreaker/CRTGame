@@ -10,8 +10,8 @@ public partial class Player_Script : CharacterBody2D
 	[Export]
 	public AudioStreamWav bounce;
 
-    [Export]
-    public int maxBounceSounds = 1;
+	[Export]
+	public int maxBounceSounds = 1;
 	private int bounceTimes = 0;
 
 	[Export]
@@ -62,12 +62,25 @@ public partial class Player_Script : CharacterBody2D
 	{
 		if (bounceTimes <= maxBounceSounds)
 		{
-            audioOutput.Stream = bounce;
-            audioOutput.PitchScale = Random.Randf() * 0.3f + 0.85f;
-            audioOutput.Play();
+			audioOutput.Stream = bounce;
+			audioOutput.PitchScale = Random.Randf() * 0.3f + 0.85f;
+			audioOutput.Play();
 			bounceTimes++;
 			await ToSignal(audioOutput, "finished");
 			bounceTimes--;
-        }
-    }
+		}
+	}
+
+			
+	/*
+	public override void Pause()
+	{
+		GetTree().Paused = true;
+	}
+	
+	public override void UnPause()
+	{
+		GetTree().Paused = false;
+	}
+	*/
 }

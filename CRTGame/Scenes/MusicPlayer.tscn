@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://dd4m24oqjkto0"]
 
 [ext_resource type="Script" uid="uid://dn0ywidmrqp88" path="res://CRTGame/Scripts/MusicPlayer.cs" id="1_faxil"]
-[ext_resource type="AudioStream" uid="uid://1v0u87yo1ust" path="res://CRTGame/Assets/A_Music_Base.wav" id="2_bma1v"]
-[ext_resource type="AudioStream" uid="uid://8ac87u7umyqt" path="res://CRTGame/Assets/A_Music_Red.wav" id="3_73jxi"]
-[ext_resource type="AudioStream" uid="uid://caftivjro6gcs" path="res://CRTGame/Assets/A_Music_Green.wav" id="4_73jxi"]
-[ext_resource type="AudioStream" uid="uid://dvppsvvb6mdwc" path="res://CRTGame/Assets/A_Music_Blue.wav" id="5_4xelv"]
+[ext_resource type="AudioStream" uid="uid://1v0u87yo1ust" path="res://CRTGame/Assets/Audio/A_Music_Base.wav" id="2_bma1v"]
+[ext_resource type="AudioStream" uid="uid://8ac87u7umyqt" path="res://CRTGame/Assets/Audio/A_Music_Red.wav" id="3_73jxi"]
+[ext_resource type="AudioStream" uid="uid://caftivjro6gcs" path="res://CRTGame/Assets/Audio/A_Music_Green.wav" id="4_73jxi"]
+[ext_resource type="AudioStream" uid="uid://dvppsvvb6mdwc" path="res://CRTGame/Assets/Audio/A_Music_Blue.wav" id="5_4xelv"]
 
 [node name="MusicPlayer" type="Node2D" unique_id=1747096354 node_paths=PackedStringArray("PlayerBase", "PlayerRed", "PlayerGreen", "PlayerBlue")]
 script = ExtResource("1_faxil")
@@ -16,18 +16,22 @@ PlayerBlue = NodePath("AudioStreamPlayer2DBlue")
 [node name="AudioStreamPlayer2DBase" type="AudioStreamPlayer2D" parent="." unique_id=1001624579]
 stream = ExtResource("2_bma1v")
 autoplay = true
+bus = &"Music"
 
 [node name="AudioStreamPlayer2DRed" type="AudioStreamPlayer2D" parent="." unique_id=211733157]
 stream = ExtResource("3_73jxi")
 volume_db = -80.0
 autoplay = true
+bus = &"Music"
 
 [node name="AudioStreamPlayer2DGreen" type="AudioStreamPlayer2D" parent="." unique_id=275664823]
 stream = ExtResource("4_73jxi")
 volume_db = -80.0
 autoplay = true
+bus = &"Music"
 
 [node name="AudioStreamPlayer2DBlue" type="AudioStreamPlayer2D" parent="." unique_id=1619868718]
 stream = ExtResource("5_4xelv")
 volume_db = -80.0
 autoplay = true
+bus = &"Music"

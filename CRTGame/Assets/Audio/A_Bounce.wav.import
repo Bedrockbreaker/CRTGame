@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dcmhco7fs3vbn"
-path="res://.godot/imported/A_Bounce.wav-2e06d60f63998a77f58c2829b071e561.sample"
+path="res://.godot/imported/A_Bounce.wav-ca9ac0efe92f5b03ac1844edc02b7b68.sample"
 
 [deps]
 
-source_file="res://CRTGame/Assets/A_Bounce.wav"
-dest_files=["res://.godot/imported/A_Bounce.wav-2e06d60f63998a77f58c2829b071e561.sample"]
+source_file="res://CRTGame/Assets/Audio/A_Bounce.wav"
+dest_files=["res://.godot/imported/A_Bounce.wav-ca9ac0efe92f5b03ac1844edc02b7b68.sample"]
 
 [params]
 

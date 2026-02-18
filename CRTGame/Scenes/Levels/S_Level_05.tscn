@@ -40,6 +40,7 @@ script = ExtResource("1_jf12v")
 position = Vector2(19.999985, 22.999977)
 scale = Vector2(0.08376193, 0.08348762)
 speed = 125.0
+Shake = 0.6
 
 [node name="P_TempWall_obj" parent="." unique_id=2132844915 instance=ExtResource("2_nyhls")]
 position = Vector2(260, 84)

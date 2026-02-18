@@ -38,6 +38,7 @@ shader_parameter/crt_pixel_size = 1.0000000475
 position = Vector2(233.99998, 16.999996)
 scale = Vector2(0.08376193, 0.08348762)
 speed = 125.0
+Shake = 0.6
 
 [node name="P_TempWall_obj17" parent="." unique_id=1602956079 instance=ExtResource("2_4sea2")]
 position = Vector2(58.000004, 53.999996)

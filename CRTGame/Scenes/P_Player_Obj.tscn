@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://fsm0j1e5vx04" path="res://CRTGame/Assets/icon.svg" id="1_24w76"]
 [ext_resource type="Script" uid="uid://cv4qy572tfxr" path="res://CRTGame/Scripts/Player_Script.cs" id="1_ky0se"]
-[ext_resource type="AudioStream" uid="uid://dcmhco7fs3vbn" path="res://CRTGame/Assets/A_Bounce.wav" id="2_712bt"]
+[ext_resource type="AudioStream" uid="uid://dcmhco7fs3vbn" path="res://CRTGame/Assets/Audio/A_Bounce.wav" id="2_712bt"]
 [ext_resource type="PackedScene" uid="uid://dlau5g35l52ss" path="res://CRTGame/Scenes/Collision particle.tscn" id="3_gj25g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s3ing"]
@@ -27,3 +27,4 @@ shape = SubResource("RectangleShape2D_s3ing")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=2083865459]
 volume_db = -10.0
+bus = &"SFX"

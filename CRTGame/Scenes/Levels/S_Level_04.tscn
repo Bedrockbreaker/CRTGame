@@ -39,6 +39,7 @@ script = ExtResource("1_vypat")
 position = Vector2(235.99998, 170)
 scale = Vector2(0.08376193, 0.08348762)
 speed = 125.0
+Shake = 0.6
 
 [node name="P_TempWall_obj" parent="." unique_id=2132844915 instance=ExtResource("2_vypat")]
 position = Vector2(260.00003, 171)

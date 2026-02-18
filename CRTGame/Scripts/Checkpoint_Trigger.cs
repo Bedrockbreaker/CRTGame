@@ -15,22 +15,22 @@ public partial class Checkpoint_Trigger : Area2D
 
 	public override void _Ready()
 	{
-        checkpointManager = GetParent<CheckpointManager>(); // previous implementation was always making this null
-        checkpointManager.lastPlayerLocation = GetNode<Marker2D>("RespawnPoint").GlobalPosition;
+		checkpointManager = GetParent<CheckpointManager>(); // previous implementation was always making this null
+		checkpointManager.lastPlayerLocation = GetNode<Marker2D>("RespawnPoint").GlobalPosition;
 	}
 
-    public override void _Input(InputEvent @event)
-    {
-        if (@event.IsActionPressed("Reset"))
-        {
-            GD.Print("Checkpoint triggered.");
+	public override void _Input(InputEvent @event)
+	{
+		if (@event.IsActionPressed("Reset"))
+		{
+			GD.Print("Checkpoint triggered.");
 			TriggerCheckpoint();
-        }
-        else return;
-    }
+		}
+		else return;
+	}
 
 	public void TriggerCheckpoint()
 	{        
-        checkpointManager.ResetAtCheckpoint();
-    }
+		checkpointManager.ResetAtCheckpoint();
+	}
 }

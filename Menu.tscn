@@ -1,6 +1,139 @@
 [gd_scene format=3 uid="uid://y7qsvsyk2gju"]
 
-[node name="ColorRect" type="ColorRect" unique_id=432836943]
-offset_right = 256.0
-offset_bottom = 192.0
-color = Color(0.12591085, 0.12591085, 0.12591082, 1)
+[ext_resource type="Texture2D" uid="uid://b1volk0s1b8v3" path="res://CRTGame/Assets/Pause.png" id="1_uubjt"]
+[ext_resource type="Script" uid="uid://bhxfheie1uoev" path="res://CRTGame/Scripts/PauseCanvas.cs" id="1_v0s1l"]
+[ext_resource type="Script" uid="uid://cnh0rs7u12lwt" path="res://MusicSlider.cs" id="2_dlksc"]
+[ext_resource type="Texture2D" uid="uid://dhjx0chpjinr5" path="res://CRTGame/Assets/Music.png" id="3_ylpcl"]
+[ext_resource type="Script" uid="uid://c4dk37uo1xcjk" path="res://SfxSlider.cs" id="4_5p1lm"]
+[ext_resource type="Texture2D" uid="uid://dsl2jw31mv7o3" path="res://CRTGame/Assets/volume.png" id="4_cx167"]
+[ext_resource type="Texture2D" uid="uid://bt2es131xtp1w" path="res://CRTGame/Assets/quit.png" id="5_dolsu"]
+[ext_resource type="Script" uid="uid://bxnnbbkyju2j5" path="res://QuitButton.cs" id="5_hcwhg"]
+[ext_resource type="Texture2D" uid="uid://by5ledjdfc0vy" path="res://CRTGame/Assets/exit.png" id="6_dlksc"]
+[ext_resource type="Texture2D" uid="uid://cdqpkrrauaq0j" path="res://CRTGame/Assets/settings.png" id="6_n4eug"]
+[ext_resource type="Script" uid="uid://4p1qmi7h5eh5" path="res://SettingsButton.cs" id="9_5qkn8"]
+[ext_resource type="Script" uid="uid://dwg20byfxoqep" path="res://ExitButton.cs" id="10_1igrg"]
+
+[node name="MenuCanvasLayer" type="CanvasLayer" unique_id=558463798]
+process_mode = 2
+layer = 2
+script = ExtResource("1_v0s1l")
+
+[node name="Menu" type="ColorRect" parent="." unique_id=432836943]
+process_mode = 2
+offset_left = -2.0
+offset_top = 1.0
+offset_right = 254.0
+offset_bottom = 193.0
+color = Color(0.004899827, 0.004899827, 0.004899827, 0.27058825)
+
+[node name="SettingsMenu" type="ColorRect" parent="Menu" unique_id=1814193394]
+layout_mode = 0
+offset_right = 259.0
+offset_bottom = 191.0
+color = Color(0, 0, 0, 0)
+
+[node name="PauseMenu" type="ColorRect" parent="Menu" unique_id=926629252]
+layout_mode = 0
+offset_right = 260.0
+offset_bottom = 193.0
+color = Color(0, 0, 0, 0)
+
+[node name="ColorRect2" type="ColorRect" parent="Menu/PauseMenu" unique_id=466050548]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 56.0
+offset_right = 214.0
+offset_bottom = 87.0
+color = Color(0.011764706, 0.011764706, 0.011764706, 0.36078432)
+
+[node name="Music" type="Sprite2D" parent="Menu/PauseMenu/ColorRect2" unique_id=1872518555]
+position = Vector2(16, 14)
+texture = ExtResource("3_ylpcl")
+
+[node name="MusicSlider" type="HSlider" parent="Menu/PauseMenu/ColorRect2" unique_id=2004368820]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 7.0
+offset_right = 192.0
+offset_bottom = 23.0
+mouse_default_cursor_shape = 2
+max_value = 1.0
+step = 0.001
+value = 1.0
+script = ExtResource("2_dlksc")
+BusName = "Music"
+
+[node name="ColorRect3" type="ColorRect" parent="Menu/PauseMenu" unique_id=587176676]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 91.0
+offset_right = 215.0
+offset_bottom = 122.0
+color = Color(0.011764706, 0.011764706, 0.011764706, 0.36078432)
+
+[node name="Volume" type="Sprite2D" parent="Menu/PauseMenu/ColorRect3" unique_id=874050235]
+position = Vector2(15.999996, 16.000008)
+scale = Vector2(1.09375, 1.15625)
+texture = ExtResource("4_cx167")
+
+[node name="SFXSlider" type="HSlider" parent="Menu/PauseMenu/ColorRect3" unique_id=1005748933]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 7.0
+offset_right = 192.0
+offset_bottom = 23.0
+mouse_default_cursor_shape = 2
+max_value = 1.0
+step = 0.001
+value = 1.0
+script = ExtResource("4_5p1lm")
+BusName = "SFX"
+
+[node name="QuitButton" type="Button" parent="Menu/PauseMenu" unique_id=57734168]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 137.0
+offset_right = 230.0
+offset_bottom = 177.0
+mouse_default_cursor_shape = 2
+icon = ExtResource("5_dolsu")
+flat = true
+script = ExtResource("5_hcwhg")
+
+[node name="SettingsButton" type="Button" parent="Menu/PauseMenu" unique_id=1122798598]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 137.0
+offset_right = 65.0
+offset_bottom = 177.0
+icon = ExtResource("6_n4eug")
+flat = true
+script = ExtResource("9_5qkn8")
+
+[node name="ColorRect" type="ColorRect" parent="Menu" unique_id=1332071060]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 2.0
+offset_right = 48.0
+offset_bottom = 42.0
+color = Color(0.011764706, 0.011764706, 0.011764706, 0.36078432)
+
+[node name="Pause" type="Sprite2D" parent="Menu/ColorRect" unique_id=898179256]
+position = Vector2(20, 20)
+texture = ExtResource("1_uubjt")
+
+[node name="ExitButton" type="Button" parent="Menu" unique_id=174604352 node_paths=PackedStringArray("canvasLayer")]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 13.0
+offset_right = 230.0
+offset_bottom = 53.0
+mouse_default_cursor_shape = 2
+icon = ExtResource("6_dlksc")
+flat = true
+script = ExtResource("10_1igrg")
+canvasLayer = NodePath("../..")
+
+[connection signal="pressed" from="Menu/PauseMenu/QuitButton" to="Menu/PauseMenu/QuitButton" method="OnPressed"]
+[connection signal="pressed" from="Menu/PauseMenu/SettingsButton" to="Menu/PauseMenu/SettingsButton" method="OnPressed"]
+[connection signal="pressed" from="Menu/ExitButton" to="Menu/ExitButton" method="OnPressed"]

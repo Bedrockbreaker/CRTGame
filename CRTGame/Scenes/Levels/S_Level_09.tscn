@@ -43,6 +43,7 @@ script = ExtResource("1_4u631")
 position = Vector2(198.00002, 76)
 scale = Vector2(0.08376193, 0.08348762)
 speed = 125.0
+Shake = 0.6
 
 [node name="Sheet" parent="." unique_id=3925472 instance=ExtResource("3_at406")]
 position = Vector2(229, 167)

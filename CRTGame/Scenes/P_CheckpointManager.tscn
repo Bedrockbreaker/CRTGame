@@ -1,6 +1,13 @@
 [gd_scene format=3 uid="uid://b72nxmx4xjgma"]
 
 [ext_resource type="Script" uid="uid://56pslhm3awqg" path="res://CRTGame/Scripts/CheckpointManager.cs" id="1_o1swa"]
+[ext_resource type="PackedScene" uid="uid://y7qsvsyk2gju" path="res://Menu.tscn" id="2_5xgb2"]
 
-[node name="P_CheckpointManager" type="Node2D" unique_id=979586994]
+[node name="P_CheckpointManager" type="Node2D" unique_id=979586994 node_paths=PackedStringArray("PauseMenu")]
 script = ExtResource("1_o1swa")
+PauseMenu = NodePath("MenuCanvasLayer")
+
+[node name="MenuCanvasLayer" parent="." unique_id=558463798 node_paths=PackedStringArray("checkpointManager") instance=ExtResource("2_5xgb2")]
+layer = 1
+visible = false
+checkpointManager = NodePath("..")
