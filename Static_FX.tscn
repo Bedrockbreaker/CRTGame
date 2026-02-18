@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://d23of6mtvfubo"]
+
+[ext_resource type="Texture2D" uid="uid://d14r2o4yduwj8" path="res://CRTGame/Assets/Sprites/outterStatic_2/outterstatic_00000.png" id="1_460q8"]
+[ext_resource type="Texture2D" uid="uid://xkaktvleluf" path="res://CRTGame/Assets/Sprites/outterStatic_2/outterstatic_00019.png" id="5_l6vij"]
+[ext_resource type="Texture2D" uid="uid://bs3lyr2m5v8uj" path="res://CRTGame/Assets/Sprites/outterStatic_2/outterstatic_00023.png" id="6_oxpgd"]
+[ext_resource type="Texture2D" uid="uid://b36ch0q7488sr" path="res://CRTGame/Assets/Sprites/outterStatic_2/outterstatic_00006.png" id="7_lq8jy"]
+[ext_resource type="Texture2D" uid="uid://3rnp40hhkl2y" path="res://CRTGame/Assets/Sprites/outterStatic_2/outterstatic_00002.png" id="8_hcx2s"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qgrae"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_460q8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_l6vij")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_oxpgd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_lq8jy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_hcx2s")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=319059775]
+scale = Vector2(0.04, 0.04)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1610858352]
+auto_translate_mode = 1
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_qgrae")
+autoplay = "default"
