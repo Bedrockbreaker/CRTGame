@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://dwrks4ty21o7j"]
+
+[ext_resource type="Texture2D" uid="uid://bat2q2hr4v827" path="res://CRTGame/Assets/Sprites/InnerStatic/InnerStatic_00001.png" id="1_ofqc4"]
+[ext_resource type="Texture2D" uid="uid://tlqd6w088iyt" path="res://CRTGame/Assets/Sprites/InnerStatic/InnerStatic_00002.png" id="2_l7up0"]
+[ext_resource type="Texture2D" uid="uid://ctqjxt0mou67j" path="res://CRTGame/Assets/Sprites/InnerStatic/InnerStatic_00003.png" id="3_v04d7"]
+[ext_resource type="Texture2D" uid="uid://56gthosms2qw" path="res://CRTGame/Assets/Sprites/InnerStatic/InnerStatic_00004.png" id="4_q00kk"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dkqo2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ofqc4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_l7up0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_v04d7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_q00kk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=1378337605]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=736400025]
+scale = Vector2(0.08, 0.08)
+sprite_frames = SubResource("SpriteFrames_dkqo2")
+autoplay = "default"
+frame_progress = 0.67763805
