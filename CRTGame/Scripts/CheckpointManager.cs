@@ -20,4 +20,9 @@ public partial class CheckpointManager : Node2D
 	{
         GetTree().ReloadCurrentScene();
     }
+
+	public void LoadScene(string sceneName)
+	{
+        GetTree().ChangeSceneToFile(sceneName);
+    }
 }

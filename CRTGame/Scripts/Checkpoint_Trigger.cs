@@ -21,15 +21,19 @@ public partial class Checkpoint_Trigger : Area2D
 
     public override void _Input(InputEvent @event)
     {
-        if (@event.IsActionPressed("Reset"))
+        if (@event.IsActionPressed("ResetLevel"))
         {
-            GD.Print("Checkpoint triggered.");
-			TriggerCheckpoint();
+            ResetLevel();
+        }
+        else if (@event.IsActionPressed("ResetGame"))
+        {
+            // hardcoded to the title screen, please change later (:
+            checkpointManager.LoadScene("res://CRTGame/Scenes/Levels/S_Level_00.tscn");
         }
         else return;
     }
 
-	public void TriggerCheckpoint()
+	public void ResetLevel()
 	{        
         checkpointManager.ResetAtCheckpoint();
     }

@@ -59,19 +59,16 @@ scale = Vector2(0.1180593, 2.1716092)
 [node name="Sheet" parent="." unique_id=3925472 instance=ExtResource("4_h1iqy")]
 position = Vector2(193, 137)
 Color = Color(1, 0, 0, 0.5882353)
-mouseBounds = Rect2(0, 0, 0, 0)
 
 [node name="Sheet2" parent="." unique_id=1893159727 instance=ExtResource("4_h1iqy")]
 position = Vector2(-56, -23)
 ColorLayer = 2
 Color = Color(0, 1, 0, 0.5882353)
-mouseBounds = Rect2(0, 0, 0, 0)
 
 [node name="Sheet3" parent="." unique_id=959544771 instance=ExtResource("4_h1iqy")]
 position = Vector2(-58, 131)
 ColorLayer = 4
 Color = Color(0, 0, 1, 0.5882353)
-mouseBounds = Rect2(0, 0, 0, 0)
 
 [node name="PRemovableWall" parent="." unique_id=1832529673 instance=ExtResource("3_alwe3")]
 position = Vector2(85, 14)
